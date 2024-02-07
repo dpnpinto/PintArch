@@ -12,5 +12,6 @@ git clone https://github.com/christitustech/ArchTitus
 echo "Executar o script de Instalação"
 
 cd $HOME/PintoArch
+chmod 755 PintArch.sh
 
 exec ./PintArch.sh
