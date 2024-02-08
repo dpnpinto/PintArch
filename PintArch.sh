@@ -22,8 +22,8 @@ echo -ne "
 -------------------------------------------------------------------------
 "
 echo $SCRIPT_DIR
-echo $SCRIPT_DIR
-echo $SCRIPT_DIR
+echo $SCRIPTS_DIR
+echo $CONFIGS_DIR
 echo -ne "
 -------------------------------------------------------------------------
 "
