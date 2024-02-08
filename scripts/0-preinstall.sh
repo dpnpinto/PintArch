@@ -48,7 +48,7 @@ echo -ne "
                     Installing Prerequisites
 -------------------------------------------------------------------------
 "
-pacman -S --noconfirm --needed gptfdisk btrfs-progs glibc
+pacman -S --noconfirm --needed gptfdisk btrfs-progs glibc #gpt partition, btfs filesystem and Gnu lib C
 echo -ne "
 -------------------------------------------------------------------------
                     Formating Disk
