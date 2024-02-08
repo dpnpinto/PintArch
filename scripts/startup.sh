@@ -347,10 +347,7 @@ installtype () {
   set_option INSTALL_TYPE $install_type
 }
 
-# More features in future
-# language (){}
-
-# Starting functions
+# Startig each step of instalation
 background_checks
 clear
 logo
