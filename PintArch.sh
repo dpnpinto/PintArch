@@ -39,7 +39,6 @@ echo -ne "
 -------------------------------------------------------------------------
                     Instalação do PintArch automatizada
 -------------------------------------------------------------------------
-             Os scripts estão no diretório chamado PintArch
 "
 #    ( bash $SCRIPT_DIR/scripts/startup.sh )|& tee startup.log
 #      source $CONFIGS_DIR/setup.conf
@@ -53,9 +52,14 @@ echo -ne "
 
 echo -ne "
 -------------------------------------------------------------------------
-   PintaArch
+    ____  _       _      _             _
+   |  _ \(_)_ __ | |_   / \   _ __ ___| |__
+   | |_) | | '_ \| __| / _ \ | '__/ __| '_ \
+   |  __/| | | | | |_ / ___ \| | | (__| | | |
+   |_|   |_|_| |_|\__/_/   \_|_|  \___|_| |_|
+
 -------------------------------------------------------------------------
-              Intalação do PintaARch Automatizada Concluida
+              Intalação do PintARch Automatizada Concluida
 -------------------------------------------------------------------------
           Por favor retirar o dispositivo de arranque e reiniciar 
 "
