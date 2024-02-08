@@ -353,8 +353,8 @@ background_checks # verify conditions
 clear # clear screen
 logo # Show my logo ;)
 userinfo # lets set the user info
-clear
-logo
+clear # clear screen
+logo # Show my logo again ;)
 desktopenv
 # Set fixed options that installation uses if user choses server installation
 set_option INSTALL_TYPE MINIMAL
