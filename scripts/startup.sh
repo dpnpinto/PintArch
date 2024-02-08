@@ -352,7 +352,7 @@ installtype () {
 background_checks # verify conditions
 clear # clear screen
 logo # Show my logo ;)
-userinfo
+userinfo # lets set the user info
 clear
 logo
 desktopenv
