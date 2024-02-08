@@ -32,7 +32,7 @@ echo -ne "
 -------------------------------------------------------------------------
    PintaArch
 -------------------------------------------------------------------------
-                    Intalação do PintaARch Automatizada
+              Intalação do PintaARch Automatizada Concluida
 -------------------------------------------------------------------------
-  Cloncluido - Por favor retirar o dispositivo de arranque e reiniciar 
+          Por favor retirar o dispositivo de arranque e reiniciar 
 "
