@@ -39,14 +39,7 @@ echo -ne "
 set +a
 echo -ne "
 -------------------------------------------------------------------------
-    ____  _       _      _             _
-   |  _ \(_)_ __ | |_   / \   _ __ ___| |__
-   | |_) | | '_ \| __| / _ \ | '__/ __| '_ \ NOVO
-   |  __/| | | | | |_ / ___ \| | | (__| | | |
-   |_|   |_|_| |_|\__/_/   \_|_|  \___|_| |_|
-
--------------------------------------------------------------------------
-                    Instalação do PintArch automatizada
+                Inicio da instalação do PintArch automatizada
 -------------------------------------------------------------------------
 "
 #    ( bash $SCRIPT_DIR/scripts/startup.sh )|& tee startup.log
@@ -68,7 +61,7 @@ echo -ne "
    |_|   |_|_| |_|\__/_/   \_|_|  \___|_| |_|
 
 -------------------------------------------------------------------------
-              Intalação do PintARch Automatizada Concluida
+                 Fim da intalação do PintARch Automatizada
 -------------------------------------------------------------------------
           Por favor retirar o dispositivo de arranque e reiniciar 
 "
