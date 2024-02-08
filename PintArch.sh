@@ -14,7 +14,7 @@ echo -ne "
 -------------------------------------------------------------------------
   PintArch
 -------------------------------------------------------------------------
-                    Instlação do PintArch automatizada
+                    Instalação do PintArch automatizada
 -------------------------------------------------------------------------
                 Os scripts estão num diretório chamado PintArch
 "
