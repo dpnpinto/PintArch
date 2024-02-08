@@ -18,6 +18,7 @@ Setting up mirrors for optimal download
 source $CONFIGS_DIR/setup.conf
 iso=$(curl -4 ifconfig.co/country-iso) # return the country based on ifconfig.co site
 timedatectl set-ntp true # set ntp to true to sincronize clock and date
+pacman -Sy
 pacman -S --noconfirm archlinux-keyring # update keyrings to latest to prevent packages failing to install
 pacman -S --noconfirm --needed pacman-contrib terminus-font # 
 setfont ter-v22b
