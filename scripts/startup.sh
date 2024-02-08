@@ -1,8 +1,8 @@
-#!/usr/bin/env bash
+p#!/usr/bin/env bash
 #github-action genshdoc
 #
 # @file Startup
-# @brief This script will ask users about their prefrences like disk, file system, timezone, keyboard layout, user name, password, etc.
+# @brief This script will setup my inicial prefrences like disk, file system, timezone, keyboard layout, user name, ask for password, etc.
 # @stdout Output routed to startup.log
 # @stderror Output routed to startup.log
 
