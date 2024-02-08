@@ -27,7 +27,7 @@ echo -ne "
 -------------------------------------------------------------------------
                        BY https://dpnpinto.github.io
 -------------------------------------------------------------------------
-                    Diretorios do PintArch automatizado
+            Diretorios da Instalação da PintArch automatizada
 -------------------------------------------------------------------------
 "
 echo 'Diretório da Solução->' $SCRIPT_DIR
