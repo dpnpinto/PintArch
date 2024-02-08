@@ -16,21 +16,22 @@ PintArch
 Setting up mirrors for optimal download
 "
 source $CONFIGS_DIR/setup.conf
-iso=$(curl -4 ifconfig.co/country-iso) # return the country based on ifconfig.co site
+iso=$PT # Set Country to PT
 timedatectl set-ntp true # set ntp to true to sincronize clock and date
-pacman -Sy
+loadkeys pt-latin1 # set keybord keys to PT
+pacman -Sy # updadte repo
 pacman -S --noconfirm archlinux-keyring # update keyrings to latest to prevent packages failing to install
-pacman -S --noconfirm --needed pacman-contrib terminus-font # 
-setfont ter-v22b
-sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
-pacman -S --noconfirm --needed reflector rsync grub
-cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
+pacman -S --noconfirm --needed pacman-contrib terminus-font # Install extra scripts for pacman and terminus font
+setfont ter-v22b # set the font to ter-v22b setfont [-m MAPPING] ter-<X><SIZE><STYLE>]
+sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf # edit pacman.conf and set ParallelDownloads
+pacman -S --noconfirm --needed reflector rsync grub # install reflector rsync amd grub
+cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup # backup of the mirrorlist
 echo -ne "
 -------------------------------------------------------------------------
-                    Setting up $iso mirrors for faster downloads
+                    Update $iso mirrors for faster downloads
 -------------------------------------------------------------------------
 "
-reflector -a 48 -c $iso -f 5 -l 20 --sort rate --save /etc/pacman.d/mirrorlist
+reflector -a 48 -c $iso -f 5 -l 20 --sort rate --save /etc/pacman.d/mirrorlist # update mirror list for PT
 mkdir /mnt &>/dev/null # Hiding error message if any
 echo -ne "
 -------------------------------------------------------------------------
