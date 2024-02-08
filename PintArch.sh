@@ -61,7 +61,7 @@ echo -ne "
    |_|   |_|_| |_|\__/_/   \_|_|  \___|_| |_|
 
 -------------------------------------------------------------------------
-                 Fim da intalação do PintARch Automatizada
+                 Fim da intalação do PintArch Automatizada
 -------------------------------------------------------------------------
           Por favor retirar o dispositivo de arranque e reiniciar 
 "
