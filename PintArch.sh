@@ -42,7 +42,7 @@ echo -ne "
                 Inicio da instalação do PintArch automatizada
 -------------------------------------------------------------------------
 "
-#    ( bash $SCRIPT_DIR/scripts/startup.sh )|& tee startup.log
+    ( bash $SCRIPT_DIR/scripts/startup.sh )|& tee startup.log
 #      source $CONFIGS_DIR/setup.conf
 #    ( bash $SCRIPT_DIR/scripts/0-preinstall.sh )|& tee 0-preinstall.log
 #    ( arch-chroot /mnt $HOME/ArchTitus/scripts/1-setup.sh )|& tee 1-setup.log
