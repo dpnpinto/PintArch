@@ -355,27 +355,28 @@ logo # Show my logo ;)
 userinfo # lets set the user info
 clear # clear screen
 logo # Show my logo again ;)
-desktopenv
+# AQUI
+#desktopenv
 # Set fixed options that installation uses if user choses server installation
-set_option INSTALL_TYPE MINIMAL
-set_option AUR_HELPER NONE
-if [[ ! $desktop_env == server ]]; then
-  clear
-  logo
-  aurhelper
-  clear
-  logo
-  installtype
-fi
-clear
-logo
-diskpart
-clear
-logo
-filesystem
-clear
-logo
-timezone
-clear
-logo
-keymap
+# set_option INSTALL_TYPE MINIMAL
+# set_option AUR_HELPER NONE
+# if [[ ! $desktop_env == server ]]; then
+#  clear
+#  logo
+#  aurhelper
+#  clear
+#  logo
+#  installtype
+# fi
+# clear
+# logo
+# diskpart
+# clear
+# logo
+# filesystem
+# clear
+# logo
+# timezone
+# clear
+# logo
+# keymap
