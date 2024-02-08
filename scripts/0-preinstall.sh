@@ -26,7 +26,7 @@ echo -ne "
 Setting up mirrors for optimal download
 "
 source $CONFIGS_DIR/setup.conf
-iso=$PT # Set Country to PT
+iso=$(curl -4 ifconfig.co/country-iso) # Set local based of network location
 timedatectl set-ntp true # set ntp to true to sincronize clock and date
 loadkeys pt-latin1 # set keybord keys to PT
 pacman -Sy # updadte repo
