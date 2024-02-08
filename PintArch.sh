@@ -21,9 +21,9 @@ echo -ne "
                     Diretorios do PintArch automatizado
 -------------------------------------------------------------------------
 "
-echo $SCRIPT_DIR
-echo $SCRIPTS_DIR
-echo $CONFIGS_DIR
+echo Diretório da Solução-> $SCRIPT_DIR
+echo Diretório dos Scripts-> $SCRIPTS_DIR
+echo Diretório das Configurações-> $CONFIGS_DIR
 echo -ne "
 -------------------------------------------------------------------------
 "
