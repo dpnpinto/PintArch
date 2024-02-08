@@ -349,9 +349,9 @@ installtype () {
 }
 
 # Startig each step of instalation
-background_checks
-clear
-logo
+background_checks # verify conditions
+clear # clear screen
+logo # Show my logo ;)
 userinfo
 clear
 logo
