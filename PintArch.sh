@@ -1,8 +1,15 @@
 #!/bin/bash
 #
 # PintArch
-# 
-# Script Inicial que lança cada um dos scripts para cada uma das fazes de instalação
+#-------------------------------------------------------------------------
+#  ____  _       _      _             _
+# |  _ \(_)_ __ | |_   / \   _ __ ___| |__
+# | |_) | | '_ \| __| / _ \ | '__/ __| '_ \
+# |  __/| | | | | |_ / ___ \| | | (__| | | |
+# |_|   |_|_| |_|\__/_/   \_|_|  \___|_| |_|
+#
+#-------------------------------------------------------------------------
+# Initial Script that start the scripts for each stages of instalation
 
 # Find the name of the folder the scripts are in
 set -a
@@ -12,11 +19,16 @@ CONFIGS_DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd 
 set +a
 echo -ne "
 -------------------------------------------------------------------------
-  PintArch
+    ____  _       _      _             _
+   |  _ \(_)_ __ | |_   / \   _ __ ___| |__
+   | |_) | | '_ \| __| / _ \ | '__/ __| '_ \
+   |  __/| | | | | |_ / ___ \| | | (__| | | |
+   |_|   |_|_| |_|\__/_/   \_|_|  \___|_| |_|
+
 -------------------------------------------------------------------------
                     Instalação do PintArch automatizada
 -------------------------------------------------------------------------
-                Os scripts estão num diretório chamado PintArch
+             Os scripts estão no diretório chamado PintArch
 "
     ( bash $SCRIPT_DIR/scripts/startup.sh )|& tee startup.log
       source $CONFIGS_DIR/setup.conf
