@@ -70,7 +70,7 @@ arch_check() {
 pacman_check() {
     if [[ -f /var/lib/pacman/db.lck ]]; then
         echo "ERRO! O gestor de pacotes Pacman está bloqueado !\n"
-        echo -ne "Se não consegue correr remove o ficheiro /var/lib/pacman/db.lck. !\n"
+        echo -ne "Se não consegue correr, remover o ficheiro /var/lib/pacman/db.lck. !\n"
         exit 0
     fi
 }
