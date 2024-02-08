@@ -16,6 +16,17 @@ set -a
 SCRIPT_DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 SCRIPTS_DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"/scripts
 CONFIGS_DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"/configs
+echo -ne "
+-------------------------------------------------------------------------
+                    Diretorios do PintArch automatizado
+-------------------------------------------------------------------------
+"
+echo $SCRIPT_DIR
+echo $SCRIPT_DIR
+echo $SCRIPT_DIR
+echo -ne "
+-------------------------------------------------------------------------
+"
 set +a
 echo -ne "
 -------------------------------------------------------------------------
