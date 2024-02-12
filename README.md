@@ -4,7 +4,7 @@
 -------------------------------------------------------------------------
                        BY https://dpnpinto.github.io
 -------------------------------------------------------------------------
-## Chamei a esta versão o PintArch mas na realidade é o Arch Linux que, na minha opinião é uma das melhores dsitribuições de linux existentes por ser:
+## Chamei a esta versão o PintArch mas na realidade é o Arch Linux que, na minha opinião é uma das melhores dsitribuições de linux para desktop existentes por ser:
 
 *  Uma distribuição sempre atualizada (Rolling Release)
 *  Ter uma comunicade muito grande    
