@@ -7,7 +7,7 @@ pacman -Sy --noconfirm --needed git glibc
 
 echo "Clonar o projeto PintArch"
 
-git clone https://github.com/christitustech/ArchTitus
+git clone https://github.com/dpnpinto/PintArch
 
 echo "Executar o script de Instalação"
 
