@@ -213,7 +213,7 @@ echo -ne "
 # btrfs and ext4. Others will be added in future.
 filesystem () {
 echo -ne "
-Please Select your file system for both boot and root
+Seleciona o formato sistema de ficheiros para o boot e a root
 "
 options=("btrfs" "ext4" "luks" "exit")
 select_option $? 1 "${options[@]}"
@@ -226,7 +226,7 @@ case $? in
     set_option FS luks
     ;;
 3) exit ;;
-*) echo "Wrong option please select again"; filesystem;;
+*) echo "Opção errada sleciona de novo"; filesystem;;
 esac
 }
 # @description Detects and sets timezone. 
