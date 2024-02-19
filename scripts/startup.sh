@@ -289,7 +289,7 @@ diskpart () {
 echo -ne "
 ------------------------------------------------------------------------
     TODA A INFORMÇÂO DO DISCO VAI SER APAGADA E FORMATADA
-    Tenha toda a certeza do que está  a fazer porque depois de
+    Tenha toda a certeza do que está a fazer porque depois de
     formatar o seu disco não há forma de recuperr a sua informação
 ------------------------------------------------------------------------
 
