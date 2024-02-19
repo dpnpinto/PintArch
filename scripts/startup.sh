@@ -226,7 +226,7 @@ case $? in
     set_option FS luks
     ;;
 3) exit ;;
-*) echo "Opção errada sleciona de novo"; filesystem;;
+*) echo "Opção errada, seleciona de novo"; filesystem;;
 esac
 }
 # @description Detects and sets timezone. 
