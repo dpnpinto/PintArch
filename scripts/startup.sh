@@ -370,10 +370,12 @@ if [[ ! $desktop_env == server ]]; then
 fi
 clear
 logo
+# define disk to make partitions
 diskpart
-# clear
-# logo
-# filesystem
+clear
+logo
+# format disk with partitions
+filesystem
 # clear
 # logo
 # timezone
