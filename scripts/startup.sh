@@ -376,9 +376,9 @@ clear
 logo
 # Chose filesyetm to format disk
 filesystem
-# clear
-# logo
-# timezone
+clear
+logo
+timezone
 # clear
 # logo
 # keymap
