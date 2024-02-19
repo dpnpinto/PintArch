@@ -330,7 +330,7 @@ aurhelper () {
 # @description Choose Desktop Environment
 desktopenv () {
   # Let the user choose Desktop Enviroment from predefined list
-  echo -ne "Please select your desired Desktop Enviroment:\n"
+  echo -ne "Por favor seleciona o ambiente de trabalho pretendido:\n"
   options=( `for f in pkg-files/*.txt; do echo "$f" | sed -r "s/.+\/(.+)\..+/\1/;/pkgs/d"; done` )
   select_option $? 4 "${options[@]}"
   desktop_env=${options[$?]}
