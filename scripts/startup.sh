@@ -31,7 +31,7 @@ set_option() {
 }
 
 set_password() {
-    read -rs -p "Qual a palavra passe: " PASSWORD1
+    read -rs -p "Qual a palavra passe (password): " PASSWORD1
     echo -ne "\n"
     read -rs -p "Escreva novamente a palavra passe: " PASSWORD2
     echo -ne "\n"
