@@ -365,6 +365,7 @@ if [[ ! $desktop_env == server ]]; then
 #  aurhelper
 #  clear
 #  logo
+# Install the type of system that you want
  installtype
 fi
 # clear
