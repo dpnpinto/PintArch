@@ -378,7 +378,9 @@ logo
 filesystem
 clear
 logo
+# chose timezone
 timezone
 # clear
 # logo
+# Chose keymap
 # keymap
