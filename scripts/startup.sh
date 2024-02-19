@@ -269,18 +269,18 @@ set_option KEYMAP $keymap
 # @description Choose whether drive is SSD or not.
 drivessd () {
 echo -ne "
-Is this an ssd? yes/no:
+O disco é um ssd? sim/não:
 "
 
-options=("Yes" "No")
+options=("Sim" "Não")
 select_option $? 1 "${options[@]}"
 
 case ${options[$?]} in
-    y|Y|yes|Yes|YES)
+    s|S|sim|Sim|SIM)
     set_option MOUNT_OPTIONS "noatime,compress=zstd,ssd,commit=120";;
-    n|N|no|NO|No)
+    n|N|não|NÃO|Não)
     set_option MOUNT_OPTIONS "noatime,compress=zstd,commit=120";;
-    *) echo "Wrong option. Try again";drivessd;;
+    *) echo "Opção errada. Tente novamente";drivessd;;
 esac
 }
 
@@ -288,23 +288,23 @@ esac
 diskpart () {
 echo -ne "
 ------------------------------------------------------------------------
-    THIS WILL FORMAT AND DELETE ALL DATA ON THE DISK
-    Please make sure you know what you are doing because
-    after formating your disk there is no way to get data back
+    TODA A INFORMÇÂO DO DISCO VAI SER APAGADA E FORMATADA
+    Tenha toda a certeza do que está  a fazer porque depois de
+    formatar o seu disco não há forma de recuperr a sua informação
 ------------------------------------------------------------------------
 
 "
 
 PS3='
-Select the disk to install on: '
+Seleciona o disco que rpetende fazer a instalação: '
 options=($(lsblk -n --output TYPE,KNAME,SIZE | awk '$1=="disk"{print "/dev/"$2"|"$3}'))
 
 select_option $? 1 "${options[@]}"
 disk=${options[$?]%|*}
 
-echo -e "\n${disk%|*} selected \n"
+echo -e "\n${disk%|*} selecionado\n"
     set_option DISK ${disk%|*}
-
+# Is the disk a SSD
 drivessd
 }
 
