@@ -42,6 +42,7 @@ echo -ne "
                 Inicio da instalação do PintArch automatizada
 -------------------------------------------------------------------------
 "
+    # set varibles a store in setup.conf
     ( bash $SCRIPT_DIR/scripts/startup.sh )|& tee startup.log
     source $CONFIGS_DIR/setup.conf
 #    ( bash $SCRIPT_DIR/scripts/0-preinstall.sh )|& tee 0-preinstall.log
