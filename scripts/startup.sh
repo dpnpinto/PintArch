@@ -339,7 +339,7 @@ desktopenv () {
 
 # @description Choose whether to do full or minimal installation. 
 installtype () {
-  echo -ne "Please select type of installation:\n\n
+  echo -ne "Seleciona o tipo de instlação pretendida :\n\n
   Full install: Installs full featured desktop enviroment, with added apps and themes needed for everyday use\n
   Minimal Install: Installs only apps few selected apps to get you started\n"
   options=(FULL MINIMAL)
