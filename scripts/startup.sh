@@ -380,7 +380,7 @@ clear
 logo
 # chose timezone
 timezone
-# clear
-# logo
+clear
+logo
 # Chose keymap
-# keymap
+keymap
