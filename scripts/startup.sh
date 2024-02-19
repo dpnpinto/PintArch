@@ -374,7 +374,7 @@ logo
 diskpart
 clear
 logo
-# format disk with partitions
+# Chose filesyetm and format disk
 filesystem
 # clear
 # logo
