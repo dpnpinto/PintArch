@@ -13,17 +13,16 @@
 # @brief Contains the steps necessary to configure and pacstrap the install to selected drive. 
 echo -ne "
 -------------------------------------------------------------------------
-   ____  _       _      _             _
-  |  _ \(_)_ __ | |_   / \   _ __ ___| |__
-  | |_) | | '_ \| __| / _ \ | '__/ __| '_ \
-  |  __/| | | | | |_ / ___ \| | | (__| | | |
-  |_|   |_|_| |_|\__/_/   \_|_|  \___|_| |_|
+    ____  _       _      _             _
+   |  _ \(_)_ __ | |_   / \   _ __ ___| |__
+   | |_) | | '_ \| __| / _ \ | '__/ __| '_ \ NOVO
+   |  __/| | | | | |_ / ___ \| | | (__| | | |
+   |_|   |_|_| |_|\__/_/   \_|_|  \___|_| |_|
 
 -------------------------------------------------------------------------
-                    Automated PintArch Linux Installer
+             Seleciona as definições para configuração              
 -------------------------------------------------------------------------
-
-Setting up mirrors for optimal download
+Seleciona os mirrors para download's otimizados
 "
 source $CONFIGS_DIR/setup.conf
 iso=$(curl -4 ifconfig.co/country-iso) # Set local based of network location
