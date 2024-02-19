@@ -368,9 +368,9 @@ if [[ ! $desktop_env == server ]]; then
 # Install the type of system that you want
  installtype
 fi
-# clear
-# logo
-# diskpart
+clear
+logo
+diskpart
 # clear
 # logo
 # filesystem
