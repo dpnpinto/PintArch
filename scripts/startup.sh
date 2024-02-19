@@ -234,22 +234,22 @@ timezone () {
 # Added this from arch wiki https://wiki.archlinux.org/title/System_time
 time_zone="$(curl --fail https://ipapi.co/timezone)"
 echo -ne "
-System detected your timezone to be '$time_zone' \n"
-echo -ne "Is this correct?
+O sistema detetou a sua timezone como '$time_zone' \n"
+echo -ne "Está correto?
 " 
-options=("Yes" "No")
+options=("Sim" "Não")
 select_option $? 1 "${options[@]}"
 
 case ${options[$?]} in
-    y|Y|yes|Yes|YES)
-    echo "${time_zone} set as timezone"
+    s|S|sim|Sim|SIM)
+    echo "${time_zone} colocado como a sua timezone"
     set_option TIMEZONE $time_zone;;
     n|N|no|NO|No)
-    echo "Please enter your desired timezone e.g. Europe/London :" 
+    echo "Por favor coloca a tua timezone exemplo Atlantic/Azores :" 
     read new_timezone
-    echo "${new_timezone} set as timezone"
+    echo "${new_timezone} colocado como a sua timezone"
     set_option TIMEZONE $new_timezone;;
-    *) echo "Wrong option. Try again";timezone;;
+    *) echo "Opção errada. Tente novamente:";timezone;;
 esac
 }
 # @description Set user's keyboard mapping. 
