@@ -370,7 +370,7 @@ if [[ ! $desktop_env == server ]]; then
 fi
 clear
 logo
-# define disk to make partitions
+# Chose disk to make partitions
 diskpart
 clear
 logo
