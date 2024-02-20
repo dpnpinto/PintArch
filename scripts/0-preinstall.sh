@@ -27,7 +27,6 @@ Seleciona os mirrors para download's otimizados
 source $CONFIGS_DIR/setup.conf
 iso=$(curl -4 ifconfig.co/country-iso) # Set local based of network location
 timedatectl set-ntp true # set ntp to true to sincronize clock and date
-loadkeys pt-latin1 # set keybord keys to PT
 pacman -Sy # updadte repo
 pacman -S --noconfirm archlinux-keyring # update keyrings to latest to prevent packages failing to install
 pacman -S --noconfirm --needed pacman-contrib terminus-font # Install extra scripts for pacman and terminus font
