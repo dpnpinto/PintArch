@@ -42,7 +42,7 @@ echo -ne "
                 Inicio da instalação do PintArch automatizada
 -------------------------------------------------------------------------
 "
-    # loadkeys pt-latin1 # set keybord keys to PT
+    loadkeys pt-latin1 # set keybord keys to PT
     # set varibles a store in setup.conf
     ( bash $SCRIPT_DIR/scripts/startup.sh )|& tee startup.log
     source $CONFIGS_DIR/setup.conf
