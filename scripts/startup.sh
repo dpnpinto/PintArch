@@ -257,7 +257,7 @@ keymap () {
 echo -ne "
 Seleciona o layout do teclado desta lista:"
 # These are default key maps as presented in official arch repo archinstall
-options=(us by ca cf cz de dk es et fa fi fr gr hu il it lt lv mk nl no pl pt ro ru sg ua uk)
+options=(us es pt uk)
 
 select_option $? 4 "${options[@]}"
 keymap=${options[$?]}
