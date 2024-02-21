@@ -11,6 +11,7 @@
 #
 # @file Preinstall
 # @brief Contains the steps necessary to configure and pacstrap the install to selected drive. 
+clear
 echo -ne "
 -------------------------------------------------------------------------
     ____  _       _      _             _
@@ -20,9 +21,8 @@ echo -ne "
    |_|   |_|_| |_|\__/_/   \_|_|  \___|_| |_|
 
 -------------------------------------------------------------------------
-             Seleciona as definições para configuração              
+             Seleciona os mirrors para download's otimizados          
 -------------------------------------------------------------------------
-Seleciona os mirrors para download's otimizados
 "
 source $CONFIGS_DIR/setup.conf
 iso=$(curl -4 ifconfig.co/country-iso) # Set local based of network location
@@ -34,20 +34,47 @@ setfont ter-v22b # set the font to ter-v22b setfont [-m MAPPING] ter-<X><SIZE><S
 sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf # edit pacman.conf and set ParallelDownloads
 pacman -S --noconfirm --needed reflector rsync grub # install reflector rsync amd grub
 cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup # backup of the mirrorlist
+sleep 5
+clear
 echo -ne "
+-------------------------------------------------------------------------
+    ____  _       _      _             _
+   |  _ \(_)_ __ | |_   / \   _ __ ___| |__
+   | |_) | | '_ \| __| / _ \ | '__/ __| '_ \ NOVO
+   |  __/| | | | | |_ / ___ \| | | (__| | | |
+   |_|   |_|_| |_|\__/_/   \_|_|  \___|_| |_|
+
 -------------------------------------------------------------------------
            A atualizar os mirrors $iso para rapidos downloads
 -------------------------------------------------------------------------
 "
 reflector -a 48 -c $iso -f 5 -l 20 --sort rate --save /etc/pacman.d/mirrorlist # update mirror list for PT
 mkdir /mnt &>/dev/null # Hiding error message if any
+sleep 5
+clear
 echo -ne "
+-------------------------------------------------------------------------
+    ____  _       _      _             _
+   |  _ \(_)_ __ | |_   / \   _ __ ___| |__
+   | |_) | | '_ \| __| / _ \ | '__/ __| '_ \ NOVO
+   |  __/| | | | | |_ / ___ \| | | (__| | | |
+   |_|   |_|_| |_|\__/_/   \_|_|  \___|_| |_|
+
 -------------------------------------------------------------------------
                       A Instalar prerequesitos
 -------------------------------------------------------------------------
 "
 pacman -S --noconfirm --needed gptfdisk btrfs-progs glibc #gpt partition, btfs filesystem and Gnu lib C
+sleep 5
+clear
 echo -ne "
+-------------------------------------------------------------------------
+    ____  _       _      _             _
+   |  _ \(_)_ __ | |_   / \   _ __ ___| |__
+   | |_) | | '_ \| __| / _ \ | '__/ __| '_ \ NOVO
+   |  __/| | | | | |_ / ___ \| | | (__| | | |
+   |_|   |_|_| |_|\__/_/   \_|_|  \___|_| |_|
+
 -------------------------------------------------------------------------
                       A formatar o disco
 -------------------------------------------------------------------------
@@ -65,9 +92,17 @@ if [[ ! -d "/sys/firmware/efi" ]]; then # Checking for bios system
     sgdisk -A 1:set:2 ${DISK}
 fi
 partprobe ${DISK} # reread partition table to ensure it is correct
-
+sleep 5
+clear
 # make filesystems
 echo -ne "
+-------------------------------------------------------------------------
+    ____  _       _      _             _
+   |  _ \(_)_ __ | |_   / \   _ __ ___| |__
+   | |_) | | '_ \| __| / _ \ | '__/ __| '_ \ NOVO
+   |  __/| | | | | |_ / ___ \| | | (__| | | |
+   |_|   |_|_| |_|\__/_/   \_|_|  \___|_| |_|
+
 -------------------------------------------------------------------------
                     A criar sistema de ficheiros
 -------------------------------------------------------------------------
@@ -146,7 +181,16 @@ if ! grep -qs '/mnt' /proc/mounts; then
     echo "Rebooting in 1 Second ..." && sleep 1
     reboot now
 fi
+sleep 5
+clear
 echo -ne "
+-------------------------------------------------------------------------
+    ____  _       _      _             _
+   |  _ \(_)_ __ | |_   / \   _ __ ___| |__
+   | |_) | | '_ \| __| / _ \ | '__/ __| '_ \ NOVO
+   |  __/| | | | | |_ / ___ \| | | (__| | | |
+   |_|   |_|_| |_|\__/_/   \_|_|  \___|_| |_|
+
 -------------------------------------------------------------------------
             A instalar o Arch Linux na drive principal
 -------------------------------------------------------------------------
@@ -161,7 +205,16 @@ echo "
   Generated /etc/fstab:
 "
 cat /mnt/etc/fstab
+sleep 5
+clear
 echo -ne "
+-------------------------------------------------------------------------
+    ____  _       _      _             _
+   |  _ \(_)_ __ | |_   / \   _ __ ___| |__
+   | |_) | | '_ \| __| / _ \ | '__/ __| '_ \ NOVO
+   |  __/| | | | | |_ / ___ \| | | (__| | | |
+   |_|   |_|_| |_|\__/_/   \_|_|  \___|_| |_|
+
 -------------------------------------------------------------------------
              A instalar e verificar o GRUB BIOS Bootloader
 -------------------------------------------------------------------------
@@ -171,7 +224,16 @@ if [[ ! -d "/sys/firmware/efi" ]]; then
 else
     pacstrap /mnt efibootmgr --noconfirm --needed
 fi
+sleep 5
+clear
 echo -ne "
+-------------------------------------------------------------------------
+    ____  _       _      _             _
+   |  _ \(_)_ __ | |_   / \   _ __ ___| |__
+   | |_) | | '_ \| __| / _ \ | '__/ __| '_ \ NOVO
+   |  __/| | | | | |_ / ___ \| | | (__| | | |
+   |_|   |_|_| |_|\__/_/   \_|_|  \___|_| |_|
+
 -------------------------------------------------------------------------
              A verificar se o sistema tem menos de 8Gbytes
 -------------------------------------------------------------------------
@@ -189,7 +251,16 @@ if [[  $TOTAL_MEM -lt 8000000 ]]; then
     # The line below is written to /mnt/ but doesn't contain /mnt/, since it's just / for the system itself.
     echo "/opt/swap/swapfile	none	swap	sw	0	0" >> /mnt/etc/fstab # Add swap to fstab, so it KEEPS working after installation.
 fi
+sleep 5
+clear
 echo -ne "
+-------------------------------------------------------------------------
+    ____  _       _      _             _
+   |  _ \(_)_ __ | |_   / \   _ __ ___| |__
+   | |_) | | '_ \| __| / _ \ | '__/ __| '_ \ NOVO
+   |  __/| | | | | |_ / ___ \| | | (__| | | |
+   |_|   |_|_| |_|\__/_/   \_|_|  \___|_| |_|
+
 -------------------------------------------------------------------------
                     SISTEMA PREPARADO para o 1-setup.sh
 -------------------------------------------------------------------------
