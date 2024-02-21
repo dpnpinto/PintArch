@@ -1,10 +1,10 @@
 # Projeto de Instalação da minha versão personalizada do Arch
 -------------------------------------------------------------------------
-                                PINTARCH
+#                               **PINTARCH**
 -------------------------------------------------------------------------
-                       BY https://dpnpinto.github.io
+#                      **BY https://dpnpinto.github.io**
 -------------------------------------------------------------------------
-## Chamei a esta versão o PintArch mas na realidade é o Arch Linux que, na minha opinião é uma das melhores dsitribuições de linux para desktop existentes por ser:
+## Designei esta versão de PintArch mas na realidade é a instalação facilitada do meu Arch Linux que, na minha opinião é uma das melhores dsitribuições de linux para desktop existentes por ser:
 
 *  Uma distribuição sempre atualizada (Rolling Release)
 *  Ter uma comunicade muito grande    
