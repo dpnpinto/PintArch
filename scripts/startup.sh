@@ -233,7 +233,6 @@ esac
 timezone () {
 # Added this from arch wiki https://wiki.archlinux.org/title/System_time
 time_zone="$(curl --fail https://ipapi.co/timezone)"
-#time_zone="$(curl ipapi.co/timezone)"
 echo -ne "
 O sistema detetou a sua timezone como '$time_zone' \n"
 echo -ne "Está correto?
@@ -245,7 +244,7 @@ case ${options[$?]} in
     s|S|sim|Sim|SIM)
     echo "${time_zone} colocado como a sua timezone"
     set_option TIMEZONE $time_zone;;
-    n|N|no|NO|No)
+    n|N|não|NÃO|Não)
     echo "Por favor coloca a tua timezone exemplo Atlantic/Azores :" 
     read new_timezone
     echo "${new_timezone} colocado como a sua timezone"
