@@ -10,6 +10,6 @@
 *  Ter uma comunidade muito grande    
 *  Permitir instalar tudo e mais alguma coisa
 *  Ser completamente modular e adaptavel às necessaides de qualquer utilizador
-*  Ter sempre as ultimas utualizações
+*  Ter sempre as ultimas utualizações https://wiki.archlinux.org/title/ArchWiki:About
 *  Possuir uma fonte de conhecimento muito bem documentada (Arch Wiki) https://wiki.archlinux.org
 *  Tem o melhor repositório aberto de uma comunicade Linux (AUR) https://aur.archlinux.org
