@@ -232,8 +232,8 @@ esac
 # @description Detects and sets timezone. 
 timezone () {
 # Added this from arch wiki https://wiki.archlinux.org/title/System_time
-#time_zone="$(curl --fail https://ipapi.co/timezone)"
-time_zone="$(curl ipapi.co/timezone)"
+time_zone="$(curl --fail https://ipapi.co/timezone)"
+#time_zone="$(curl ipapi.co/timezone)"
 echo -ne "
 O sistema detetou a sua timezone como '$time_zone' \n"
 echo -ne "Está correto?
