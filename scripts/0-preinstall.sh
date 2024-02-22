@@ -12,13 +12,14 @@
 # @file Preinstall
 # @brief Contains the steps necessary to configure and pacstrap the install to selected drive. 
 counter() {
- COUNT=$1
+ COUNT=10
  while [ $COUNT -gt 0 ] ;do
          echo $COUNT
          let COUNT=COUNT-1
   done
 }
 
+counter
 clear
 echo -ne "
 -------------------------------------------------------------------------
