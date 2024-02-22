@@ -18,7 +18,7 @@ count=10
 (( ++count )) 
 echo
 while (( --count >= 0 )); do
-  echo -n $count
+  echo -n $count - 
   sleep 1
 done
 echo
