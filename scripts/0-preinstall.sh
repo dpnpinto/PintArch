@@ -202,7 +202,7 @@ fi
 counter
 echo -ne "
 -------------------------------------------------------------------------
-             A verificar se o sistema tem menos de 8Gbytes
+             A verificar se o sistema tem menos de 8 Gbytes
 -------------------------------------------------------------------------
 "
 TOTAL_MEM=$(cat /proc/meminfo | grep -i 'memtotal' | grep -o '[[:digit:]]*')
