@@ -2,7 +2,7 @@
 -------------------------------------------------------------------------
 #                               **PINTARCH**
 -------------------------------------------------------------------------
-#                      **BY https://dpnpinto.github.io**
+#                      **by https://dpnpinto.github.io**
 -------------------------------------------------------------------------
 ## Designei esta versão de PintArch mas na realidade é a instalação facilitada do meu Arch Linux que, na minha opinião é uma das melhores dsitribuições de linux para desktop existentes por ser:
 
