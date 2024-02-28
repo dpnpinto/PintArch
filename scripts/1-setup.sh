@@ -5,28 +5,28 @@
 # @brief Configures installed system, installs base packages, and creates user. 
 echo -ne "
 -------------------------------------------------------------------------
-   █████╗ ██████╗  ██████╗██╗  ██╗████████╗██╗████████╗██╗   ██╗███████╗
-  ██╔══██╗██╔══██╗██╔════╝██║  ██║╚══██╔══╝██║╚══██╔══╝██║   ██║██╔════╝
-  ███████║██████╔╝██║     ███████║   ██║   ██║   ██║   ██║   ██║███████╗
-  ██╔══██║██╔══██╗██║     ██╔══██║   ██║   ██║   ██║   ██║   ██║╚════██║
-  ██║  ██║██║  ██║╚██████╗██║  ██║   ██║   ██║   ██║   ╚██████╔╝███████║
-  ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝   ╚═╝   ╚═╝   ╚═╝    ╚═════╝ ╚══════╝
+    ____  _       _      _             _
+   |  _ \(_)_ __ | |_   / \   _ __ ___| |__
+   | |_) | | '_ \| __| / _ \ | '__/ __| '_ \ NOVO
+   |  __/| | | | | |_ / ___ \| | | (__| | | |
+   |_|   |_|_| |_|\__/_/   \_|_|  \___|_| |_|
+
 -------------------------------------------------------------------------
-                    Automated Arch Linux Installer
-                        SCRIPTHOME: ArchTitus
+                    PintArch Arch Linux Instalador
+                        SCRIPTHOME: PintArch
 -------------------------------------------------------------------------
 "
-source $HOME/ArchTitus/configs/setup.conf
+source $HOME/PintArch/configs/setup.conf
 echo -ne "
 -------------------------------------------------------------------------
-                    Network Setup 
+                        Configuração de rede 
 -------------------------------------------------------------------------
 "
 pacman -S --noconfirm --needed networkmanager dhclient
 systemctl enable --now NetworkManager
 echo -ne "
 -------------------------------------------------------------------------
-                    Setting up mirrors for optimal download 
+               Configurar mirrors ?? para um otimo download 
 -------------------------------------------------------------------------
 "
 pacman -S --noconfirm --needed pacman-contrib curl
@@ -48,24 +48,25 @@ sed -i "s/COMPRESSXZ=(xz -c -z -)/COMPRESSXZ=(xz -c -T $nc -z -)/g" /etc/makepkg
 fi
 echo -ne "
 -------------------------------------------------------------------------
-                    Setup Language to US and set locale  
+                    Setup Language to PT and set locale  
 -------------------------------------------------------------------------
 "
-sed -i 's/^#en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen
+sed -i 's/^#pt_PT.UTF-8 UTF-8/pt_PT.UTF-8 UTF-8/' /etc/locale.gen
 locale-gen
 timedatectl --no-ask-password set-timezone ${TIMEZONE}
-timedatectl --no-ask-password set-ntp 1
-localectl --no-ask-password set-locale LANG="en_US.UTF-8" LC_TIME="en_US.UTF-8"
+timedatectl --no-ask-password set-ntp -1
+localectl --no-ask-password set-locale LANG="pt_PT.UTF-8" LC_TIME="pt_PT.UTF-8"
 ln -s /usr/share/zoneinfo/${TIMEZONE} /etc/localtime
 # Set keymaps
 localectl --no-ask-password set-keymap ${KEYMAP}
 
-# Add sudo no password rights
-sed -i 's/^# %wheel ALL=(ALL) NOPASSWD: ALL/%wheel ALL=(ALL) NOPASSWD: ALL/' /etc/sudoers
-sed -i 's/^# %wheel ALL=(ALL:ALL) NOPASSWD: ALL/%wheel ALL=(ALL:ALL) NOPASSWD: ALL/' /etc/sudoers
+# Add sudo for  wheel users
+sed -i 's/^# %wheel ALL=(ALL:ALL) ALL/%wheel ALL=(ALL:ALL) ALL/' /etc/sudoers
 
-#Add parallel downloading
+#Add parallel downloading and verbose candy
 sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
+sed -i 's/^#Color/ILoveCandy/' /etc/pacman.conf
+sed -i 's/^#VerbosePkgLists/VerbosePkgLists/' /etc/pacman.conf
 
 #Enable multilib
 sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
@@ -79,7 +80,7 @@ echo -ne "
 # sed $INSTALL_TYPE is using install type to check for MINIMAL installation, if it's true, stop
 # stop the script and move on, not installing any more packages below that line
 if [[ ! $DESKTOP_ENV == server ]]; then
-  sed -n '/'$INSTALL_TYPE'/q;p' $HOME/ArchTitus/pkg-files/pacman-pkgs.txt | while read line
+  sed -n '/'$INSTALL_TYPE'/q;p' $HOME/PintArch/pkg-files/pacman-pkgs.txt | while read line
   do
     if [[ ${line} == '--END OF MINIMAL INSTALL--' ]]; then
       # If selected installation type is FULL, skip the --END OF THE MINIMAL INSTALLATION-- line
@@ -124,7 +125,7 @@ elif grep -E "Intel Corporation UHD" <<< ${gpu_type}; then
     pacman -S --needed --noconfirm libva-intel-driver libvdpau-va-gl lib32-vulkan-intel vulkan-intel libva-intel-driver libva-utils lib32-mesa
 fi
 #SETUP IS WRONG THIS IS RUN
-if ! source $HOME/ArchTitus/configs/setup.conf; then
+if ! source $HOME/PintArch/configs/setup.conf; then
 	# Loop through user input until the user gives a valid username
 	while true
 	do 
@@ -138,11 +139,11 @@ if ! source $HOME/ArchTitus/configs/setup.conf; then
 		echo "Incorrect username."
 	done 
 # convert name to lowercase before saving to setup.conf
-echo "username=${username,,}" >> ${HOME}/ArchTitus/configs/setup.conf
+echo "username=${username,,}" >> ${HOME}/PintArch/configs/setup.conf
 
     #Set Password
     read -p "Please enter password:" password
-echo "password=${password,,}" >> ${HOME}/ArchTitus/configs/setup.conf
+echo "password=${password,,}" >> ${HOME}/PintArch/configs/setup.conf
 
     # Loop through user input until the user gives a valid hostname, but allow the user to force save 
 	while true
@@ -161,7 +162,7 @@ echo "password=${password,,}" >> ${HOME}/ArchTitus/configs/setup.conf
 		fi 
 	done 
 
-    echo "NAME_OF_MACHINE=${name_of_machine,,}" >> ${HOME}/ArchTitus/configs/setup.conf
+    echo "NAME_OF_MACHINE=${name_of_machine,,}" >> ${HOME}/PintArch/configs/setup.conf
 fi
 echo -ne "
 -------------------------------------------------------------------------
@@ -177,8 +178,8 @@ if [ $(whoami) = "root"  ]; then
     echo "$USERNAME:$PASSWORD" | chpasswd
     echo "$USERNAME password set"
 
-	cp -R $HOME/ArchTitus /home/$USERNAME/
-    chown -R $USERNAME: /home/$USERNAME/ArchTitus
+	cp -R $HOME/PintArch /home/$USERNAME/
+    chown -R $USERNAME: /home/$USERNAME/PintArch
     echo "ArchTitus copied to home directory"
 
 # enter $NAME_OF_MACHINE to /etc/hostname
