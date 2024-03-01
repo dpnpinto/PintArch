@@ -48,7 +48,7 @@ sed -i "s/COMPRESSXZ=(xz -c -z -)/COMPRESSXZ=(xz -c -T $nc -z -)/g" /etc/makepkg
 fi
 echo -ne "
 -------------------------------------------------------------------------
-                    Setup Language to PT and set locale  
+                DEfenir a linguagem como PT e o local  
 -------------------------------------------------------------------------
 "
 sed -i 's/^#pt_PT.UTF-8 UTF-8/pt_PT.UTF-8 UTF-8/' /etc/locale.gen
@@ -74,7 +74,7 @@ pacman -Sy --noconfirm --needed
 
 echo -ne "
 -------------------------------------------------------------------------
-                    Installing Base System  
+                    Instlação do Sistema Base 
 -------------------------------------------------------------------------
 "
 # sed $INSTALL_TYPE is using install type to check for MINIMAL installation, if it's true, stop
@@ -92,7 +92,7 @@ if [[ ! $DESKTOP_ENV == server ]]; then
 fi
 echo -ne "
 -------------------------------------------------------------------------
-                    Installing Microcode
+                    Instalação do Microcode AMD/Intel
 -------------------------------------------------------------------------
 "
 # determine processor type and install microcode
@@ -109,7 +109,7 @@ fi
 
 echo -ne "
 -------------------------------------------------------------------------
-                    Installing Graphics Drivers
+                Instalação dos drivers da grafica
 -------------------------------------------------------------------------
 "
 # Graphics Drivers find and install
@@ -166,13 +166,13 @@ echo "password=${password,,}" >> ${HOME}/PintArch/configs/setup.conf
 fi
 echo -ne "
 -------------------------------------------------------------------------
-                    Adding User
+                    Adicionar  o Utilizador
 -------------------------------------------------------------------------
 "
 if [ $(whoami) = "root"  ]; then
     groupadd libvirt
     useradd -m -G wheel,libvirt -s /bin/bash $USERNAME 
-    echo "$USERNAME created, home directory created, added to wheel and libvirt group, default shell set to /bin/bash"
+    echo "$USERNAME criado, diretorio home criado, adicionado ao grupo wheel e libvirt, o shell por defeito colocado /bin/bash"
 
 # use chpasswd to enter $USERNAME:$password
     echo "$USERNAME:$PASSWORD" | chpasswd
@@ -180,7 +180,7 @@ if [ $(whoami) = "root"  ]; then
 
 	cp -R $HOME/PintArch /home/$USERNAME/
     chown -R $USERNAME: /home/$USERNAME/PintArch
-    echo "ArchTitus copied to home directory"
+    echo "PintArch copiado para o diretorio home"
 
 # enter $NAME_OF_MACHINE to /etc/hostname
 	echo $NAME_OF_MACHINE > /etc/hostname
@@ -196,6 +196,6 @@ if [[ ${FS} == "luks" ]]; then
 fi
 echo -ne "
 -------------------------------------------------------------------------
-                    SYSTEM READY FOR 2-user.sh
+                    SISTEMA PRONTO PARA 2-user.sh
 -------------------------------------------------------------------------
 "
