@@ -176,14 +176,14 @@ echo -ne "
             A instalar o Arch Linux na drive principal
 -------------------------------------------------------------------------
 "
-pacstrap /mnt base base-devel linux linux-firmware vim nano sudo archlinux-keyring wget libnewt --noconfirm --needed
+pacstrap /mnt base base-devel linux linux-firmware vim sudo archlinux-keyring wget libnewt --noconfirm --needed
 echo "keyserver hkp://keyserver.ubuntu.com" >> /mnt/etc/pacman.d/gnupg/gpg.conf
 cp -R ${SCRIPT_DIR} /mnt/root/PintArch
 cp /etc/pacman.d/mirrorlist /mnt/etc/pacman.d/mirrorlist
 
 genfstab -L /mnt >> /mnt/etc/fstab
 echo " 
-  Generated /etc/fstab:
+  Tabela de file system criada /etc/fstab:
 "
 cat /mnt/etc/fstab
 
