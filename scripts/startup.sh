@@ -218,7 +218,7 @@ select_option() {
 }
 # @description Displays ArchTitus logo
 # @noargs
-seleciona () {
+logo () {
 # This will be shown on every set as user is progressing
 echo -ne "
 -------------------------------------------------------------------------
