@@ -65,8 +65,7 @@ sed -i 's/^# %wheel ALL=(ALL:ALL) ALL/%wheel ALL=(ALL:ALL) ALL/' /etc/sudoers
 
 #Add parallel downloading, verbose and candy
 sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
-sed 's/^#Color/a ILoveCandy/' /etc/pacman.conf
-sed -i 's/^#Color/Color/' /etc/pacman.conf
+sed -i 's/^#Color/Color /a ILoveCandy/' /etc/pacman.conf
 sed -i 's/^#VerbosePkgLists/VerbosePkgLists/' /etc/pacman.conf
 
 #Enable multilib
