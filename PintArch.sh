@@ -12,6 +12,30 @@
 # Initial Script that start the scripts for each stages of instalation
 
 # Find the name of the folder the scripts are in
+
+counter() {
+count=10
+# Count down to 0 using a C-style arithmetic expression inside `((...))`.
+# Note: Increment the count first so as to simplify the `while` loop.
+(( ++count )) 
+echo
+while (( --count >= 0 )); do
+  echo -n -
+  echo -n $count
+  sleep 1
+done
+clear
+echo -ne "
+-------------------------------------------------------------------------
+    ____  _       _      _             _
+   |  _ \(_)_ __ | |_   / \   _ __ ___| |__
+   | |_) | | '_ \| __| / _ \ | '__/ __| '_ \ NOVO
+   |  __/| | | | | |_ / ___ \| | | (__| | | |
+   |_|   |_|_| |_|\__/_/   \_|_|  \___|_| |_|
+
+"
+}
+
 set -a
 SCRIPT_DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 SCRIPTS_DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"/scripts
@@ -36,6 +60,7 @@ echo 'Diretório das Configurações->' $CONFIGS_DIR
 echo -ne "
 -------------------------------------------------------------------------
 "
+counter();
 set +a
 echo -ne "
 -------------------------------------------------------------------------
