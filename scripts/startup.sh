@@ -23,6 +23,30 @@ fi
 # @description set options in setup.conf
 # @arg $1 string Configuration variable.
 # @arg $2 string Configuration value.
+
+counter() {
+count=10
+# Count down to 0 using a C-style arithmetic expression inside `((...))`.
+# Note: Increment the count first so as to simplify the `while` loop.
+(( ++count )) 
+echo
+while (( --count >= 0 )); do
+  echo -n -
+  echo -n $count
+  sleep 1
+done
+clear
+echo -ne "
+-------------------------------------------------------------------------
+    ____  _       _      _             _
+   |  _ \(_)_ __ | |_   / \   _ __ ___| |__
+   | |_) | | '_ \| __| / _ \ | '__/ __| '_ \ NOVO
+   |  __/| | | | | |_ / ___ \| | | (__| | | |
+   |_|   |_|_| |_|\__/_/   \_|_|  \___|_| |_|
+
+"
+}
+
 set_option() {
     if grep -Eq "^${1}.*" $CONFIG_FILE; then # check if option exists
         sed -i -e "/^${1}.*/d" $CONFIG_FILE # delete option if exists
@@ -194,16 +218,9 @@ select_option() {
 }
 # @description Displays ArchTitus logo
 # @noargs
-logo () {
+seleciona () {
 # This will be shown on every set as user is progressing
 echo -ne "
--------------------------------------------------------------------------
-    ____  _       _      _             _
-   |  _ \(_)_ __ | |_   / \   _ __ ___| |__
-   | |_) | | '_ \| __| / _ \ | '__/ __| '_ \ NOVO
-   |  __/| | | | | |_ / ___ \| | | (__| | | |
-   |_|   |_|_| |_|\__/_/   \_|_|  \___|_| |_|
-
 -------------------------------------------------------------------------
              Seleciona as definições para configuração              
 -------------------------------------------------------------------------
