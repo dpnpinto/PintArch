@@ -30,11 +30,11 @@ count=10
 # Note: Increment the count first so as to simplify the `while` loop.
 (( ++count )) 
 echo
-while (( --count >= 0 )); do
-  echo -n -
-  echo -n $count
-  sleep 1
-done
+#while (( --count >= 0 )); do
+#  echo -n -
+#  echo -n $count
+#  sleep 1
+#done
 clear
 echo -ne "
 -------------------------------------------------------------------------
@@ -44,6 +44,9 @@ echo -ne "
    |  __/| | | | | |_ / ___ \| | | (__| | | |
    |_|   |_|_| |_|\__/_/   \_|_|  \___|_| |_|
 
+-------------------------------------------------------------------------
+             Seleciona as definições para configuração              
+-------------------------------------------------------------------------
 "
 }
 
@@ -218,14 +221,6 @@ select_option() {
 }
 # @description Displays ArchTitus logo
 # @noargs
-logo () {
-# This will be shown on every set as user is progressing
-echo -ne "
--------------------------------------------------------------------------
-             Seleciona as definições para configuração              
--------------------------------------------------------------------------
-"
-}
 # @description This function will handle file systems. At this movement we are handling only
 # btrfs and ext4. Others will be added in future.
 filesystem () {
