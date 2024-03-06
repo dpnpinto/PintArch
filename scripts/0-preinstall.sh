@@ -96,7 +96,6 @@ sgdisk -n 3::-0 --typecode=3:8300 --change-name=3:'Linux filesystem' ${DISK} # p
 partprobe ${DISK} # reread partition table to ensure it is correct
 lsblk ${DISK} # Show what we have done
 counter
-counter # parar aqui
 # make filesystems
 echo -ne "
 -------------------------------------------------------------------------
@@ -135,12 +134,17 @@ subvolumesetup () {
 }
 
 if [[ "${DISK}" =~ "nvme" ]]; then
+    partition1=${DISK}p1
     partition2=${DISK}p2
     partition3=${DISK}p3
 else
+    partition2=${DISK}1
     partition2=${DISK}2
     partition3=${DISK}3
 fi
+
+# Boot partition format
+
 
 if [[ "${FS}" == "btrfs" ]]; then
     mkfs.vfat -F32 -n "EFIBOOT" ${partition2}
