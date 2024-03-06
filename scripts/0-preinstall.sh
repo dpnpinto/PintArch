@@ -37,7 +37,7 @@ echo -ne "
 }
 
 
-# start this bash script with the counter
+# start this preinstalation bash script with the counter
 counter
 echo -ne "
 -------------------------------------------------------------------------
@@ -54,7 +54,6 @@ setfont ter-v22b # set the font to ter-v22b setfont [-m MAPPING] ter-<X><SIZE><S
 sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf # edit pacman.conf and set ParallelDownloads
 pacman -S --noconfirm --needed reflector rsync grub # install reflector rsync amd grub
 cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup # backup of the mirrorlist
-
 counter
 echo -ne "
 -------------------------------------------------------------------------
@@ -70,18 +69,19 @@ echo -ne "
                       A Instalar prerequesitos
 -------------------------------------------------------------------------
 "
-pacman -S --noconfirm --needed gptfdisk btrfs-progs glibc #gpt partition, btfs filesystem and Gnu lib C
-
+pacman -S --noconfirm --needed gptfdisk  glibc #gpt partition, btfs (only install is btfs is selected btrfs-progs) filesystem and Gnu lib C
 counter
 echo -ne "
 -------------------------------------------------------------------------
-                      A formatar o disco
+                  Criar as pasrtições para o disco e formatar
 -------------------------------------------------------------------------
 "
 umount -A --recursive /mnt # make sure everything is unmounted before we start
-# disk prep
+# disk partition
 sgdisk -Z ${DISK} # zap all GPT/MBR on disk
-sgdisk -a 2048 -o ${DISK} # new gpt disk 2048 alignment
+sgdisk -a 2048 -o ${DISK} # new gpt disk 2048 alignment, no MBR here bro
+
+#ESTOU AQUI
 
 # create partitions
 sgdisk -n 1::+1M --typecode=1:ef02 --change-name=1:'BIOSBOOT' ${DISK} # partition 1 (BIOS Boot Partition)
