@@ -364,6 +364,9 @@ installtype () {
 background_checks # verify conditions
 clear # clear screen
 logo # Show my logo ;)
+keymap # Chose keymap
+clear
+logo
 userinfo # lets set the user info
 clear # clear screen
 logo # Show my logo again ;)
@@ -393,6 +396,4 @@ logo
 # chose timezone
 timezone
 clear
-logo
-# Chose keymap
-keymap
+
