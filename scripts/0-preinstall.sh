@@ -191,6 +191,7 @@ if ! grep -qs '/mnt' /proc/mounts; then
 fi
 lsblk ${DISK} 
 counter
+counter
 echo -ne "
 -------------------------------------------------------------------------
             A instalar o Arch Linux na drive principal
