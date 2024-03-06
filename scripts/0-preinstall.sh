@@ -77,6 +77,8 @@ echo -ne "
 -------------------------------------------------------------------------
 "
 umount -A --recursive /mnt # make sure everything is unmounted before we start
+swapoff
+
 # disk partition
 sgdisk -Z ${DISK} # zap all GPT/MBR on disk
 sgdisk -a 2048 -o ${DISK} # new gpt disk 2048 alignment, no MBR here bro
