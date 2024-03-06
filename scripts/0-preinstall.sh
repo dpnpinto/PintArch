@@ -77,7 +77,7 @@ echo -ne "
 -------------------------------------------------------------------------
 "
 umount -A --recursive /mnt # make sure everything is unmounted before we start
-swapoff ${DISK}
+# swapoff ${DISK} if need do other way
 
 # disk partition
 sgdisk -Z ${DISK} # zap all GPT/MBR on disk
@@ -193,7 +193,6 @@ if ! grep -qs '/mnt' /proc/mounts; then
 fi
 lsblk ${DISK} 
 counter
-counter
 echo -ne "
 -------------------------------------------------------------------------
             A instalar o Arch Linux na drive principal
@@ -224,26 +223,7 @@ fi
 
 counter
 echo -ne "
--------------------------------------------------------------------------
-             A verificar se o sistema tem menos de 8 Gbytes
--------------------------------------------------------------------------
-"
-TOTAL_MEM=$(cat /proc/meminfo | grep -i 'memtotal' | grep -o '[[:digit:]]*')
-if [[  $TOTAL_MEM -lt 8000000 ]]; then
-    # Put swap into the actual system, not into RAM disk, otherwise there is no point in it, it'll cache RAM into RAM. So, /mnt/ everything.
-    mkdir -p /mnt/opt/swap # make a dir that we can apply NOCOW to to make it btrfs-friendly.
-    chattr +C /mnt/opt/swap # apply NOCOW, btrfs needs that.
-    dd if=/dev/zero of=/mnt/opt/swap/swapfile bs=1M count=2048 status=progress
-    chmod 600 /mnt/opt/swap/swapfile # set permissions.
-    chown root /mnt/opt/swap/swapfile
-    mkswap /mnt/opt/swap/swapfile
-    swapon /mnt/opt/swap/swapfile
-    # The line below is written to /mnt/ but doesn't contain /mnt/, since it's just / for the system itself.
-    echo "/opt/swap/swapfile	none	swap	sw	0	0" >> /mnt/etc/fstab # Add swap to fstab, so it KEEPS working after installation.
-fi
 
-counter
-echo -ne "
 -------------------------------------------------------------------------
                     SISTEMA PREPARADO para o 1-setup.sh
 -------------------------------------------------------------------------
