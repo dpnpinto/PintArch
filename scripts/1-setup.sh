@@ -49,11 +49,11 @@ echo -ne "
 -------------------------------------------------------------------------
 "
 if [[ ! -d "/sys/firmware/efi" ]]; then
-    pacman -S grub
+    pacman -S --noconfirm grub
     grub-install --target=i386-pc --recheck /dev/${DISK} # install GRUB in disk
     grub-mkconfig -o /boot/grub/grub.cfg #generate GRUB config
 else
-    pacman -S grub efibootmgr
+    pacman -S --noconfirm grub efibootmgr
     grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=arch_grub --recheck
     grub-mkconfig -o /boot/grub/grub.cfg 
 fi
