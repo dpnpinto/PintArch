@@ -81,18 +81,22 @@ umount -A --recursive /mnt # make sure everything is unmounted before we start
 sgdisk -Z ${DISK} # zap all GPT/MBR on disk
 sgdisk -a 2048 -o ${DISK} # new gpt disk 2048 alignment, no MBR here bro
 
-#ESTOU AQUI
-
 # create partitions
-sgdisk -n 1::+1M --typecode=1:ef02 --change-name=1:'BIOSBOOT' ${DISK} # partition 1 (BIOS Boot Partition)
-sgdisk -n 2::+1G --typecode=2:ef00 --change-name=2:'EFIBOOT' ${DISK} # partition 2 (UEFI Boot Partition)
-sgdisk -n 3::-0 --typecode=3:8300 --change-name=3:'ROOT' ${DISK} # partition 3 (Root), default start, remaining
-if [[ ! -d "/sys/firmware/efi" ]]; then # Checking for bios system
-    sgdisk -A 1:set:2 ${DISK}
+
+if [[ ! -d "/sys/firmware/efi" ]]; then # BIOS BOOT
+sgdisk -n 1::+1G --typecode=1:ef02 --change-name=1:'BIOS boot partition' ${DISK} # partition 1 (BIOS Boot Partition)
+else # UEFI BOOT
+sgdisk -n 1::+1G --typecode=1:ef00 --change-name=2:'EFI System' ${DISK} # partition 2 (UEFI Boot Partition)
 fi
+sgdisk -n 2::4G --typecode=2:8200 --change-name=3:'Linux swap' ${DISK} # partition 3 (Root), default start, remaining
+sgdisk -n 3::-0 --typecode=3:8300 --change-name=3:'Linux filesystem' ${DISK} # partition 3 (Root), default start, remaining
+
+
+
 partprobe ${DISK} # reread partition table to ensure it is correct
 
 counter
+counter # parar aqui
 # make filesystems
 echo -ne "
 -------------------------------------------------------------------------
