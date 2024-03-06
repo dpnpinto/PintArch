@@ -138,7 +138,7 @@ if [[ "${DISK}" =~ "nvme" ]]; then
     partition2=${DISK}p2
     partition3=${DISK}p3
 else
-    partition2=${DISK}1
+    partition1=${DISK}1
     partition2=${DISK}2
     partition3=${DISK}3
 fi
