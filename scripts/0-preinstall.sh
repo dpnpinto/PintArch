@@ -178,6 +178,9 @@ else # UEFI BOOT
     mount -t ${partition1} /mnt/boot/efi # mount partition for EFI
 fi
 
+# swap activation
+
+swapon ${partition2}
 
 if ! grep -qs '/mnt' /proc/mounts; then
     echo "Drive is not mounted can not continue"
