@@ -198,14 +198,15 @@ echo -ne "
             A instalar o Arch Linux na drive principal
 -------------------------------------------------------------------------
 "
-pacstrap /mnt base base-devel linux linux-firmware vim sudo archlinux-keyring wget libnewt --noconfirm --needed
+# pacstrap /mnt base base-devel linux linux-firmware vim sudo archlinux-keyring wget libnewt --noconfirm --needed
+pacstrap -K /mnt base base-devel linux linux-firmware vim networkmanager --noconfirm --needed
 echo "keyserver hkp://keyserver.ubuntu.com" >> /mnt/etc/pacman.d/gnupg/gpg.conf
-cp -R ${SCRIPT_DIR} /mnt/root/PintArch
-cp /etc/pacman.d/mirrorlist /mnt/etc/pacman.d/mirrorlist
+cp -R ${SCRIPT_DIR} /mnt/root/PintArch #copy instalation stuff
+cp /etc/pacman.d/mirrorlist /mnt/etc/pacman.d/mirrorlist #copy mirror list
 
-genfstab -L /mnt >> /mnt/etc/fstab
+genfstab -U /mnt >> /mnt/etc/fstab
 echo " 
-  Tabela de file system criada /etc/fstab:
+  Tabela de file system criada /etc/fstab do novo sistema
 "
 cat /mnt/etc/fstab
 
@@ -216,9 +217,12 @@ echo -ne "
 -------------------------------------------------------------------------
 "
 if [[ ! -d "/sys/firmware/efi" ]]; then
-    grub-install --boot-directory=/mnt/boot ${DISK}
+    grub-install --target=i386-pc --recheck /dev/${DISK} # install GRUB in disk
+    grub-mkconfig -o mnt/boot/grub/grub.cfg #generate GRUB config
 else
     pacstrap /mnt efibootmgr --noconfirm --needed
+    grub-install --target=x86_64-efi --efi-directory=mnt/boot/efi --bootloader-id=arch_grub --recheck
+    grub-mkconfig -o mnt/boot/grub/grub.cfg 
 fi
 
 counter
