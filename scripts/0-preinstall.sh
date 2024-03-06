@@ -86,9 +86,9 @@ sgdisk -a 2048 -o ${DISK} # new gpt disk 2048 alignment, no MBR here bro
 if [[ ! -d "/sys/firmware/efi" ]]; then # BIOS BOOT
 sgdisk -n 1::+1G --typecode=1:ef02 --change-name=1:'BIOS boot partition' ${DISK} # partition 1 (BIOS Boot Partition)
 else # UEFI BOOT
-sgdisk -n 1::+1G --typecode=1:ef00 --change-name=1:'EFI System' ${DISK} # partition 2 (UEFI Boot Partition)
+sgdisk -n 1::+1G --typecode=1:ef00 --change-name=1:'EFI System' ${DISK} # partition 1 (UEFI Boot Partition)
 fi
-sgdisk -n 2::+4G --typecode=2:8200 --change-name=2:'Linux swap' ${DISK} # partition 3 (Root), default start, remaining
+sgdisk -n 2::+4G --typecode=2:8200 --change-name=2:'Linux swap' ${DISK} # partition 2 SWAP partition
 sgdisk -n 3::-0 --typecode=3:8300 --change-name=3:'Linux filesystem' ${DISK} # partition 3 (Root), default start, remaining
 
 
