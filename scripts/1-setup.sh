@@ -22,7 +22,7 @@ echo -ne "
                         Configuração de rede 
 -------------------------------------------------------------------------
 "
-pacman -S --noconfirm --needed networkmanager dhclient
+pacman -S --noconfirm --needed networkmanager # se for necessário dhclient
 systemctl enable --now NetworkManager
 echo -ne "
 -------------------------------------------------------------------------
