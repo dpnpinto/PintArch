@@ -28,7 +28,6 @@ echo -ne "
 }
 
 
-
 echo -ne "
 -------------------------------------------------------------------------
     ____  _       _      _             _
@@ -44,8 +43,20 @@ echo -ne "
 "
 source $HOME/PintArch/configs/setup.conf
 counter
-
-
+echo -ne "
+-------------------------------------------------------------------------
+             A instalar e verificar o GRUB BIOS Bootloader
+-------------------------------------------------------------------------
+"
+if [[ ! -d "/sys/firmware/efi" ]]; then
+    grub-install --target=i386-pc --recheck /dev/${DISK} # install GRUB in disk
+    grub-mkconfig -o /boot/grub/grub.cfg #generate GRUB config
+else
+    pacstrap /mnt efibootmgr --noconfirm --needed
+    grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=arch_grub --recheck
+    grub-mkconfig -o /boot/grub/grub.cfg 
+fi
+counter
 echo -ne "
 -------------------------------------------------------------------------
                         Configuração de rede 
