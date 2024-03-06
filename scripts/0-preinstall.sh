@@ -143,14 +143,6 @@ else
     partition3=${DISK}3
 fi
 
-# Boot partition format
-
-if [[ ! -d "/sys/firmware/efi" ]]; then # BIOS BOOT
-    mkfs.vfat -F32 -n "BIOSBOOT" ${partition1}
-else # UEFI BOOT
-    mkfs.vfat -F32 -n "EFIBOOT" ${partition1}
-fi
-
 # Main system format and mount
 
 if [[ "${FS}" == "btrfs" ]]; then
@@ -174,7 +166,7 @@ elif [[ "${FS}" == "luks" ]]; then
     echo ENCRYPTED_PARTITION_UUID=$(blkid -s UUID -o value ${partition3}) >> $CONFIGS_DIR/setup.conf
 fi
 
-# mount targets
+# Boot partition format, mount and install grub
 
 mkdir -p /mnt/home # create home directory
 mkdir -p /mnt/boot # cretae boot directory
