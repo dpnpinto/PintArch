@@ -174,9 +174,18 @@ elif [[ "${FS}" == "luks" ]]; then
     echo ENCRYPTED_PARTITION_UUID=$(blkid -s UUID -o value ${partition3}) >> $CONFIGS_DIR/setup.conf
 fi
 
-# mount target
-mkdir -p /mnt/boot/efi
-mount -t vfat -L EFIBOOT /mnt/boot/
+# mount targets
+
+mkdir -p /mnt/home # create home directory
+mkdir -p /mnt/boot # cretae boot directory
+if [[ ! -d "/sys/firmware/efi" ]]; then # BIOS BOOT
+    mkfs.vfat -F32 -n "BIOSBOOT" ${partition1}
+else # UEFI BOOT
+    mkfs.vfat -F32 -n "EFIBOOT" ${partition1}
+    mkdir -p /mnt/boot/efi # make efi dir for EFI
+    mount -t ${partition1} /mnt/boot/efi # mount partition for EFI
+fi
+
 
 if ! grep -qs '/mnt' /proc/mounts; then
     echo "Drive is not mounted can not continue"
