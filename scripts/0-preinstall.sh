@@ -11,6 +11,8 @@
 #
 # @file Preinstall
 # @brief Contains the steps necessary to configure and pacstrap the install to selected drive. 
+
+# Counter function
 counter() {
 count=10
 # Count down to 0 using a C-style arithmetic expression inside `((...))`.
@@ -34,6 +36,8 @@ echo -ne "
 "
 }
 
+
+# start this bash script with the counter
 counter
 echo -ne "
 -------------------------------------------------------------------------
