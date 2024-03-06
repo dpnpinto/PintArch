@@ -88,7 +88,7 @@ sgdisk -n 1::+1G --typecode=1:ef02 --change-name=1:'BIOS boot partition' ${DISK}
 else # UEFI BOOT
 sgdisk -n 1::+1G --typecode=1:ef00 --change-name=1:'EFI System' ${DISK} # partition 2 (UEFI Boot Partition)
 fi
-sgdisk -n 2::4G --typecode=2:8200 --change-name=2:'Linux swap' ${DISK} # partition 3 (Root), default start, remaining
+sgdisk -n 2::+4G --typecode=2:8200 --change-name=2:'Linux swap' ${DISK} # partition 3 (Root), default start, remaining
 sgdisk -n 3::-0 --typecode=3:8300 --change-name=3:'Linux filesystem' ${DISK} # partition 3 (Root), default start, remaining
 
 
