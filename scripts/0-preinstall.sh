@@ -179,7 +179,7 @@ else # UEFI BOOT
 fi
 
 # swap activation
-
+mkswap ${partition2}
 swapon ${partition2}
 
 if ! grep -qs '/mnt' /proc/mounts; then
