@@ -146,13 +146,12 @@ fi
 # Boot partition format
 
 if [[ ! -d "/sys/firmware/efi" ]]; then # BIOS BOOT
-sgdisk -n 1::+1G --typecode=1:ef02 --change-name=1:'BIOS boot partition' ${DISK} # partition 1 (BIOS Boot Partition)
+    mkfs.vfat -F32 -n "BIOSBOOT" ${partition1}
 else # UEFI BOOT
-    pacman -S efibootmgr 
     mkfs.vfat -F32 -n "EFIBOOT" ${partition1}
 fi
 
-
+# Main system format and mount
 
 if [[ "${FS}" == "btrfs" ]]; then
     mkfs.btrfs -L ROOT ${partition3} -f
