@@ -354,7 +354,7 @@ installtype () {
   echo -ne "Seleciona o tipo de instalação pretendida :\n\n
   Total: Instala todos os componnetes para o ambiente de desktop, com aplicações e temas necessários\n
   Minima: Instala apenas as aplicações necessárias para o arranque do sistema\n"
-  options=(TOTAL MINIMA)
+  options=(MINIMA TOTAL       )
   select_option $? 4 "${options[@]}"
   install_type=${options[$?]}
   set_option INSTALL_TYPE $install_type
