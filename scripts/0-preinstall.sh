@@ -94,7 +94,7 @@ sgdisk -n 3::-0 --typecode=3:8300 --change-name=3:'Linux filesystem' ${DISK} # p
 
 
 partprobe ${DISK} # reread partition table to ensure it is correct
-
+lsblk ${DISK} # Show what we have done
 counter
 counter # parar aqui
 # make filesystems
