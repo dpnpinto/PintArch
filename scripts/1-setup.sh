@@ -2,7 +2,33 @@
 #github-action genshdoc
 #
 # @file Setup
-# @brief Configures installed system, installs base packages, and creates user. 
+# @brief Configures installed system, installs base packages, and creates user.
+
+counter() {
+count=10
+# Count down to 0 using a C-style arithmetic expression inside `((...))`.
+# Note: Increment the count first so as to simplify the `while` loop.
+(( ++count )) 
+echo
+while (( --count >= 0 )); do
+  echo -n -
+  echo -n $count
+  sleep 1
+done
+clear
+echo -ne "
+-------------------------------------------------------------------------
+    ____  _       _      _             _
+   |  _ \(_)_ __ | |_   / \   _ __ ___| |__
+   | |_) | | '_ \| __| / _ \ | '__/ __| '_ \ NOVO
+   |  __/| | | | | |_ / ___ \| | | (__| | | |
+   |_|   |_|_| |_|\__/_/   \_|_|  \___|_| |_|
+
+"
+}
+
+
+
 echo -ne "
 -------------------------------------------------------------------------
     ____  _       _      _             _
@@ -12,11 +38,14 @@ echo -ne "
    |_|   |_|_| |_|\__/_/   \_|_|  \___|_| |_|
 
 -------------------------------------------------------------------------
-                    PintArch Arch Linux Instalador
+                    PintArch Instalador Arch Linux
                         SCRIPTHOME: PintArch
 -------------------------------------------------------------------------
 "
 source $HOME/PintArch/configs/setup.conf
+counter
+
+
 echo -ne "
 -------------------------------------------------------------------------
                         Configuração de rede 
