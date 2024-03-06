@@ -212,21 +212,6 @@ cat /mnt/etc/fstab
 
 counter
 echo -ne "
--------------------------------------------------------------------------
-             A instalar e verificar o GRUB BIOS Bootloader
--------------------------------------------------------------------------
-"
-if [[ ! -d "/sys/firmware/efi" ]]; then
-    grub-install --target=i386-pc --recheck /dev/${DISK} # install GRUB in disk
-    grub-mkconfig -o mnt/boot/grub/grub.cfg #generate GRUB config
-else
-    pacstrap /mnt efibootmgr --noconfirm --needed
-    grub-install --target=x86_64-efi --efi-directory=mnt/boot/efi --bootloader-id=arch_grub --recheck
-    grub-mkconfig -o mnt/boot/grub/grub.cfg 
-fi
-
-counter
-echo -ne "
 
 -------------------------------------------------------------------------
                     SISTEMA PREPARADO para o 1-setup.sh
