@@ -134,6 +134,10 @@ else
     partition2=${DISK}2
     partition3=${DISK}3
 fi
+echo Partições
+echo ${partition1}
+echo ${partition2}
+echo ${partition3}
 
 # Main system format and mount
 
