@@ -50,7 +50,7 @@ echo -ne "
 "
 if [[ ! -d "/sys/firmware/efi" ]]; then
     pacman -S --noconfirm grub
-    grub-install --target=i386-pc --recheck /dev/${DISK} # install GRUB in disk
+    grub-install --target=i386-pc --recheck ${DISK} # install GRUB in disk
     grub-mkconfig -o /boot/grub/grub.cfg #generate GRUB config
 else
     pacman -S --noconfirm grub efibootmgr
