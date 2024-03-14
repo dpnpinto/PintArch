@@ -65,21 +65,26 @@ echo -ne "
 "
 pacman -S --noconfirm --needed networkmanager # se for necessário dhclient
 systemctl enable --now NetworkManager # activate networkmanager it is the one i like to manage network
+
+counter
 echo -ne "
 -------------------------------------------------------------------------
-               Configurar mirrors ?? para um otimo download 
+           A atualizar os mirrors $iso para rapidos downloads
 -------------------------------------------------------------------------
 "
 pacman -S --noconfirm --needed pacman-contrib curl # Install pacman scripts and curl (copy url)
 pacman -S --noconfirm --needed reflector rsync arch-install-scripts git # Install rsync, reflector, arch install scripts amd git
 cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak #backup of the mirrors
+reflector -a 48 -c $iso -f 5 -l 20 --sort rate --save /etc/pacman.d/mirrorlist # update mirror list for PT
+mkdir /mnt &>/dev/null # Hiding error message if any
 
+counter
 nc=$(grep -c ^processor /proc/cpuinfo)
 echo -ne "
 -------------------------------------------------------------------------
-                    You have " $nc" cores. And
-			changing the makeflags for "$nc" cores. Aswell as
-				changing the compression settings.
+                    Tens " $nc" cores.
+			mudar a  makeflags para "$nc" cores. bem como
+				mudar as configurações de compressão.
 -------------------------------------------------------------------------
 "
 TOTAL_MEM=$(cat /proc/meminfo | grep -i 'memtotal' | grep -o '[[:digit:]]*')
@@ -87,15 +92,19 @@ if [[  $TOTAL_MEM -gt 8000000 ]]; then
 sed -i "s/#MAKEFLAGS=\"-j2\"/MAKEFLAGS=\"-j$nc\"/g" /etc/makepkg.conf
 sed -i "s/COMPRESSXZ=(xz -c -z -)/COMPRESSXZ=(xz -c -T $nc -z -)/g" /etc/makepkg.conf
 fi
+
+counter
 echo -ne "
 -------------------------------------------------------------------------
-                DEfenir a linguagem como PT e o local  
+ 	Definir a linguagem como PT e o local és Dámérica muda 
 -------------------------------------------------------------------------
 "
-sed -i 's/^#pt_PT.UTF-8 UTF-8/pt_PT.UTF-8 UTF-8/' /etc/locale.gen
-locale-gen
-timedatectl --no-ask-password set-timezone ${TIMEZONE}
-timedatectl --no-ask-password set-ntp -1
+sed -i 's/^#pt_PT.UTF-8 UTF-8/pt_PT.UTF-8 UTF-8/' /etc/locale.gen # remove the coment from line pt_PT.UTF-8 UTF-8
+locale-gen # generate local
+timedatectl --no-ask-password set-timezone ${TIMEZONE} # set my time zone
+timedatectl --no-ask-password set-ntp -1 # set azores time ;)
+timedatectl set-ntp true # sincronize stuff
+
 localectl --no-ask-password set-locale LANG="pt_PT.UTF-8" LC_TIME="pt_PT.UTF-8"
 ln -s /usr/share/zoneinfo/${TIMEZONE} /etc/localtime
 # Set keymaps
