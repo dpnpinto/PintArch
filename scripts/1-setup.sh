@@ -96,7 +96,7 @@ fi
 counter
 echo -ne "
 -------------------------------------------------------------------------
- 	Definir a linguagem como PT e o local és Dámérica muda 
+ 	Definir a linguagem como PT, se és Dámérica muda :D
 -------------------------------------------------------------------------
 "
 sed -i 's/^#pt_PT.UTF-8 UTF-8/pt_PT.UTF-8 UTF-8/' /etc/locale.gen # remove the coment from line pt_PT.UTF-8 UTF-8
