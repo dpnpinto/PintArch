@@ -1,11 +1,3 @@
-mesa
-xorg
-xorg-server
-xorg-apps
-xorg-drivers
-xorg-xkill
-xorg-xinit
-xterm
 base-devel
 libx11
 libxft
@@ -18,6 +10,14 @@ noto-fonts-emoji
 usbutils
 xdg-user-dirs
 --END OF MINIMAL INSTALL--
+mesa
+xorg
+xorg-server
+xorg-apps
+xorg-drivers
+xorg-xkill
+xorg-xinit
+xterm
 alsa-plugins
 alsa-utils
 autoconf
