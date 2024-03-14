@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+ mu#!/usr/bin/env bash
 #-------------------------------------------------------------------------
 #  ____  _       _      _             _
 # |  _ \(_)_ __ | |_   / \   _ __ ___| |__
@@ -168,16 +168,16 @@ fi
 mkdir -p /mnt/home # create home directory
 mkdir -p /mnt/boot # cretae boot directory
 if [[ ! -d "/sys/firmware/efi" ]]; then # BIOS BOOT
-    mkfs.vfat -F32 -n "BIOSBOOT" ${partition1}
+    mkfs.vfat -F32 -n "BIOSBOOT" ${partition1} # format and name it BIOSBOOT
 else # UEFI BOOT
-    mkfs.vfat -F32 -n "EFIBOOT" ${partition1}
+    mkfs.vfat -F32 -n "EFIBOOT" ${partition1} # format and name it EFIBOOT
     mkdir -p /mnt/boot/efi # make efi dir for EFI
     mount -t ${partition1} /mnt/boot/efi # mount partition for EFI
 fi
 
 # swap activation
-mkswap ${partition2}
-swapon ${partition2}
+mkswap ${partition2} # make aprtition 2 as swap
+swapon ${partition2} # activate swap
 
 if ! grep -qs '/mnt' /proc/mounts; then
     echo "Drive is not mounted can not continue"
@@ -186,7 +186,7 @@ if ! grep -qs '/mnt' /proc/mounts; then
     echo "Rebooting in 1 Second ..." && sleep 1
     reboot now
 fi
-lsblk ${DISK} 
+lsblk ${DISK} # To show the stuff
 counter
 echo -ne "
 -------------------------------------------------------------------------
