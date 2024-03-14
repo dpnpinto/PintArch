@@ -155,11 +155,11 @@ echo -ne "
 # determine processor type and install microcode
 proc_type=$(lscpu)
 if grep -E "GenuineIntel" <<< ${proc_type}; then
-    echo "Installing Intel microcode"
+    echo "Tens um Intel - a instalar o microcode da Intel"
     pacman -S --noconfirm --needed intel-ucode
     proc_ucode=intel-ucode.img
 elif grep -E "AuthenticAMD" <<< ${proc_type}; then
-    echo "Installing AMD microcode"
+    echo "Tens um AMD - A installing AMD microcode"
     pacman -S --noconfirm --needed amd-ucode
     proc_ucode=amd-ucode.img
 fi
