@@ -6,6 +6,8 @@ linux-headers
 noto-fonts-emoji
 usbutils
 xdg-user-dirs
+fastfetch
+btop
 --END OF MINIMAL INSTALL--
 mesa
 xorg
