@@ -111,7 +111,15 @@ echo KEYMAP=pt-latin1 >> /etc/vconsole.conf
 # Set Laguage
 echo LANG=pt_PT.UTF-8 >> /etc/locale.conf
 ln -s /usr/share/zoneinfo/${TIMEZONE} /etc/localtime
+hwclock --systohc #sicronize
+date # check
+counter
 
+echo -ne "
+-------------------------------------------------------------------------
+                    Instlação do Sistema Base 
+-------------------------------------------------------------------------
+"
 
 # Add sudo for  wheel users
 sed -i 's/^# %wheel ALL=(ALL:ALL) ALL/%wheel ALL=(ALL:ALL) ALL/' /etc/sudoers
@@ -124,12 +132,6 @@ sed -i 's/^#VerbosePkgLists/VerbosePkgLists/' /etc/pacman.conf
 #Enable multilib
 sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
 pacman -Sy --noconfirm --needed
-
-echo -ne "
--------------------------------------------------------------------------
-                    Instlação do Sistema Base 
--------------------------------------------------------------------------
-"
 # sed $INSTALL_TYPE is using install type to check for MINIMAL installation, if it's true, stop
 # stop the script and move on, not installing any more packages below that line
 if [[ ! $DESKTOP_ENV == server ]]; then
