@@ -54,8 +54,8 @@ if [[ ! -d "/sys/firmware/efi" ]]; then
     grub-mkconfig -o /boot/grub/grub.cfg #generate GRUB config
 else
     pacman -S --noconfirm grub efibootmgr # for efi you have to install efibootmgr
-    grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=arch_grub --recheck
-    grub-mkconfig -o /boot/grub/grub.cfg 
+    grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=arch_grub --recheck # install grub to EFI partition
+    grub-mkconfig -o /boot/grub/grub.cfg  #generate GRUB config
 fi
 counter
 echo -ne "
@@ -64,15 +64,15 @@ echo -ne "
 -------------------------------------------------------------------------
 "
 pacman -S --noconfirm --needed networkmanager # se for necessário dhclient
-systemctl enable --now NetworkManager
+systemctl enable --now NetworkManager # activate networkmanager it is the one i like to manage network
 echo -ne "
 -------------------------------------------------------------------------
                Configurar mirrors ?? para um otimo download 
 -------------------------------------------------------------------------
 "
-pacman -S --noconfirm --needed pacman-contrib curl
-pacman -S --noconfirm --needed reflector rsync grub arch-install-scripts git
-cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
+pacman -S --noconfirm --needed pacman-contrib curl # Install pacman scripts and curl (copy url)
+pacman -S --noconfirm --needed reflector rsync arch-install-scripts git # Install rsync, reflector, arch install scripts amd git
+cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak #backup of the mirrors
 
 nc=$(grep -c ^processor /proc/cpuinfo)
 echo -ne "
