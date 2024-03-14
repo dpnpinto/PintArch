@@ -130,8 +130,8 @@ sed -i 's/^#Color/Color \nILoveCandy/' /etc/pacman.conf
 sed -i 's/^#VerbosePkgLists/VerbosePkgLists/' /etc/pacman.conf
 
 #Enable multilib
-sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
-pacman -Sy --noconfirm --needed
+sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf # remove coment from multilib
+pacman -Sy --noconfirm --needed # udpate now with multilib
 # sed $INSTALL_TYPE is using install type to check for MINIMAL installation, if it's true, stop
 # stop the script and move on, not installing any more packages below that line
 if [[ ! $DESKTOP_ENV == server ]]; then
