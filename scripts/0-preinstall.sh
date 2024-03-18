@@ -16,14 +16,6 @@ counter() {
 count=10
 # Count down to 0 using a C-style arithmetic expression inside `((...))`.
 # Note: Increment the count first so as to simplify the `while` loop.
-(( ++count )) 
-echo
-while (( --count >= 0 )); do
-  echo -n -
-  echo -n $count
-  sleep 1
-done
-clear
 echo -ne "
 -------------------------------------------------------------------------
     ____  _       _      _             _
@@ -31,16 +23,25 @@ echo -ne "
    | |_) | | '_ \| __| / _ \ | '__/ __| '_ \ NOVO
    |  __/| | | | | |_ / ___ \| | | (__| | | |
    |_|   |_|_| |_|\__/_/   \_|_|  \___|_| |_|
-
+-------------------------------------------------------------------------
 "
+(( ++count )) 
+echo
+while (( --count >= 0 )); do
+  echo -n -
+  echo -n $count
+  sleep 1
+done
 }
 # start this preinstalation bash script with the counter
-counter
+
+clear
 echo -ne "
 -------------------------------------------------------------------------
              Seleciona os mirrors para download's otimizados          
 -------------------------------------------------------------------------
 "
+counter
 source $CONFIGS_DIR/setup.conf
 iso=$(curl -4 ifconfig.co/country-iso) # Set local based of network location
 timedatectl set-ntp true # set ntp to true to sincronize clock and date
@@ -52,26 +53,35 @@ sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf # edit pacman
 pacman -S --noconfirm --needed reflector rsync grub # install reflector rsync amd grub
 cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup # backup of the mirrorlist
 counter
+
+clear
 echo -ne "
 -------------------------------------------------------------------------
-           A atualizar os mirrors $iso para rapidos downloads
+        A atualizar os mirrors de $iso para rapidos downloads
 -------------------------------------------------------------------------
 "
+counter
 reflector -a 48 -c $iso -f 5 -l 20 --sort rate --save /etc/pacman.d/mirrorlist # update mirror list for PT
 mkdir /mnt &>/dev/null # Hiding error message if any
 counter
+
+clear
 echo -ne "
 -------------------------------------------------------------------------
                       A Instalar prerequesitos
 -------------------------------------------------------------------------
 "
-pacman -S --noconfirm --needed gptfdisk  glibc #gpt partition, btfs (only install is btfs is selected btrfs-progs) filesystem and Gnu lib C
 counter
+pacman -S --noconfirm --needed gptfdisk glibc #gpt partition, btfs (only install is btfs is selected btrfs-progs) filesystem and Gnu lib C
+counter
+
+clear
 echo -ne "
 -------------------------------------------------------------------------
                   Criar as pasrtições para o disco e formatar
 -------------------------------------------------------------------------
 "
+counter
 umount -A --recursive /mnt # make sure everything is unmounted before we start
 # swapoff ${DISK} if need do other way
 # disk partition
@@ -88,12 +98,15 @@ sgdisk -n 3::-0 --typecode=3:8300 --change-name=3:'Linux filesystem' ${DISK} # p
 partprobe ${DISK} # reread partition table to ensure it is correct
 lsblk ${DISK} # Show what we have done
 counter
+
 # make filesystems
+clear
 echo -ne "
 -------------------------------------------------------------------------
                     A criar sistema de ficheiros
 -------------------------------------------------------------------------
 "
+counter
 # @description Creates the btrfs subvolumes. 
 createsubvolumes () {
     btrfs subvolume create /mnt/@
@@ -188,11 +201,15 @@ if ! grep -qs '/mnt' /proc/mounts; then
 fi
 lsblk ${DISK} # To show the stuff
 counter
+
+# Install Arch 
+clear
 echo -ne "
 -------------------------------------------------------------------------
             A instalar o Arch Linux na drive principal
 -------------------------------------------------------------------------
 "
+counter
 # pacstrap /mnt base base-devel linux linux-firmware vim sudo archlinux-keyring wget libnewt --noconfirm --needed
 pacstrap -K /mnt base base-devel linux linux-firmware vim networkmanager --noconfirm --needed
 echo "keyserver hkp://keyserver.ubuntu.com" >> /mnt/etc/pacman.d/gnupg/gpg.conf
@@ -203,10 +220,14 @@ genfstab -U /mnt >> /mnt/etc/fstab
 echo " 
   Tabela de file system criada /etc/fstab do novo sistema
 "
-cat /mnt/etc/fstab
+cat /mnt/etc/fstab #show fstab
 counter
+
+#stuff ready
+clear
 echo -ne "
 -------------------------------------------------------------------------
                     SISTEMA PREPARADO para o 1-setup.sh
 -------------------------------------------------------------------------
 "
+counter
