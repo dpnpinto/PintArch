@@ -396,4 +396,3 @@ logo
 # chose timezone
 timezone
 clear
-
