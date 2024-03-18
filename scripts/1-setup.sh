@@ -45,7 +45,7 @@ source $HOME/PintArch/configs/setup.conf
 counter
 echo -ne "
 -------------------------------------------------------------------------
-             A instalar e verificar o GRUB BIOS Bootloader
+             A instalar e verificar o GRUB BIOS/EFI Bootloader
 -------------------------------------------------------------------------
 "
 if [[ ! -d "/sys/firmware/efi" ]]; then
