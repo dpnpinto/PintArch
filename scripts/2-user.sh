@@ -23,22 +23,14 @@ source $HOME/PintArch/configs/setup.conf
 
 cd ~
 
-  mkdir "/home/$USERNAME/.cache"
-  touch "/home/$USERNAME/.cache/zshhistory"
-
-  git clone "https://github.com/ChrisTitusTech/zsh"
-
-  git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
-  ln -s "~/zsh/.zshrc" ~/.zshrc
-
-sed -n '/'$INSTALL_TYPE'/q;p' ~/ArchTitus/pkg-files/${DESKTOP_ENV}.txt | while read line
+sed -n '/'$INSTALL_TYPE'/q;p' ~/PintArch/pkg-files/${DESKTOP_ENV}.txt | while read line
 do
   if [[ ${line} == '--END OF MINIMAL INSTALL--' ]]
   then
     # If selected installation type is FULL, skip the --END OF THE MINIMAL INSTALLATION-- line
     continue
   fi
-  echo "INSTALLING: ${line}"
+  echo "A Instalar: ${line}"
   sudo pacman -S --noconfirm --needed ${line}
 done
 

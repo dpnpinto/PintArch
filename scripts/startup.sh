@@ -350,12 +350,12 @@ desktopenv () {
   set_option DESKTOP_ENV $desktop_env
 }
 
-# @description Choose whether to do full or minimal installation. 
+# @description Choose whether to do minimal or "full" installation. 
 installtype () {
   echo -ne "Seleciona o tipo de instalação pretendida :\n\n
   Total: Instala todos os componnetes para o ambiente de desktop, com aplicações e temas necessários\n
   Minima: Instala apenas as aplicações necessárias para o arranque do sistema\n"
-  options=(MINIMA TOTAL       )
+  options=(MINIMA TOTAL)
   select_option $? 4 "${options[@]}"
   install_type=${options[$?]}
   set_option INSTALL_TYPE $install_type
@@ -373,9 +373,9 @@ clear # clear screen
 logo # Show my logo again ;)
 desktopenv
 # Set fixed options that installation uses if user choses server installation
-set_option INSTALL_TYPE MINIMAL
-set_option AUR_HELPER NONE
-if [[ ! $desktop_env == server ]]; then
+set_option INSTALL_TYPE MINIMA
+set_option AUR_HELPER NONE # do not need this 
+if [[ ! $desktop_env == Command-line ]]; then
  clear
  logo
 #  aurhelper
