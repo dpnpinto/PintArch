@@ -63,7 +63,7 @@ echo -ne "
                         Configuração de rede 
 -------------------------------------------------------------------------
 "
-pacman -S --noconfirm --needed networkmanager # se for necessário dhclient
+pacman -S --noconfirm --needed networkmanager # for now i dont need dhclient
 systemctl enable --now NetworkManager # activate networkmanager it is the one i like to manage network
 
 counter
@@ -133,10 +133,10 @@ sed -i 's/^#VerbosePkgLists/VerbosePkgLists/' /etc/pacman.conf
 sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf # remove coment from multilib
 pacman -Sy --noconfirm --needed # udpate now with multilib
 
-# sed $INSTALL_TYPE is using install type to check for MINIMAL installation, if it's true, stop
+# sed $INSTALL_TYPE is using install type to check for MINIMA installation, if it's true, stop
 # stop the script and move on, not installing any more packages below that line
 
-if [[ ! $DESKTOP_ENV == server ]]; then
+if [[ ! $DESKTOP_ENV == CONSOLA ]]; then
   sed -n '/'$INSTALL_TYPE'/q;p' $HOME/PintArch/pkg-files/pacman-pkgs.txt | while read line
   do
     if [[ ${line} == '--END OF MINIMAL INSTALL--' ]]; then

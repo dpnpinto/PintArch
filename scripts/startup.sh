@@ -374,14 +374,14 @@ logo # Show my logo again ;)
 desktopenv
 # Set fixed options that installation uses if user choses server installation
 set_option INSTALL_TYPE MINIMA
-set_option AUR_HELPER NONE # do not need this 
-if [[ ! $desktop_env == Command-line ]]; then
+set_option AUR_HELPER NONE # do not need this for now
+if [[ ! $desktop_env == CONSOLA ]]; then
  clear
  logo
 #  aurhelper
 #  clear
 #  logo
-# Install the type of system that you want
+ # Install the type of system that you want
  installtype
 fi
 clear
