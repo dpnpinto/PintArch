@@ -309,7 +309,7 @@ echo -ne "
 "
 
 PS3='
-Seleciona o disco que rpetende fazer a instalação: '
+Seleciona o disco em que pretende fazer a instalação: '
 options=($(lsblk -n --output TYPE,KNAME,SIZE | awk '$1=="disk"{print "/dev/"$2"|"$3}'))
 
 select_option $? 1 "${options[@]}"
