@@ -3,7 +3,13 @@ libx11
 libxft
 libxinerama
 freetype2
-kitty
-thunar
 xorg
+fastfetch
+btop
 --END OF MINIMAL INSTALL--
+rofi
+picom
+nitrogen
+lxappearance
+firefox
+unzip

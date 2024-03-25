@@ -34,7 +34,7 @@ do
   sudo pacman -S --noconfirm --needed ${line}
 done
 
-
+# if you need aur I don't
 if [[ ! $AUR_HELPER == none ]]; then
   cd ~
   git clone "https://aur.archlinux.org/$AUR_HELPER.git"
@@ -57,12 +57,9 @@ export PATH=$PATH:~/.local/bin
 
 # Theming DE if user chose FULL installation
 if [[ $INSTALL_TYPE == "FULL" ]]; then
-  if [[ $DESKTOP_ENV == "kde" ]]; then
-    cp -r ~/ArchTitus/configs/.config/* ~/.config/
-    pip install konsave
-    konsave -i ~/ArchTitus/configs/kde.knsv
-    sleep 1
-    konsave -a kde
+  if [[ $DESKTOP_ENV == "DWM" ]]; then
+   # to my dwm full install and startup 
+   cp -r ~/PintArch/configs/start_confs/* ~/
  fi
 fi
 
