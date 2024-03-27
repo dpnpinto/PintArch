@@ -1,4 +1,4 @@
---END OF MINIMAL INSTALL--
+--END OF MINIMA INSTALL--
 autojump
 brave-bin
 bridge-utils

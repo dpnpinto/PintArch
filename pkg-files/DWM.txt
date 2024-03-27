@@ -6,7 +6,7 @@ freetype2
 xorg
 fastfetch
 btop
---END OF MINIMAL INSTALL--
+--END OF MINIMA INSTALL--
 rofi
 picom
 nitrogen

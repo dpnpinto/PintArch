@@ -25,7 +25,7 @@ cd ~
 
 sed -n '/'$INSTALL_TYPE'/q;p' ~/PintArch/pkg-files/${DESKTOP_ENV}.txt | while read line
 do
-  if [[ ${line} == '--END OF MINIMAL INSTALL--' ]]
+  if [[ ${line} == '--END OF MINIMA INSTALL--' ]]
   then
     # If selected installation type is FULL, skip the --END OF THE MINIMAL INSTALLATION-- line
     continue
@@ -55,12 +55,34 @@ fi
 
 export PATH=$PATH:~/.local/bin
 
+# Lets install My DWM
+if [[ $DESKTOP_ENV == "DWM" ]]; then
+   # to my dwm full install and startup
+   cd ~/.config
+   echo "Clone Pinto Stuff"
+   git clone https://github.com/dpnpinto/PintoDWM /home/$USERNAME/.config
+   git clone https://github.com/dpnpinto/PintoST /home/$USERNAME/.config
+   git clone https://github.com/dpnpinto/PintoDWMBLOCKS /home/$USERNAME/.config
+   cd /home/$USERNAME/.config/PintoDWM
+   make install
+   cd /home/$USERNAME/.config/PintoST
+   make install
+   cd /home/$USERNAME/.config/PintoDWMBLOCKS
+   make install
+   cp -r /home/$USERNAME/PintArch/configs/start_confs/*  /home/$USERNAME/
+   chown -R $USERNAME: /home/$USERNAME/.config
+   chmod 755 /home/$USERNAME/.config/scripts/*   
+fi
+
+
+
+
 # Theming DE if user chose FULL installation
-if [[ $INSTALL_TYPE == "FULL" ]]; then
+if [[ $INSTALL_TYPE == "TOTAL" ]]; then
   if [[ $DESKTOP_ENV == "DWM" ]]; then
    # to my dwm full install and startup 
    cp -r ~/PintArch/configs/start_confs/* ~/
- fi
+  fi
 fi
 
 echo -ne "
