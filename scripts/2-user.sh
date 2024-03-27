@@ -58,7 +58,6 @@ export PATH=$PATH:~/.local/bin
 # Lets install My DWM
 if [[ $DESKTOP_ENV == "DWM" ]]; then
    # to my dwm full install and startup
-   cd ~/.config
    echo "Clone Pinto Stuff"
    git clone https://github.com/dpnpinto/PintoDWM /home/$USERNAME/.config
    git clone https://github.com/dpnpinto/PintoST /home/$USERNAME/.config
@@ -67,21 +66,19 @@ if [[ $DESKTOP_ENV == "DWM" ]]; then
    make install
    cd /home/$USERNAME/.config/PintoST
    make install
-   cd /home/$USERNAME/.config/PintoDWMBLOCKS
+   cd /home/$USERNAME/.config/PintoDWMBlocks
    make install
    cp -r /home/$USERNAME/PintArch/configs/start_confs/*  /home/$USERNAME/
+   mkdir /home/$USERNAME/.config/scrips
+   cp -r /home/$USERNAME/.config/PintoDWMBlocks/scrips/*  /home/$USERNAME/
    chown -R $USERNAME: /home/$USERNAME/.config
    chmod 755 /home/$USERNAME/.config/scripts/*   
 fi
 
-
-
-
 # Theming DE if user chose FULL installation
 if [[ $INSTALL_TYPE == "TOTAL" ]]; then
   if [[ $DESKTOP_ENV == "DWM" ]]; then
-   # to my dwm full install and startup 
-   cp -r ~/PintArch/configs/start_confs/* ~/
+   # to my dwm full install if i whant to do something else
   fi
 fi
 
