@@ -58,6 +58,12 @@ export PATH=$PATH:~/.local/bin
 # Lets install My DWM
 if [[ $DESKTOP_ENV == "DWM" ]]; then
    # to my dwm full install and startup
+  echo -ne "
+  -------------------------------------------------------------------------
+                    THE NEW STUFF
+  -------------------------------------------------------------------------
+  "
+
    echo "Clone Pinto Stuff"
    git clone https://github.com/dpnpinto/PintoDWM /home/$USERNAME/.config
    git clone https://github.com/dpnpinto/PintoST /home/$USERNAME/.config
