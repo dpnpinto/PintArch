@@ -79,7 +79,7 @@ reflector -a 48 -c $iso -f 5 -l 20 --sort rate --save /etc/pacman.d/mirrorlist #
 mkdir /mnt &>/dev/null # Hiding error message if any
 
 counter
-nc=$(grep -c ^processor /proc/cpuinfo)
+nc=$(grep -c ^processor /proc/cpuinfo) # how many core you have
 echo -ne "
 -------------------------------------------------------------------------
                     Tens " $nc" cores.

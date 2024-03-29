@@ -6,10 +6,10 @@ freetype2
 xorg
 fastfetch
 btop
---END OF MINIMA INSTALL--
 rofi
 picom
 nitrogen
 lxappearance
 firefox
 unzip
+--END OF MINIMA INSTALL--
