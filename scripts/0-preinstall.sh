@@ -13,7 +13,6 @@
 # @brief Contains the steps necessary to configure and pacstrap the install to selected drive. 
 # Counter function
 counter() {
-count=10
 # Count down to 0 using a C-style arithmetic expression inside `((...))`.
 # Note: Increment the count first so as to simplify the `while` loop.
 echo -ne "
@@ -25,13 +24,6 @@ echo -ne "
    |_|   |_|_| |_|\__/_/   \_|_|  \___|_| |_|
 -------------------------------------------------------------------------
 "
-(( ++count )) 
-echo
-while (( --count >= 0 )); do
-  echo -n -
-  echo -n $count
-  sleep 1
-done
 }
 # start this preinstalation bash script with the counter
 
