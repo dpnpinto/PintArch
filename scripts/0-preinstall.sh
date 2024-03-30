@@ -70,7 +70,7 @@ counter
 clear
 echo -ne "
 -------------------------------------------------------------------------
-                  Criar as pasrtições para o disco e formatar
+                  Criar as partições para o disco e formatar
 -------------------------------------------------------------------------
 "
 counter
