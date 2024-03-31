@@ -26,11 +26,11 @@ fi
 # @arg $2 string Configuration value.
 
 logo() {
-count=10
+#count=10
 # Count down to 0 using a C-style arithmetic expression inside `((...))`.
 # Note: Increment the count first so as to simplify the `while` loop.
-(( ++count )) 
-echo
+#(( ++count )) 
+#echo
 #while (( --count >= 0 )); do
 #  echo -n -
 #  echo -n $count
