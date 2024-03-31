@@ -211,23 +211,21 @@ echo -ne "
 "
 if [ $(whoami) = "root"  ]; then
     groupadd libvirt
-    echo "AENTROU AQUI ------------------------------------"
     useradd -m -G wheel,libvirt -s /bin/bash $USERNAME 
     echo "$USERNAME criado, diretorio home criado, adicionado ao grupo wheel e libvirt, o shell por defeito colocado /bin/bash"
-
 # use chpasswd to enter $USERNAME:$password
     echo "$USERNAME:$PASSWORD" | chpasswd
     echo "$USERNAME password set"
-
-	cp -R $HOME/PintArch /home/$USERNAME/
+    cp -R $HOME/PintArch /home/$USERNAME/
     chown -R $USERNAME: /home/$USERNAME/PintArch
     echo "PintArch copiado para o diretorio home"
 
 # enter $NAME_OF_MACHINE to /etc/hostname
 	echo $NAME_OF_MACHINE > /etc/hostname
 else
-	echo "You are already a user proceed with aur installs"
+	echo "Já és um user"
 fi
+
 if [[ ${FS} == "luks" ]]; then
 # Making sure to edit mkinitcpio conf if luks is selected
 # add encrypt in mkinitcpio.conf before filesystems in hooks
