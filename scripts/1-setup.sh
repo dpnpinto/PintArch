@@ -5,16 +5,6 @@
 # @brief Configures installed system, installs base packages, and creates user.
 
 counter() {
-count=10
-# Count down to 0 using a C-style arithmetic expression inside `((...))`.
-# Note: Increment the count first so as to simplify the `while` loop.
-(( ++count )) 
-echo
-while (( --count >= 0 )); do
-  echo -n -
-  echo -n $count
-  sleep 1
-done
 clear
 echo -ne "
 -------------------------------------------------------------------------
