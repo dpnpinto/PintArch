@@ -70,8 +70,8 @@ echo -ne "
     loadkeys pt-latin1 # set keybord keys to PT
     # set varibles a store in setup.conf
     ( bash $SCRIPT_DIR/scripts/startup.sh )|& tee startup.log
-    source $CONFIGS_DIR/setup.conf
     ( bash $SCRIPT_DIR/scripts/0-preinstall.sh )|& tee 0-preinstall.log
+    source $CONFIGS_DIR/setup.conf
     ( arch-chroot /mnt bash $HOME/PintArch/scripts/1-setup.sh )|& tee 1-setup.log
     # set user enviroment if selected
     if [[ ! $DESKTOP_ENV == consola ]]; then
