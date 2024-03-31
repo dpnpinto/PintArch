@@ -67,19 +67,19 @@ if [[ $DESKTOP_ENV == "DWM" ]]; then
   "
 
    echo "Clone Pinto Stuff"
-   git clone https://github.com/dpnpinto/PintoDWM /home/$USERNAME/.config
-   git clone https://github.com/dpnpinto/PintoST /home/$USERNAME/.config
-   git clone https://github.com/dpnpinto/PintoDWMBLOCKS /home/$USERNAME/.config
+   git clone https://github.com/dpnpinto/PintoDWM /home/$USERNAME/.config/PintoDWM
+   git clone https://github.com/dpnpinto/PintoST /home/$USERNAME/.config/PintoST
+   git clone https://github.com/dpnpinto/PintoDWMBLocks /home/$USERNAME/.config/PintoDWMBlocks
    cd /home/$USERNAME/.config/PintoDWM
-   make install
+   sudo make install
    cd /home/$USERNAME/.config/PintoST
-   make install
+   sudo make install
    cd /home/$USERNAME/.config/PintoDWMBlocks
-   make install
+   sudo make install
    cp -r /home/$USERNAME/PintArch/configs/start_confs/*  /home/$USERNAME/
    mkdir /home/$USERNAME/.config/scrips
-   cp -r /home/$USERNAME/.config/PintoDWMBlocks/scrips/*  /home/$USERNAME/
-   chown -R $USERNAME: /home/$USERNAME/.config
+   cp -r /home/$USERNAME/.config/PintoDWMBlocks/scrips/*  /home/$USERNAME/.config/scrips
+   #chown -R $USERNAME: /home/$USERNAME/.config
    chmod 755 /home/$USERNAME/.config/scripts/*   
 fi
 
