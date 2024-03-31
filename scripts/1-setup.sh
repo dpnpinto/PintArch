@@ -213,17 +213,16 @@ if [ $(whoami) = "root"  ]; then
     groupadd libvirt
     useradd -m -G wheel,libvirt -s /bin/bash $USERNAME 
     echo "$USERNAME criado, diretorio home criado, adicionado ao grupo wheel e libvirt, o shell por defeito colocado /bin/bash"
-# use chpasswd to enter $USERNAME:$password
+    # use chpasswd to enter $USERNAME:$password
     echo "$USERNAME:$PASSWORD" | chpasswd
-    echo "$USERNAME password set"
+    echo "$USERNAME password set"  
     cp -R $HOME/PintArch /home/$USERNAME/
     chown -R $USERNAME: /home/$USERNAME/PintArch
     echo "PintArch copiado para o diretorio home"
-
-# enter $NAME_OF_MACHINE to /etc/hostname
-	echo $NAME_OF_MACHINE > /etc/hostname
+    # enter $NAME_OF_MACHINE to /etc/hostname
+    echo $NAME_OF_MACHINE > /etc/hostname
 else
-	echo "Já és um user"
+     echo "Já és um user"
 fi
 
 if [[ ${FS} == "luks" ]]; then
