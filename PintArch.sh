@@ -14,16 +14,16 @@
 # Find the name of the folder the scripts are in
 
 counter() {
-count=10
+#count=10
 # Count down to 0 using a C-style arithmetic expression inside `((...))`.
 # Note: Increment the count first so as to simplify the `while` loop.
-(( ++count )) 
-echo
-while (( --count >= 0 )); do
-  echo -n -
-  echo -n $count
-  sleep 1
-done
+#(( ++count )) 
+#echo
+#while (( --count >= 0 )); do
+#  echo -n -
+#  echo -n $count
+#  sleep 1
+#done
 clear
 echo -ne "
 -------------------------------------------------------------------------
