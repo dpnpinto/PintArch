@@ -5,7 +5,6 @@
 # @brief Configures installed system, installs base packages, and creates user.
 
 counter() {
-clear
 echo -ne "
 -------------------------------------------------------------------------
     ____  _       _      _             _
@@ -17,15 +16,8 @@ echo -ne "
 "
 }
 
-
+counter
 echo -ne "
--------------------------------------------------------------------------
-    ____  _       _      _             _
-   |  _ \(_)_ __ | |_   / \   _ __ ___| |__
-   | |_) | | '_ \| __| / _ \ | '__/ __| '_ \ NOVO
-   |  __/| | | | | |_ / ___ \| | | (__| | | |
-   |_|   |_|_| |_|\__/_/   \_|_|  \___|_| |_|
-
 -------------------------------------------------------------------------
                     PintArch Instalador Arch Linux
                         SCRIPTHOME: PintArch
@@ -219,6 +211,7 @@ echo -ne "
 "
 if [ $(whoami) = "root"  ]; then
     groupadd libvirt
+    echo "AENTROU AQUI ------------------------------------"
     useradd -m -G wheel,libvirt -s /bin/bash $USERNAME 
     echo "$USERNAME criado, diretorio home criado, adicionado ao grupo wheel e libvirt, o shell por defeito colocado /bin/bash"
 
