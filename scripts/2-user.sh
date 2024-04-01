@@ -76,7 +76,7 @@ if [[ $DESKTOP_ENV == "DWM" ]]; then
    sudo make install
    cd /home/$USERNAME/.config/PintoDWMBlocks
    sudo make install
-   cp -r /home/$USERNAME/PintArch/configs/start_confs/*  /home/$USERNAME/
+   cp -r /home/$USERNAME/PintArch/configs/start_confs/.*  /home/$USERNAME/
    mkdir /home/$USERNAME/.config/scrips
    cp -r /home/$USERNAME/.config/PintoDWMBlocks/scrips/*  /home/$USERNAME/.config/scrips
    #chown -R $USERNAME: /home/$USERNAME/.config
