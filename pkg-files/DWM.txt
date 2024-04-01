@@ -4,7 +4,7 @@ libxft
 libxinerama
 freetype2
 xorg
-xorg-init
+xorg-xinit
 fastfetch
 btop
 rofi
