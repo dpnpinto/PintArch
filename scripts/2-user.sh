@@ -65,22 +65,22 @@ if [[ $DESKTOP_ENV == "DWM" ]]; then
                     THE NEW STUFF
   -------------------------------------------------------------------------
   "
-
-   echo "Clone Pinto Stuff"
-   git clone https://github.com/dpnpinto/PintoDWM /home/$USERNAME/.config/PintoDWM
-   git clone https://github.com/dpnpinto/PintoST /home/$USERNAME/.config/PintoST
-   git clone https://github.com/dpnpinto/PintoDWMBLocks /home/$USERNAME/.config/PintoDWMBlocks
-   cd /home/$USERNAME/.config/PintoDWM
-   sudo make install
-   cd /home/$USERNAME/.config/PintoST
-   sudo make install
-   cd /home/$USERNAME/.config/PintoDWMBlocks
-   sudo make install
-   cp -r /home/$USERNAME/PintArch/configs/start_confs/.*  /home/$USERNAME/
-   mkdir /home/$USERNAME/.config/scripts
-   cp -r /home/$USERNAME/.config/PintoDWMBlocks/scripts/*  /home/$USERNAME/.config/scripts
-   #chown -R $USERNAME: /home/$USERNAME/.config
-   chmod 755 /home/$USERNAME/.config/scripts/*   
+  sudo pacman -S xorg-xinit
+  echo "Clone Pinto Stuff"
+  git clone https://github.com/dpnpinto/PintoDWM /home/$USERNAME/.config/PintoDWM
+  git clone https://github.com/dpnpinto/PintoST /home/$USERNAME/.config/PintoST
+  git clone https://github.com/dpnpinto/PintoDWMBLocks /home/$USERNAME/.config/PintoDWMBlocks
+  cd /home/$USERNAME/.config/PintoDWM
+  sudo make install
+  cd /home/$USERNAME/.config/PintoST
+  sudo make install
+  cd /home/$USERNAME/.config/PintoDWMBlocks
+  sudo make install
+  cp -r /home/$USERNAME/PintArch/configs/start_confs/.*  /home/$USERNAME/
+  mkdir /home/$USERNAME/.config/scripts
+  cp -r /home/$USERNAME/.config/PintoDWMBlocks/scripts/*  /home/$USERNAME/.config/scripts
+  #chown -R $USERNAME: /home/$USERNAME/.config
+  chmod 755 /home/$USERNAME/.config/scripts/*   
 fi
 
 # Theming DE if user chose FULL installation
