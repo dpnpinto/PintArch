@@ -3,7 +3,6 @@ libx11
 libxft
 libxinerama
 freetype2
-xorg
 fastfetch
 btop
 rofi
