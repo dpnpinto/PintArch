@@ -58,7 +58,7 @@ pacman -S --noconfirm --needed pacman-contrib curl # Install pacman scripts and 
 pacman -S --noconfirm --needed reflector rsync arch-install-scripts git # Install rsync, reflector, arch install scripts amd git
 cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak #backup of the mirrors
 iso=$(curl -4 ifconfig.co/country-iso) # Set local based of network location
-reflector -a 48 -c $iso -f 5 -l 20 --sort rate --save /etc/pacman.d/mirrorlist # update mirror list for PT
+reflector -a 48 -c $iso -f 5 -l 20  --download-timeout 2 --sort rate --save /etc/pacman.d/mirrorlist # update mirror list for PT
 mkdir /mnt &>/dev/null # Hiding error message if any
 
 counter
