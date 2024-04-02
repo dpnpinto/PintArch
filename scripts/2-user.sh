@@ -65,7 +65,7 @@ if [[ $DESKTOP_ENV == "DWM" ]]; then
                     THE NEW STUFF
   -------------------------------------------------------------------------
   "
-  sudo pacman -S xorg-xinit
+  sudo pacman --noconfirm -S xorg xorg-xinit
   echo "Clone Pinto Stuff"
   git clone https://github.com/dpnpinto/PintoDWM /home/$USERNAME/.config/PintoDWM
   git clone https://github.com/dpnpinto/PintoST /home/$USERNAME/.config/PintoST
