@@ -13,7 +13,7 @@ echo -ne "
    |_|   |_|_| |_|\__/_/   \_|_|  \___|_| |_|
 
 -------------------------------------------------------------------------
-                    Instalação do Arch Linux
+                    Instalação das ferramentes de UI do Arch Linux
                       Script: PintArch
 -------------------------------------------------------------------------
 
@@ -62,7 +62,7 @@ if [[ $DESKTOP_ENV == "DWM" ]]; then
    # to my dwm full install and startup
   echo -ne "
   -------------------------------------------------------------------------
-                    THE NEW STUFF
+                    Vamos instalar o DWM e restante software
   -------------------------------------------------------------------------
   "
   sudo pacman --noconfirm -S xorg xorg-xinit
@@ -92,7 +92,7 @@ fi
 
 echo -ne "
 -------------------------------------------------------------------------
-                    SYSTEM READY FOR 3-post-setup.sh
+                    SISTEMA PRONTO PARA 3-post-setup.sh
 -------------------------------------------------------------------------
 "
 exit
