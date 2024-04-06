@@ -12,4 +12,4 @@
 *  Ser completamente modular e adaptavel às necessaides de qualquer utilizador
 *  Ter sempre as ultimas actualizações https://wiki.archlinux.org/title/ArchWiki:About
 *  Possuir uma fonte de conhecimento muito bem documentada (Arch Wiki) https://wiki.archlinux.org
-*  Ter o melhor repositório aberto de uma comunicade Linux (AUR) https://aur.archlinux.org
+*  Ter o melhor repositório aberto de uma comunidade Linux (AUR) https://aur.archlinux.org
