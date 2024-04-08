@@ -4,7 +4,7 @@
 -------------------------------------------------------------------------
 #                      **by https://dpnpinto.github.io**
 -------------------------------------------------------------------------
-## Designei esta versão de PintArch mas na realidade é a instalação facilitada do meu Arch Linux que, na minha opinião, é uma das melhores dsitribuições de Linux para desktop existentes, por ser:
+## Designei esta versão de PintArch mas na realidade é a instalação facilitada do meu Arch Linux que, na minha opinião, é uma das melhores distribuições de Linux para desktop existentes, por ser:
 
 *  Uma distribuição sempre atualizada (Rolling Release)
 *  Ter uma comunidade muito grande    
