@@ -28,12 +28,13 @@ echo -ne "
 # start this preinstalation bash script with the counter
 
 clear
+counter
 echo -ne "
 -------------------------------------------------------------------------
              Seleciona os mirrors para download's otimizados          
 -------------------------------------------------------------------------
 "
-counter
+
 source $CONFIGS_DIR/setup.conf
 iso=$(curl -4 ifconfig.co/country-iso) # Set local based of network location
 timedatectl set-ntp true # set ntp to true to sincronize clock and date
@@ -44,36 +45,32 @@ setfont ter-v22b # set the font to ter-v22b setfont [-m MAPPING] ter-<X><SIZE><S
 sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf # edit pacman.conf and set ParallelDownloads
 pacman -S --noconfirm --needed reflector rsync grub # install reflector rsync amd grub
 cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup # backup of the mirrorlist
-counter
-
 clear
+counter
 echo -ne "
 -------------------------------------------------------------------------
         A atualizar os mirrors de $iso para rapidos downloads
 -------------------------------------------------------------------------
 "
-counter
 reflector -a 48 -c $iso -f 5 -l 20 --protocol https --download-timeout 2 --sort rate --save /etc/pacman.d/mirrorlist # update mirror list for PT
 mkdir /mnt &>/dev/null # Hiding error message if any
-counter
 
 clear
+counter
 echo -ne "
 -------------------------------------------------------------------------
                       A Instalar prerequesitos
 -------------------------------------------------------------------------
 "
-counter
 pacman -S --noconfirm --needed gptfdisk glibc #gpt partition, btfs (only install is btfs is selected btrfs-progs) filesystem and Gnu lib C
-counter
 
 clear
+counter
 echo -ne "
 -------------------------------------------------------------------------
                   Criar as partições para o disco e formatar
 -------------------------------------------------------------------------
 "
-counter
 umount -A --recursive /mnt # make sure everything is unmounted before we start
 # swapoff ${DISK} if need do other way
 # disk partition
@@ -88,17 +85,15 @@ fi
 sgdisk -n 2::+4G --typecode=2:8200 --change-name=2:'Linux swap' ${DISK} # partition 2 SWAP partition
 sgdisk -n 3::-0 --typecode=3:8300 --change-name=3:'Linux filesystem' ${DISK} # partition 3 (Root), default start, remaining
 partprobe ${DISK} # reread partition table to ensure it is correct
-lsblk ${DISK} # Show what we have done
-counter
-
 # make filesystems
 clear
+counter
 echo -ne "
 -------------------------------------------------------------------------
                     A criar sistema de ficheiros
 -------------------------------------------------------------------------
 "
-counter
+lsblk ${DISK} # Show what we have done
 # @description Creates the btrfs subvolumes. 
 createsubvolumes () {
     btrfs subvolume create /mnt/@
@@ -191,17 +186,18 @@ if ! grep -qs '/mnt' /proc/mounts; then
     echo "Rebooting in 1 Second ..." && sleep 1
     reboot now
 fi
-lsblk ${DISK} # To show the stuff
-counter
+
+
 
 # Install Arch 
 clear
+counter
 echo -ne "
 -------------------------------------------------------------------------
             A instalar o Arch Linux na drive principal
 -------------------------------------------------------------------------
 "
-counter
+lsblk ${DISK} # To show the stuff
 # pacstrap /mnt base base-devel linux linux-firmware vim sudo archlinux-keyring wget libnewt --noconfirm --needed
 pacstrap -K /mnt base base-devel linux linux-firmware vim networkmanager --noconfirm --needed
 echo "keyserver hkp://keyserver.ubuntu.com" >> /mnt/etc/pacman.d/gnupg/gpg.conf
@@ -212,14 +208,12 @@ genfstab -U /mnt >> /mnt/etc/fstab
 echo " 
   Tabela de file system criada /etc/fstab do novo sistema
 "
-cat /mnt/etc/fstab #show fstab
-counter
-
 #stuff ready
 clear
+counter
 echo -ne "
 -------------------------------------------------------------------------
                     SISTEMA PREPARADO para o 1-setup.sh
 -------------------------------------------------------------------------
 "
-counter
+cat /mnt/etc/fstab #show fstab
