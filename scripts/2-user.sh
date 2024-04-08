@@ -20,11 +20,8 @@ clear
 counter
 echo -ne "
 -------------------------------------------------------------------------
-                    Instalação das ferramentes de UI do Arch Linux
-                      Script: PintArch
+               Instalação das ferramentes de UI do Arch Linux
 -------------------------------------------------------------------------
-
-Installing AUR Softwares
 "
 source $HOME/PintArch/configs/setup.conf
 
