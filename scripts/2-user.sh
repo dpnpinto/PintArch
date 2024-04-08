@@ -4,6 +4,7 @@
 # @file User
 # @brief User customizations and AUR package installation.
 
+counter() {
 echo -ne "
 -------------------------------------------------------------------------
     ____  _       _      _             _
@@ -12,6 +13,12 @@ echo -ne "
    |  __/| | | | | |_ / ___ \| | | (__| | | |
    |_|   |_|_| |_|\__/_/   \_|_|  \___|_| |_|
 
+"
+}
+
+clear
+counter
+echo -ne "
 -------------------------------------------------------------------------
                     Instalação das ferramentes de UI do Arch Linux
                       Script: PintArch
@@ -60,6 +67,8 @@ echo $DESKTOP_ENV
 # Lets install My DWM
 if [[ $DESKTOP_ENV == "DWM" ]]; then
    # to my dwm full install and startup
+  clear
+  counter
   echo -ne "
   -------------------------------------------------------------------------
                     Vamos instalar o DWM e restante software
@@ -89,7 +98,8 @@ if [[ $INSTALL_TYPE == "TOTAL" ]]; then
    # to my dwm full install if i whant to do something else
   fi
 fi
-
+clear
+counter
 echo -ne "
 -------------------------------------------------------------------------
                     SISTEMA PRONTO PARA 3-post-setup.sh
