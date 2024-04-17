@@ -3,8 +3,10 @@ libx11
 libxft
 libxinerama
 freetype2
+scrot
 fastfetch
 btop
+htop
 rofi
 picom
 nitrogen
