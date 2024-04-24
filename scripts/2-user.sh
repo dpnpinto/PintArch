@@ -92,7 +92,7 @@ fi
 # Theming DE if user chose FULL installation
 if [[ $INSTALL_TYPE == "TOTAL" ]]; then
   if [[ $DESKTOP_ENV == "DWM" ]]; then
-    echo Estou aqui
+    echo FULL DO DWM para steam, OBS, Visual studio, etc. Vou ver.
   fi
 fi
 clear
