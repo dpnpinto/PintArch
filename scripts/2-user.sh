@@ -71,7 +71,7 @@ if [[ $DESKTOP_ENV == "DWM" ]]; then
                     Vamos instalar o DWM e restante software
   -------------------------------------------------------------------------
   "
-  sudo pacman --noconfirm -S xorg xorg-xinit
+  sudo pacman --noconfirm -S xorg xorg-xinit dmenu
   echo "Clone Pinto Stuff"
   git clone https://github.com/dpnpinto/PintoDWM /home/$USERNAME/.config/PintoDWM
   git clone https://github.com/dpnpinto/PintoST /home/$USERNAME/.config/PintoST
