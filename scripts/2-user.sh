@@ -92,7 +92,7 @@ fi
 # Theming DE if user chose FULL installation
 if [[ $INSTALL_TYPE == "TOTAL" ]]; then
   if [[ $DESKTOP_ENV == "DWM" ]]; then
-   # to my dwm full install if i whant to do something else
+    echo Estou aqui
   fi
 fi
 clear
