@@ -88,6 +88,7 @@ if [[ $DESKTOP_ENV == "DWM" ]]; then
   mkdir /home/$USERNAME/.config/backimg # Background images dir
   cp -r /home/$USERNAME/PintArch/configs/backimg/*  /home/$USERNAME/.config/backimg
   nitrogen --random --set-zoom-fill --save /home/$USERNAME/.config/backimg
+  mkdir /home/$USERNAME/.themes # Create my themes folder
   #chown -R $USERNAME: /home/$USERNAME/.config
   chmod 755 /home/$USERNAME/.config/scripts/*   
 fi
