@@ -89,7 +89,7 @@ if [[ $DESKTOP_ENV == "DWM" ]]; then
   cp -r /home/$USERNAME/PintArch/configs/backimg/*  /home/$USERNAME/.config/backimg
   nitrogen --random --set-zoom-fill --save /home/$USERNAME/.config/backimg
   mkdir /home/$USERNAME/.themes # Create my themes folder
-  unzip /home/$USERNAME/PintArch/configs/themes/Material-Black-Blueberry-Suru_1.9.3.zip /home/$USERNAME/.themes
+  unzip /home/$USERNAME/PintArch/configs/themes/Material-Black-Blueberry-Suru_1.9.3.zip -d /home/$USERNAME/.themes
   #chown -R $USERNAME: /home/$USERNAME/.config
   chmod 755 /home/$USERNAME/.config/scripts/*   
 fi
