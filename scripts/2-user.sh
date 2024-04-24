@@ -82,9 +82,12 @@ if [[ $DESKTOP_ENV == "DWM" ]]; then
   sudo make install
   cd /home/$USERNAME/.config/PintoDWMBlocks
   sudo make install
-  cp -r /home/$USERNAME/PintArch/configs/start_confs/.*  /home/$USERNAME/
-  mkdir /home/$USERNAME/.config/scripts
+  cp -r /home/$USERNAME/PintArch/configs/start_confs/.*  /home/$USERNAME/ # starting stuff
+  mkdir /home/$USERNAME/.config/scripts # Scripts dir
   cp -r /home/$USERNAME/.config/PintoDWMBlocks/scripts/*  /home/$USERNAME/.config/scripts
+  mkdir /home/$USERNAME/.config/backimg # Background images dir
+  cp -r /home/$USERNAME/PintArch/configs/backimg/*  /home/$USERNAME/.config/backimg
+  nitrogen --random --set-zoom-fill --save /home/$USERNAME/.config/backimg
   #chown -R $USERNAME: /home/$USERNAME/.config
   chmod 755 /home/$USERNAME/.config/scripts/*   
 fi
