@@ -27,7 +27,7 @@
 * nitrogen - Para a gestão do background.
 * picom - Para a gestão de transparancia e efeitos.
 * lxappearance - Gestão dos temas e icons que pretendo.
-* rofi - Geestão de execução de aplicações, ssh. Utilizo porque considero bem menhor que o dmenu
+* rofi - Geestão de execução de aplicações. Utilizo porque considero bem menhor que o dmenu
 * PintoDWM - Minha versão do DWM
 * PintoST - Minha versão do ST
 * PintoDWMBlocks - Minha barra de ferramentas baseada no DWMBlocks
