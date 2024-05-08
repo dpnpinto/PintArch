@@ -24,3 +24,11 @@
 * networkmanager - Para a gestão de rede
 * vim - O editor de texto que todos deviam saber utilizar, sou do tempo do vi
 * ...
+* nitrogen - Para a gestão do background.
+* picom - Para a gestãod e transparancia e efeitos.
+* lxappearance - GEstão dos temas e icons que pretendo.
+* rofi - Geestão de execução de aplicações, ssh. Utilizo porque considero bem menhor que o dmenu
+* PintoDWM - Minha versão do DWM
+* PintoST - Minha versão do ST
+* PintoDWMBlocks - Minha barra de ferramentas baseada no DWMBlocks
+  
