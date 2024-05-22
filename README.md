@@ -23,7 +23,7 @@
 * linux-firmware - Os ficheiros de Firmware para o Linux
 * networkmanager - Para a gestão de rede
 * vim - O editor de texto que todos deviam saber utilizar, sou do tempo do vi
-* ... Tem aqui pelo meio software alguns pacotes que vou colocar lofo que tenha tempo
+* ... Tem aqui pelo meio alguns pacotes de software que vou descrever logo que tenha tempo
 * nitrogen - Para a gestão do background.
 * picom - Para a gestão de transparancia e efeitos.
 * lxappearance - Gestão dos temas e icons que pretendo.
