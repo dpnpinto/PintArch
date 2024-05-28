@@ -72,6 +72,7 @@ if [[ $DESKTOP_ENV == "DWM" ]]; then
   -------------------------------------------------------------------------
   "
   sudo pacman --noconfirm -S xorg xorg-xinit alsa-utils wireplumber
+  # To better sound control
   echo "Clone Pinto Stuff"
   git clone https://github.com/dpnpinto/PintoDWM /home/$USERNAME/.config/PintoDWM
   git clone https://github.com/dpnpinto/PintoST /home/$USERNAME/.config/PintoST
