@@ -58,9 +58,8 @@ if [[ ! $AUR_HELPER == none ]]; then
 fi
 
 export PATH=$PATH:~/.local/bin
+echo $DESKTOP_ENV
 
-echo $DESKTOP_ENV
-echo $DESKTOP_ENV
 # Lets install My DWM
 if [[ $DESKTOP_ENV == "DWM" ]]; then
    # to my dwm full install and startup
@@ -71,7 +70,7 @@ if [[ $DESKTOP_ENV == "DWM" ]]; then
                     Vamos instalar o DWM e restante software
   -------------------------------------------------------------------------
   "
-  sudo pacman --noconfirm -S xorg xorg-xinit alsa-utils wireplumber
+  sudo pacman --noconfirm -S xorg xorg-xinit alsa-utils wireplumber pcmanfm
   # To better sound control
   echo "Clone Pinto Stuff"
   git clone https://github.com/dpnpinto/PintoDWM /home/$USERNAME/.config/PintoDWM
