@@ -1,4 +1,4 @@
-# Projeto de Instalação da minha versão personalizada do Arch
+)# Projeto de Instalação da minha versão personalizada do Arch
 -------------------------------------------------------------------------
 #                               **PintArch**
 -------------------------------------------------------------------------
@@ -26,6 +26,7 @@
 * pcmanfm - Gestor muito leve de ficheiros
 * fastfetch - Para mostrar de uma forma simpatica o sistema operativo operativo
 * htop e btop- visualizar recursos do sistema sistema
+* code -Versão open source do VS Code
 * ... Tem aqui pelo meio alguns pacotes de software que vou descrever logo que tenha tempo
 * nitrogen - Para a gestão do background.
 * picom - Para a gestão de transparancia e efeitos.
