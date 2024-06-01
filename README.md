@@ -32,6 +32,6 @@
 * lxappearance - Gestão dos temas e icons que pretendo.
 * rofi - Geestão de execução de aplicações. Utilizo porque considero bem menhor que o dmenu
 * PintoDWM - Minha versão do DWM (gestor de janelas)
-* PintoST - Minha versão do ST (terminal)
+* PintoST - Minha versão do ST (emulador de terminal)
 * PintoDWMBlocks - Minha barra de ferramentas baseada no DWMBlocks
   
