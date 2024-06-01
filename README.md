@@ -1,4 +1,4 @@
-# Projeto de Instalação da minha versão personalizada do Arch
+0# Projeto de Instalação da minha versão personalizada do Arch
 -------------------------------------------------------------------------
 #                               **PintArch**
 -------------------------------------------------------------------------
@@ -23,12 +23,15 @@
 * linux-firmware - Os ficheiros de Firmware para o Linux
 * networkmanager - Para a gestão de rede
 * vim - O editor de texto que todos deviam saber utilizar, sou do tempo do vi
+* pcmanfm - Gestor muito leve de ficheiros
+* fastfetch - Para mostrar de uma forma simpatica o sistema operativo operativo
+* htop e btop- visualizar recursos do sistema sistema
 * ... Tem aqui pelo meio alguns pacotes de software que vou descrever logo que tenha tempo
 * nitrogen - Para a gestão do background.
 * picom - Para a gestão de transparancia e efeitos.
 * lxappearance - Gestão dos temas e icons que pretendo.
 * rofi - Geestão de execução de aplicações. Utilizo porque considero bem menhor que o dmenu
-* PintoDWM - Minha versão do DWM
-* PintoST - Minha versão do ST
+* PintoDWM - Minha versão do DWM (gestor de janelas)
+* PintoST - Minha versão do ST (terminal)
 * PintoDWMBlocks - Minha barra de ferramentas baseada no DWMBlocks
   
