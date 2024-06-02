@@ -22,6 +22,7 @@
 * linux - O kernel do Linux e seus modulos
 * linux-firmware - Os ficheiros de Firmware para o Linux
 * networkmanager - Para a gestão de rede
+* scrot - Aplicação para Screeen shot
 * vim - O editor de texto que todos deviam saber utilizar, sou do tempo do vi
 * pcmanfm - Gestor muito leve de ficheiros
 * fastfetch - Para mostrar de uma forma simpatica o sistema operativo operativo
