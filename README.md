@@ -1,4 +1,4 @@
-)# Projeto de Instalação da minha versão personalizada do Arch
+# Projeto de Instalação da minha versão personalizada do Arch
 -------------------------------------------------------------------------
 #                               **PintArch**
 -------------------------------------------------------------------------
