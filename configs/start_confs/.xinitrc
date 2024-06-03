@@ -1,4 +1,6 @@
+#
 #!/bin/sh
+#
 # by https://dpnpinto.github.io
 
 setxkbmap pt &
