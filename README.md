@@ -38,4 +38,3 @@
 * PintoDWM - Minha versão do DWM (gestor de janelas)
 * PintoST - Minha versão do ST (emulador de terminal)
 * PintoDWMBlocks - Minha barra de ferramentas baseada no DWMBlocks
-  
