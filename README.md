@@ -1,6 +1,6 @@
 # Projeto de Instalação da minha versão personalizada do Arch
 -------------------------------------------------------------------------
-#                               **PintArch**
+#                               **PintArch - Ain't got no teeth, ain't got cavities.**
 -------------------------------------------------------------------------
 #                      **by https://dpnpinto.github.io**
 -------------------------------------------------------------------------
