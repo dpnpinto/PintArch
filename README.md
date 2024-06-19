@@ -5,16 +5,16 @@
 #                      **by https://dpnpinto.github.io**
 -------------------------------------------------------------------------
 ## Designei esta versão de PintArch mas na realidade é a instalação facilitada do meu Arch Linux.
-## Não é uma versão pura de linux,mas, com a mesma mentalidade do Linus Torvalds, eu precisava de uma versão de um sistema operativo para mim, que correspondesse ao que pretendo.
-## Na minha opinião a distribuição Arch Linux foi perfeita para isso, é uma das melhores distribuições de Linux para desktop e para o que pretendo, por ser:
+## Não é uma versão pura de linux, mas, com a mesma mentalidade do Linus Torvalds, eu precisava de uma versão de um sistema operativo para mim, que correspondesse ao que pretendo, simples, segura e flexível.
+## Na minha opinião a distribuição Arch Linux é perfeita para isso, é uma das melhores distribuições de Linux para desktop e para o que pretendo, pois:
 
-*  Uma distribuição sempre atualizada (Rolling Release)
-*  Ter uma comunidade muito grande    
-*  Permitir instalar tudo o que rpetendia e muito mais (não conheço nenhum software que não consiga colocar a funcionar no Arch)
-*  Ser completamente modular e adaptavel às necessaides de qualquer utilizador
-*  Ter sempre as ultimas actualizações https://wiki.archlinux.org/title/ArchWiki:About
-*  Possuir uma fonte de conhecimento muito bem documentada (Arch Wiki) https://wiki.archlinux.org
-*  Ter o melhor repositório aberto de uma comunidade Linux (AUR) https://aur.archlinux.org
+*  É uma distribuição sempre atualizada (Rolling Release)
+*  Tem uma comunidade muito grande    
+*  Permite instalar tudo o que pretendo (não conheço nenhum software que não consiga colocar a funcionar no Arch)
+*  É, completamente, modular e adaptavel às necessaides de qualquer utilizador
+*  Tem sempre as ultimas actualizações https://wiki.archlinux.org/title/ArchWiki:About
+*  Possui uma fonte de conhecimento muito bem documentada (Arch Wiki) https://wiki.archlinux.org
+*  Tem o melhor repositório aberto de uma comunidade Linux (AUR) https://aur.archlinux.org
 --------------------------------------------------------------------------
 #         Pacotes de software utilizados nesta minha versão do Arch
 
