@@ -27,7 +27,7 @@
 * scrot - Aplicação para Screeen shot
 * vim - O editor de texto que todos deviam saber utilizar, sou do tempo do vi
 * pcmanfm - Gestor muito leve de ficheiros
-* fastfetch - Para mostrar de uma forma simpatica o sistema operativo operativo
+* fastfetch - Para mostrar de uma forma simpatica o sistema operativo
 * htop e btop- visualizar recursos do sistema sistema
 * code -Versão open source do VS Code
 * ... Tem aqui pelo meio alguns pacotes de software que vou descrever logo que tenha tempo
