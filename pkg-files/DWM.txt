@@ -11,6 +11,6 @@ rofi
 picom
 nitrogen
 lxappearance
-firefox
+vivaldi
 unzip
 --END OF MINIMA INSTALL--
