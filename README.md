@@ -18,7 +18,7 @@
 --------------------------------------------------------------------------
 #         Pacotes de software utilizados nesta minha versão do Arch
 
-* GRUB - Boot  loader que estou a utilizar para carregar o sistema operativo
+* grub - Boot  loader que estou a utilizar para carregar o sistema operativo
 * base - Pacote minimo com a versão base do Arch Linux
 * base-devel - Pacote base para compilação de software por exemplo do AUR.
 * linux - O kernel do Linux e seus modulos
