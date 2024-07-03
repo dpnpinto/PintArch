@@ -3,7 +3,7 @@ libx11
 libxft
 libxinerama
 freetype2
-scrot
+maim
 fastfetch
 btop
 htop
