@@ -5,11 +5,11 @@
 #                      **by https://dpnpinto.github.io**
 -------------------------------------------------------------------------
 ## Designei esta versão de PintArch mas na realidade é a instalação facilitada do meu Arch Linux.
-## Não é uma versão pura de linux, mas, com a mesma mentalidade do Linus Torvalds, eu precisava de uma versão de um sistema operativo para mim, que correspondesse ao que pretendo, simples, seguro e flexível.
+## Não é uma versão pura de linux, em cima do kelnel, mas, com a mesma mentalidade do Linus Torvalds, eu precisava de uma versão de um sistema operativo para mim, que correspondesse ao que pretendo, simples, seguro e flexível.
 ## Na minha opinião a distribuição Arch Linux é perfeita para isso, é uma das melhores distribuições de Linux para desktop e para o que pretendo, pois:
 
-*  É uma distribuição sempre atualizada (Rolling Release)
-*  Tem uma comunidade muito grande    
+*  É uma distribuição sempre muito atualizada (Rolling Release)
+*  Tem uma enorme comunidade de pessoas muito dedicadas https://gitlab.archlinux.org/archlinux
 *  Permite instalar tudo o que pretendo (não conheço nenhum software que não consiga colocar a funcionar no Arch)
 *  É, completamente, modular e adaptavel às necessaides de qualquer utilizador
 *  Tem sempre as ultimas actualizações https://wiki.archlinux.org/title/ArchWiki:About
