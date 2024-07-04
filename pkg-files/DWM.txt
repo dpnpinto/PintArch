@@ -12,5 +12,6 @@ picom
 nitrogen
 lxappearance
 vivaldi
+bash-completion
 unzip
 --END OF MINIMA INSTALL--
