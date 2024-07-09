@@ -14,4 +14,6 @@ lxappearance
 vivaldi
 bash-completion
 unzip
+code
+gdb
 --END OF MINIMA INSTALL--
