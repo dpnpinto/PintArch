@@ -17,4 +17,6 @@ unzip
 code
 gdb
 mpv
+materia-gtk-theme
+pop-icon-theme
 --END OF MINIMA INSTALL--
