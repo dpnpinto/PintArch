@@ -16,4 +16,5 @@ bash-completion
 unzip
 code
 gdb
+mpv
 --END OF MINIMA INSTALL--
