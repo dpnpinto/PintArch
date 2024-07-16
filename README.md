@@ -30,6 +30,7 @@
 * fastfetch - Para mostrar de uma forma simpatica o sistema operativo
 * htop e btop- visualizar recursos do sistema sistema
 * code -Versão open source do VS Code
+* mpv - Reprodutor de multimédia audio/video.
 * gdb - Debug programs in Linux
 * ... Tem aqui pelo meio alguns pacotes de software que vou descrever logo que tenha tempo
 * nitrogen - Para a gestão do background.
