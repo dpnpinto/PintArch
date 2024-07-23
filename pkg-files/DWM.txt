@@ -17,6 +17,8 @@ unzip
 code
 gdb
 mpv
+zathura
+zathura-pdf-mupdf
 materia-gtk-theme
 pop-icon-theme
 --END OF MINIMA INSTALL--
