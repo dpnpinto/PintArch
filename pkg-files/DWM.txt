@@ -12,6 +12,7 @@ picom
 nitrogen
 lxappearance
 vivaldi
+thunderbird
 bash-completion
 unzip
 code
