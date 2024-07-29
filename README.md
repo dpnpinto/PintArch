@@ -33,6 +33,8 @@
 * mpv - Reprodutor de multimédia audio/video.
 * zathura - Document viewer
 * gdb - Debug programs in Linux
+* vivaldi - Navegador WWW
+* thunderbird - Gestão de Email
 * ... Tem aqui pelo meio alguns pacotes de software que vou descrever logo que tenha tempo
 * nitrogen - Para a gestão do background.
 * picom - Para a gestão de transparancia e efeitos.
