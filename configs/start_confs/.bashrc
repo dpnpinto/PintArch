@@ -31,7 +31,6 @@ alias code='code-oss'
 export MANPAGER="less -R --use-color -Dd+r -Du+b"
 export MANROFFOPT="-P -c"
 
-
 #  Get git info in terminal
 
 function parse_git_dirty {
