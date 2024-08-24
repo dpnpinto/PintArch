@@ -18,6 +18,8 @@ unzip
 code
 gdb
 mpv
+lsd
+bat
 zathura
 zathura-pdf-mupdf
 materia-gtk-theme
