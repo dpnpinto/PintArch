@@ -13,8 +13,9 @@ export LS_COLORS="no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40
 
 # Get some nie  aliases for colors and stuff
 
-alias ll='lsd -alh'
-alias ls='lsd --group-dirs first'
+alias ls='ls --color=auto'
+alias la='lsd -alh'
+alias ll='lsd --group-dirs first'
 alias grep='grep --color=always'
 alias tree='tree -C'
 alias diff='diff --color=always'
