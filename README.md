@@ -35,6 +35,8 @@
 * gdb - Debug programs in Linux
 * vivaldi - Navegador WWW
 * thunderbird - Gestão de Email
+* bat - like cat but with colors
+* lsd - like ls but more control with colors
 * ... Tem aqui pelo meio alguns pacotes de software que vou descrever logo que tenha tempo
 * nitrogen - Para a gestão do background.
 * picom - Para a gestão de transparancia e efeitos.
