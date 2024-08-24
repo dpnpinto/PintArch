@@ -13,8 +13,10 @@ export LS_COLORS="no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40
 
 # Get some nie  aliases for colors and stuff
 
-alias ll='lsd -alh'
-alias ls='lsd --group-dirs first'
+alias ls='ls --color=auto'
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
 alias grep='grep --color=always'
 alias tree='tree -C'
 alias diff='diff --color=always'
@@ -23,7 +25,6 @@ alias dmesg='dmesg --color=always'
 alias ..='cd ..'
 alias v='vim'
 alias code='code-oss'
-alias cat='bat'
 
 # Get some nice colors in man pages and use most as the pager
 
