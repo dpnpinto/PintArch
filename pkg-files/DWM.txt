@@ -24,4 +24,5 @@ zathura
 zathura-pdf-mupdf
 materia-gtk-theme
 pop-icon-theme
+tree
 --END OF MINIMA INSTALL--
