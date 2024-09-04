@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#github-action genshdoc
+# github-action genshdoc
 #
 # @file Post-Setup
 # @brief Finalizing installation configurations and cleaning up after script.
