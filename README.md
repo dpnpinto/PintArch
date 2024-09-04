@@ -18,30 +18,31 @@
 --------------------------------------------------------------------------
 #         Pacotes de software utilizados nesta minha versão do Arch
 
-* grub - Boot  loader que estou a utilizar para carregar o sistema operativo
-* base - Pacote minimo com a versão base do Arch Linux
-* base-devel - Pacote base para compilação de software por exemplo do AUR.
-* linux - O kernel do Linux e seus modulos
-* linux-firmware - Os ficheiros de Firmware para o Linux
-* networkmanager - Para a gestão de rede
-* maim - Make Image uma aplicação para Screen shot, melhor que o scrot
-* vim - O editor de texto que todos deviam saber utilizar, sou do tempo do vi
-* pcmanfm - Gestor muito leve de ficheiros
-* fastfetch - Para mostrar de uma forma simpatica o sistema operativo
-* htop e btop - visualizar recursos do sistema sistema
-* code -Versão open source do VS Code
-* mpv - Reprodutor de multimédia audio/video.
-* zathura - Document viewer
-* gdb - Debug programs in Linux
-* vivaldi - Navegador WWW
-* thunderbird - Gestão de Email
+* grub - Boot  loader that I use
+* base - base Linux package for Arch Linux
+* base-devel - Base developer package.
+* linux - Linux kernel
+* linux-firmware - Firmware files
+* networkmanager - The only thing that you need for network managemnent
+* maim - Make image software, I use to screenshot. 
+* vim - The best editor
+* pcmanfm - GUI light file manager
+* lf - Terminal file manager
+* fastfetch - Show in a nice what your config
+* htop e btop - Visualize system resorces 
+* code -Open Source vrsion of  MS VS Studio Code
+* mpv - Player audio/video.
+* zathura - Pdf document viewer
+* gdb - Debug programs for Linux
+* vivaldi - Web Browser
+* thunderbird - Email client
 * bat - like cat but with colors
 * lsd - like ls but more control with colors
-* ... Tem aqui pelo meio alguns pacotes de software que vou descrever logo que tenha tempo
-* nitrogen - Para a gestão do background.
-* picom - Para a gestão de transparancia e efeitos.
-* lxappearance - Gestão dos temas e icons que pretendo.
-* rofi - Geestão de execução de aplicações. Utilizo porque considero bem menhor que o dmenu
-* PintoDWM - Minha versão do DWM (gestor de janelas)
-* PintoST - Minha versão do ST (emulador de terminal)
-* PintoDWMBlocks - Minha barra de ferramentas baseada no DWMBlocks
+* ... Some stuff here, will put when i have time
+* nitrogen - Background image management
+* picom - Transparency management
+* lxappearance - Get icons and fancy stuff management.
+* rofi - Use for starting aplications in the GUI
+* PintoDWM - My DWM (Dinamic Windows Management)
+* PintoST - My terminal, ST (Simple Terminal)
+* PintoDWMBlocks - My task bar based on DWMBlocks
