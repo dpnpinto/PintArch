@@ -1,4 +1,4 @@
-# Projeto de Instalação da minha versão personalizada do Arch
+# My personal instation of Arch Linux
 -------------------------------------------------------------------------
 #                               **PintArch - Ain't got no teeth, ain't got cavities.**
 -------------------------------------------------------------------------
