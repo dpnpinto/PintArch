@@ -39,6 +39,7 @@
 * bat - like cat but with colors
 * lsd - like ls but more control with colors
 * ... Some stuff here, will put when i have time
+* PipeWire - Get all the sound that you deserve in a computer
 * nitrogen - Background image management
 * picom - Transparency management
 * lxappearance - Get icons and fancy stuff management.
