@@ -4,19 +4,19 @@
 -------------------------------------------------------------------------
 #                      **by https://dpnpinto.github.io**
 -------------------------------------------------------------------------
-## Designei esta versão de PintArch mas na realidade é a instalação facilitada do meu Arch Linux.
-## Não é uma versão pura de linux, em cima do kelnel, mas, com a mesma mentalidade do Linus Torvalds, eu precisava de uma versão de um sistema operativo para mim, que correspondesse ao que pretendo, simples, seguro e flexível.
-## Na minha opinião a distribuição Arch Linux é perfeita para isso, é uma das melhores distribuições de Linux para desktop e para o que pretendo, pois:
+## I designed this version of PintArch, but in reality, it is the simplified installation of my Arch Linux.
+## It is not a pure Linux version on top of the kernel, but, with the same mentality as Linus Torvalds, I needed a version of an operating system for myself that met my needs—simple, secure, and flexible.
+## In my opinion, the Arch Linux distribution is perfect for this. It is one of the best Linux distributions for desktop use and for what I need because::
 
-*  É uma distribuição sempre muito atualizada (Rolling Release)
-*  Tem uma enorme comunidade de pessoas muito dedicadas https://gitlab.archlinux.org/archlinux
-*  Permite instalar tudo o que pretendo (não conheço nenhum software que não consiga colocar a funcionar no Arch)
-*  É, completamente, modular e adaptavel às necessaides de qualquer utilizador
-*  Tem sempre as ultimas actualizações https://wiki.archlinux.org/title/ArchWiki:About
-*  Possui uma fonte de conhecimento muito bem documentada (Arch Wiki) https://wiki.archlinux.org
-*  Tem o melhor repositório aberto de uma comunidade Linux (AUR) https://aur.archlinux.org
+* It is a very up-to-date distribution (Rolling Release)
+* It has a large community of very dedicated people https://gitlab.archlinux.org/archlinux
+* It allows me to install everything I want (I don't know of any software that I can't get to work on Arch)
+* It is completely modular and adaptable to the needs of any user
+* It always has the latest updates https://wiki.archlinux.org/title/ArchWiki:About
+* It has a very well-documented source of knowledge (Arch Wiki) https://wiki.archlinux.org
+* It has the best open repository from a Linux community (AUR) https://aur.archlinux.org
 --------------------------------------------------------------------------
-#         Pacotes de software utilizados nesta minha versão do Arch
+#         Software packages used in this version of Arch
 
 * grub - Boot  loader that I use
 * base - base Linux package for Arch Linux
