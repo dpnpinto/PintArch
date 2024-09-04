@@ -23,7 +23,7 @@
 * base-devel - Base developer package.
 * linux - Linux kernel
 * linux-firmware - Firmware files
-* networkmanager - The only thing that you need for network managemnent
+* networkmanager - The only thing that you need for network management
 * maim - Make image software, I use to screenshot. 
 * vim - The best editor
 * pcmanfm - GUI light file manager
