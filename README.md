@@ -1,4 +1,4 @@
-# My personal instation of Arch Linux
+# My personal instalation of Arch Linux
 -------------------------------------------------------------------------
 #                               **PintArch - Ain't got no teeth, ain't got cavities.**
 -------------------------------------------------------------------------
