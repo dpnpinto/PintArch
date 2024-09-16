@@ -77,11 +77,11 @@ if [[ $DESKTOP_ENV == "DWM" ]]; then
   git clone https://github.com/dpnpinto/PintoST /home/$USERNAME/.config/PintoST
   git clone https://github.com/dpnpinto/PintoDWMBLocks /home/$USERNAME/.config/PintoDWMBlocks
   cd /home/$USERNAME/.config/PintoDWM
-  sudo make install
+  sudo make clean install
   cd /home/$USERNAME/.config/PintoST
-  sudo make install
+  sudo make clean install
   cd /home/$USERNAME/.config/PintoDWMBlocks
-  sudo make install
+  sudo make clean install
   cp -r /home/$USERNAME/PintArch/configs/start_confs/.*  /home/$USERNAME/ # starting stuff
   mkdir /home/$USERNAME/.config/scripts # Scripts dir
   cp -r /home/$USERNAME/.config/PintoDWMBlocks/scripts/*  /home/$USERNAME/.config/scripts
@@ -98,8 +98,12 @@ fi
 
 # Theming DE if user chose FULL installation
 if [[ $INSTALL_TYPE == "TOTAL" ]]; then
+    echo TOTAL tem de ter QUEMU
+    pacman -S qemu-full libvirt virt-manager
+    systemctl enable libvirtd.socket
+    systemctl start libvirtd.socket
   if [[ $DESKTOP_ENV == "DWM" ]]; then
-    echo FULL DO DWM para steam, flatpak, bottles, OBS, CUPS, Visual studio, etc. Vou ver.
+    echo TOTAL DO DWM para steam, flatpak, bottles, OBS, CUPS, Visual studio, etc. Vou ver.
   fi
 fi
 clear
