@@ -106,6 +106,7 @@ if [[ $INSTALL_TYPE == "TOTAL" ]]; then
     echo TOTAL DO DWM para steam, flatpak, bottles, OBS, CUPS, Visual studio, etc. Vou ver.
   fi
 fi
+rm -rf /home/$USERNAME/PintArch
 clear
 counter
 echo -ne "
