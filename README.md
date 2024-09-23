@@ -41,7 +41,7 @@
 * lf - Terminal file manager
 * fastfetch - Show in a nice what your config
 * htop e btop - Visualize system resorces 
-* code -Open Source vrsion of  MS VS Studio Code
+* code -Open Source version of  MS VS Studio Code
 * mpv - Player audio/video.
 * zathura - Pdf document viewer
 * gdb - Debug programs for Linux
