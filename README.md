@@ -18,12 +18,15 @@
 --------------------------------------------------------------------------
 #         Software packages used in this version of Arch
 
+## System Level
 * grub - Boot  loader that I use
 * base - base Linux package for Arch Linux
-* base-devel - Base developer package.
+* base-devel - Base developer package
+* Systemd - Yes I like it because I use sockets in my workstation every time I can
 * linux - Linux kernel
 * linux-firmware - Firmware files
 * networkmanager - The only thing that you need for network management
+## At user level
 * maim - Make image software, I use to screenshot. 
 * vim - The best editor
 * pcmanfm - GUI light file manager
