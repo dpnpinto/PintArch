@@ -26,6 +26,14 @@
 * linux - Linux kernel
 * linux-firmware - Firmware files
 * networkmanager - The only thing that you need for network management
+* pipewire - Get all the sound that you deserve in a computer
+* nitrogen - Background image management
+* picom - Transparency management
+* lxappearance - Get icons and fancy stuff management.
+* rofi - Use for starting aplications in the GUI
+* PintoDWM - My DWM (Dinamic Windows Management)
+* PintoST - My terminal, ST (Simple Terminal)
+* PintoDWMBlocks - My task bar based on DWMBlocks
 ## At user level
 * maim - Make image software, I use to screenshot. 
 * vim - The best editor
@@ -42,13 +50,5 @@
 * bat - like cat but with colors
 * lsd - like ls but more control with colors
 * ... Some stuff here, will put when i have time
-* pipewire - Get all the sound that you deserve in a computer
-* nitrogen - Background image management
-* picom - Transparency management
-* lxappearance - Get icons and fancy stuff management.
-* rofi - Use for starting aplications in the GUI
-* PintoDWM - My DWM (Dinamic Windows Management)
-* PintoST - My terminal, ST (Simple Terminal)
-* PintoDWMBlocks - My task bar based on DWMBlocks
 * qemu - For Virtualization
 * cups - For printing
