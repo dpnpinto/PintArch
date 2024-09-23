@@ -50,3 +50,5 @@
 * PintoDWM - My DWM (Dinamic Windows Management)
 * PintoST - My terminal, ST (Simple Terminal)
 * PintoDWMBlocks - My task bar based on DWMBlocks
+* qemu - For Virtualization
+* cups - For printing
