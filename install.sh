@@ -11,5 +11,5 @@ git clone https://github.com/dpnpinto/PintArch
 
 echo "Executar o script de Instalação"
 
-cd $HOME/PintoArch
+cd $HOME/PintArch
 bash PintArch.sh
