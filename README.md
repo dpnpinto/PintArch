@@ -53,4 +53,5 @@
 * ... Some stuff here, will put when i have time
 * qemu - For Virtualization (with service start by sockts)
 * cups - For printing (with service start by sockts)
-* docker - for managing containers (with service start by sockts)
+* docker - For managing containers (with service start by sockts)
+* flatpak - Generic distribute aplications to the entire Linux desktop
