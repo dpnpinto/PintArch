@@ -51,6 +51,7 @@
 * bat - like cat but with colors
 * lsd - like ls but more control with colors
 * ... Some stuff here, will put when i have time
+* obs - Open Brodcast Software
 * qemu - For Virtualization (with service start by sockts)
 * cups - For printing (with service start by sockts)
 * docker - For managing containers (with service start by sockts)
