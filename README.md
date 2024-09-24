@@ -40,7 +40,8 @@
 * pcmanfm - GUI light file manager
 * lf - Terminal file manager
 * fastfetch - Show in a nice what your config
-* htop e btop - Visualize system resorces 
+* htop e btop - Visualize system resorces
+* nvtop - visualize nvidia resorces (I use a Nvidia Card) 
 * code -Open Source version of  MS VS Studio Code
 * mpv - Player audio/video.
 * zathura - Pdf document viewer
