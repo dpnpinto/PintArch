@@ -1,5 +1,5 @@
 # Pinto Arch Linux (PintArch) Ĩnstall
-#dpnpinto@gmail.com
+# dpnpinto@gmail.com
 # Installing git
 
 echo "Instalar o git."
