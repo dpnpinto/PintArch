@@ -7,13 +7,7 @@
 # |_|   |_|_| |_|\__/_/   \_|_|  \___|_| |_|
 #
 #-------------------------------------------------------------------------
-# @file Startup
-# @brief This script will setup my inicial prefrences like disk, file system, timezone, keyboard layout, user name, ask for password, etc.
-# @stdout Output routed to startup.log
-# @stderror Output routed to startup.log
 
-# @setting-header General Settings
-# @setting CONFIG_FILE string[$CONFIGS_DIR/setup.conf] Location of setup.conf to be used by set_option and all subsequent scripts. 
 
 CONFIG_FILE=$CONFIGS_DIR/setup.conf
 if [ ! -f $CONFIG_FILE ]; then # check if file exists
