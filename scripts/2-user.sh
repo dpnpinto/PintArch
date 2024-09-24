@@ -101,7 +101,6 @@ if [[ $INSTALL_TYPE == "TOTAL" ]]; then
     echo TOTAL tem de ter QUEMU
     sudo pacman -S qemu-full libvirt
     sudo systemctl enable libvirtd.socket
-    sudo systemctl start libvirtd.socket
   if [[ $DESKTOP_ENV == "DWM" ]]; then
     echo TOTAL tem de ter GUI for QEMU
     pacman virt-manager
