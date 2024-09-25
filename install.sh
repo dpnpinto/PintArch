@@ -1,6 +1,7 @@
 #!/bin/ sh
+{
 pacman -Sy git glibc
-url = "https://github.com/dpnpinto/PintArch"
-git clone --noconfirm url
+git clone --noconfirm https://github.com/dpnpinto/PintArch
 cd $HOME/PintArch
 bash PintArch.sh
+}
