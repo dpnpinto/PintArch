@@ -98,22 +98,29 @@ fi
 
 # Theming DE if user chose FULL installation
 if [[ $INSTALL_TYPE == "TOTAL" ]]; then
-    echo TOTAL tem de ter QUEMU
+    echo QUEMU - Máquinas Virtuais
     sudo pacman -S --noconfirm --needed qemu-full libvirt
     sudo systemctl enable libvirtd.socket
   if [[ $DESKTOP_ENV == "DWM" ]]; then
-    echo TOTAL tem de ter GUI for QEMU
+    echo Virt MAnager - GUI para QEMU
     pacman --noconfirm --needed virt-manager
-    echo TOTAL tem de ter CUPS for printing
+    echo CUPS - Servidor de imrpessão
     # install cups
-    sudo pacman -S cups
+    sudo pacman -S --noconfirm --needed cups
     # add current user to lp (local print) group
     sudo usermod -aG lp $USERNAME
     # I like it instaled by socket to only run when i need it then
     sudo systemctl enable cups.socket
     # Install a GUI for the printer management
+    echo System Config Printer - GUI para configuração da impressora
     sudo pacman -S --noconfirm --needed system-config-printer
-    echo TOTAL DO DWM para steam, flatpak, bottles, OBS, CUPS, Visual studio, etc. Vou ver.
+    # Install Office
+    echo System Libre Office - Aplicações de escritório
+    sudo pacman -S --noconfirm --needed libreoffice-fresh
+    # Install OBS
+    echo OBS Studio - Ultima versão do OBS
+    sudo pacman -S --noconfirm --needed obs-studio
+    echo TOTAL DO DWM para steam, flatpak, bottles, etc. Vou ver.
   fi
 fi
 rm -rf /home/$USERNAME/PintArch
