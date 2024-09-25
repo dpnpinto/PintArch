@@ -99,11 +99,11 @@ fi
 # Theming DE if user chose FULL installation
 if [[ $INSTALL_TYPE == "TOTAL" ]]; then
     echo TOTAL tem de ter QUEMU
-    sudo pacman -S qemu-full libvirt
+    sudo pacman -S --noconfirm --needed qemu-full libvirt
     sudo systemctl enable libvirtd.socket
   if [[ $DESKTOP_ENV == "DWM" ]]; then
     echo TOTAL tem de ter GUI for QEMU
-    pacman virt-manager
+    pacman --noconfirm --needed virt-manager
     echo TOTAL tem de ter CUPS for printing
     # install cups
     sudo pacman -S cups
@@ -112,7 +112,7 @@ if [[ $INSTALL_TYPE == "TOTAL" ]]; then
     # I like it instaled by socket to only run when i need it then
     sudo systemctl enable cups.socket
     # Install a GUI for the printer management
-    sudo pacman -S system-config-printer
+    sudo pacman -S --noconfirm --needed system-config-printer
     echo TOTAL DO DWM para steam, flatpak, bottles, OBS, CUPS, Visual studio, etc. Vou ver.
   fi
 fi
