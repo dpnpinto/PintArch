@@ -4,6 +4,5 @@
 # Installing git
 pacman -Sy --noconfirm --needed git glibc
 git clone https://github.com/dpnpinto/PintArch
-echo "Executar o script de Instalação"
 cd $HOME/PintArch
 bash PintArch.sh
