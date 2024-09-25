@@ -1,7 +1,7 @@
 # My personal instalation of Arch Linux
 -------------------------------------------------------------------------
 #                               **PintArch - Ain't got no teeth, ain't got cavities.**
-- To run just user **curl https://githubusercontent.com/dpnpinto/PintArch/main/install.sh | bash**
+- To run just user **curl https://githubusercontent.com/dpnpinto/PintArch/main/install.sh | sh**
 - Note: remember this is made by me to me use at your own risk
 -------------------------------------------------------------------------
 #                      **by https://dpnpinto.github.io**
