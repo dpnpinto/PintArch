@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/ sh
 # Pinto Arch Linux (PintArch) Ĩnstall
 # dpnpinto@gmail.com
 # Installing git
