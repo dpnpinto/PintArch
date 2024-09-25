@@ -79,7 +79,7 @@ echo -ne "
     fi
 #    ( arch-chroot /mnt $HOME/ArchTitus/scripts/3-post-setup.sh )|& tee 3-post-setup.log
      # copy instalation logs to directory
-     cp -v *.log /mnt/home/$USERNAME/.config
+     cp -v *.log /mnt/home/$USERNAME/.config/
 
 echo -ne "
 -------------------------------------------------------------------------
