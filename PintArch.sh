@@ -77,7 +77,6 @@ echo -ne "
     if [[ ! $DESKTOP_ENV == consola ]]; then
         ( arch-chroot /mnt /usr/bin/runuser -u $USERNAME -- bash /home/$USERNAME/PintArch/scripts/2-user.sh )|& tee 2-user.log
     fi
-#    ( arch-chroot /mnt $HOME/ArchTitus/scripts/3-post-setup.sh )|& tee 3-post-setup.log
      # copy instalation logs to directory
      cp -v *.log /mnt/home/$USERNAME/.config/
 
