@@ -120,7 +120,18 @@ if [[ $INSTALL_TYPE == "TOTAL" ]]; then
     # Install OBS
     echo OBS Studio - Ultima versão do OBS
     sudo pacman -S --noconfirm --needed obs-studio
-    echo TOTAL DO DWM para steam, flatpak, bottles, etc. Vou ver.
+    echo Docker - Gestão de conteiners
+    # Installl Docker in a Arch Linux workstation 
+    sudo pacman -S --noconfirm --needed docker
+    # As it is a Workstation just start de socket
+    sudo systemctl enable docker.socket
+    #sudo systemctl start docker.socket
+    # just add the user to docker goup
+    sudo newgrp docker
+    sudo usermod -aG docker $USER
+    # then install docker compose
+    sudo pacman -S --noconfirm --needed docker-compose
+    echo TOTAL DO DWM para steam, flatpak, bottles. Vou ver.
   fi
 fi
 rm -rf /home/$USERNAME/PintArch
