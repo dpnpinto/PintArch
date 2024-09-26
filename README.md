@@ -2,8 +2,7 @@
 -------------------------------------------------------------------------
 #                               **PintArch - Ain't got no teeth, ain't got cavities.**
 - To run just use **curl https://raw.githubusercontent.com/dpnpinto/PintArch/main/install.sh | sh**
-- Or better just **loakeys pt-laint1**, **pacman -Sy git** and **git clone https://github.com/dpnpinto/PintArch**
-- The instalation scripts is **PintArch.sh** 
+- Or just do it yourself **loakeys pt-laint1**, **pacman -Sy git** and **git clone https://github.com/dpnpinto/PintArch**, the instalation script is the file **PintArch.sh** 
 - Note: remember this is made by me to me, use at your own risk, Allways changing something here.
 -------------------------------------------------------------------------
 #                      **by https://dpnpinto.github.io**
