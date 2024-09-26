@@ -4,7 +4,7 @@
 - To run just use **curl https://raw.githubusercontent.com/dpnpinto/PintArch/main/install.sh | sh**
 - Or better just **loakeys pt-laint1**, **pacman -Sy git** and **git clone https://github.com/dpnpinto/PintArch**
 - The instalation scripts is **PintArch.sh** 
-- Note: remember this is made by me to me use at your own risk
+- Note: remember this is made by me to me, use at your own risk, Allways changing something here.
 -------------------------------------------------------------------------
 #                      **by https://dpnpinto.github.io**
 -------------------------------------------------------------------------
