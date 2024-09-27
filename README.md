@@ -22,21 +22,21 @@
 #         Software packages used in this version of [Arch Linux](https://archlinux.org)
 
 ## System Level
-* grub - Boot  loader that I use
-* base - base Linux package for Arch Linux
-* base-devel - Base developer package
-* Systemd - Yes I like it because I use sockets in my workstation every time I can
-* linux - Linux kernel
-* linux-firmware - Firmware files
-* networkmanager - The only thing that you need for network management
-* pipewire - Get all the sound that you deserve in a computer
-* nitrogen - Background image management
-* picom - Transparency management
-* lxappearance - Get icons and fancy stuff management.
-* rofi - Use for starting aplications in the GUI
-* PintoDWM - My DWM (Dinamic Windows Management)
-* PintoST - My terminal, ST (Simple Terminal)
-* PintoDWMBlocks - My task bar based on DWMBlocks
+* [grub](https://www.gnu.org/software/grub/) - Boot  loader that I use
+* [base](https://archlinux.org/packages/core/any/base/) - base Linux package for Arch Linux
+* [base-devel](https://archlinux.org/packages/core/any/base-devel/) - Base developer package
+* [Systemd](https://systemd.io) - Yes I like Arch Linux use it, I use sockets in my workstation every time I can so...
+* [linux](https://archlinux.org/packages/core/x86_64/linux/) - Linux kernel
+* [linux-firmware](https://archlinux.org/packages/core/any/linux-firmware/) - Firmware files
+* [networkmanager](https://www.networkmanager.dev) - The only thing that you need for network management
+* [pipewire](https://pipewire.org) - Get all the sound that you deserve in a computer
+* [nitrogen](https://github.com/l3ib/nitrogen) - Background image management
+* [picom](https://github.com/yshui/picom) - Transparency management
+* [lxappearance](https://github.com/lxde/lxappearance) - Get icons and fancy stuff management.
+* [rofi](https://github.com/davatorium/rofi) - Use for starting aplications in the GUI
+* [PintoDWM](https://github.com/dpnpinto/PintoDWM) - My DWM (Dinamic Windows Management)
+* [PintoST](https://github.com/dpnpinto/PintoST) - My terminal, ST (Simple Terminal)
+* [PintoDWMBlocks](https://github.com/dpnpinto/PintoDWMBlocks) - My task bar based on DWMBlocks
 ## At user level
 * maim - Make image software, I use to screenshot. 
 * vim - The best editor
