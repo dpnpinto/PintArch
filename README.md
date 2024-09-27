@@ -1,4 +1,4 @@
-# My personal instalation of Arch Linux
+# PintArch - My personal instalation of [Arch Linux](https://archlinux.org)
 -------------------------------------------------------------------------
 #                               **[PintArch](https://github.com/dpnpinto/PintArch/) - Ain't got no teeth, ain't got cavities.**
 - To run just use **curl https://raw.githubusercontent.com/dpnpinto/PintArch/main/install.sh | sh**
