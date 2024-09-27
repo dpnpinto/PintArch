@@ -23,7 +23,7 @@
 
 ## System Level
 * [grub](https://www.gnu.org/software/grub/) - Boot  loader that I use
-* [base](https://archlinux.org/packages/core/any/base/) - base Linux package for Arch Linux
+* [base](https://archlinux.org/packages/core/any/base/) - Base Linux package for Arch Linux
 * [base-devel](https://archlinux.org/packages/core/any/base-devel/) - Base developer package
 * [Systemd](https://systemd.io) - Yes I like Arch Linux use it, I use sockets in my workstation every time I can so...
 * [linux](https://archlinux.org/packages/core/x86_64/linux/) - Linux kernel
