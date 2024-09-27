@@ -5,7 +5,7 @@
 - Or just do it yourself **loakeys pt-laint1**, **pacman -Sy git** and **git clone https://github.com/dpnpinto/PintArch**, the instalation script is the file **PintArch.sh** 
 - Note: remember this is made by me to me, use at your own risk, Allways changing something here.
 -------------------------------------------------------------------------
-#                      **by https://dpnpinto.github.io**
+#                      **https://dpnpinto.github.io**
 -------------------------------------------------------------------------
 ## I designed this version of PintArch but, in reality, it is the simplified installation of my [Arch Linux](https://archlinux.org).
 ## It is not a pure Linux version on top of the kernel, but, with the same mentality as Linus Torvalds, I needed a version of an operating system for my [Workstation](https://en.wikipedia.org/wiki/Workstation) that met my needs to be light, simple, secure, and flexible.
