@@ -9,6 +9,7 @@
 -------------------------------------------------------------------------
 ## I designed this version of PintArch but, in reality, it is the simplified installation of my [Arch Linux](https://archlinux.org).
 ## It is not a pure Linux version on top of the kernel, but, with the same mentality as Linus Torvalds, I needed a version of an operating system for my [Workstation](https://en.wikipedia.org/wiki/Workstation) that met my needs to be light, simple, secure, and flexible.
+## As a 'purist,' I prefer base distributions rather than the ones 'based on'. I've tested a lot of them just to see them but, naturally, they have been set aside.
 ## In my opinion, the [Arch Linux](https://archlinux.org) distribution is perfect for this. It is one of the best Linux distributions for desktop use, and for what I need, because::
 
 * It is a very up-to-date distribution (Rolling Release)
