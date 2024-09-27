@@ -30,6 +30,7 @@
 * [linux-firmware](https://archlinux.org/packages/core/any/linux-firmware/) - Firmware files
 * [networkmanager](https://www.networkmanager.dev) - The only thing that you need for network management
 * [pipewire](https://pipewire.org) - Get all the sound that you deserve in a computer
+## System Level with Gui
 * [nitrogen](https://github.com/l3ib/nitrogen) - Background image management
 * [picom](https://github.com/yshui/picom) - Transparency management
 * [lxappearance](https://github.com/lxde/lxappearance) - Get icons and fancy stuff management.
