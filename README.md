@@ -12,7 +12,7 @@
 ## As a 'purist' I prefer base distributions rather than the ones 'based on'. I've tested a lot of them just to see how they work, naturally, they have been set aside.
 ## In my opinion, the [Arch Linux](https://archlinux.org) distribution is perfect for this. It is one of the best Linux distributions for desktop use, and for what I need, because::
 
-* It is very, allways, up-to-date distribution ([Rolling Release](https://pt.wikipedia.org/wiki/Rolling_release))
+* It is very, allways, up-to-date distribution ([Rolling Release](https://en.wikipedia.org/wiki/Rolling_release))
 * It has a large community of very dedicated people https://gitlab.archlinux.org/archlinux
 * It allows me to install everything I want (I don't know of any software that I can't get to work on Arch)
 * It is completely modular and adaptable to the needs of any user
