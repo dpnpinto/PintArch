@@ -61,7 +61,7 @@
 * [qemu-full](https://www.qemu.org) - For full Virtualization (with service start by sockts)
 * [cups](https://openprinting.github.io/cups/) - For printing (with service start by sockts)
 * [system-config-printer](https://github.com/OpenPrinting/system-config-printer) - GUI for printing configuration
-* [libreoffice-fresh](https://www.libreoffice.org)
+* [libreoffice-fresh](https://www.libreoffice.org) - Office suit for Linux
 * [Festival](http://festvox.org/festival/) - For Robotic (as I like) TTS
 * [Ollama](https://ollama.com) - For my personal AI 
 * [docker](https://www.docker.com) - For managing containers (with service start by sockts)
