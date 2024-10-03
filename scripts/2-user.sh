@@ -103,7 +103,7 @@ if [[ $INSTALL_TYPE == "TOTAL" ]]; then
     sudo systemctl enable libvirtd.socket
   if [[ $DESKTOP_ENV == "DWM" ]]; then
     echo Virt MAnager - GUI para QEMU
-    pacman --noconfirm --needed virt-manager
+    pacman -S --noconfirm --needed virt-manager
     echo CUPS - Servidor de imrpessão
     # install cups
     sudo pacman -S --noconfirm --needed cups
