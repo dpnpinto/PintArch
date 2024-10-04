@@ -59,6 +59,7 @@
 * ... Some stuff here, will put when i have time
 * [obs-studio](https://obsproject.com) - Open Brodcast Software
 * [qemu-full](https://www.qemu.org) - For full Virtualization (with service start by sockts)
+* [libvirt](https://libvirt.org) - Virtualization API for QEMU 
 * [cups](https://openprinting.github.io/cups/) - For printing (with service start by sockts)
 * [system-config-printer](https://github.com/OpenPrinting/system-config-printer) - GUI for printing configuration
 * [libreoffice-fresh](https://www.libreoffice.org) - Office suit for Linux
