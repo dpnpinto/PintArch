@@ -27,7 +27,7 @@
 * [base](https://archlinux.org/packages/core/any/base/) - Base Linux package for Arch Linux
 * [base-devel](https://archlinux.org/packages/core/any/base-devel/) - Base developer package
 * [Systemd](https://systemd.io) - Yes I like that Arch Linux use it, I use sockets in my workstation every time I can so...
-* [linux](https://archlinux.org/packages/core/x86_64/linux/) - Linux kernel
+* [linux](https://archlinux.org/packages/core/x86_64/linux/) - Linux kernel and modules, you can use others, RTFM.
 * [linux-firmware](https://archlinux.org/packages/core/any/linux-firmware/) - Firmware files
 * [networkmanager](https://www.networkmanager.dev) - The only thing that you need for network management
 * [pipewire](https://pipewire.org) - Get all the sound that you deserve in a computer
