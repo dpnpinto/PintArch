@@ -104,3 +104,6 @@ ShiftMask - > ShiftKey
 ### Special keys
 * MODKEY Prt sc -> Print All Screen to a file in Imagens
 * MODKEY | ShiftMask Prt sc -> Print Selected Screen to a file Imagens
+
+## Keys that I use in ST
+* ... Some more details missing here
