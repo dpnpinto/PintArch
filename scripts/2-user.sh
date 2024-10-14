@@ -70,7 +70,7 @@ if [[ $DESKTOP_ENV == "DWM" ]]; then
                     Vamos instalar o DWM e restante software
   -------------------------------------------------------------------------
   "
-  sudo pacman --noconfirm -S xorg xorg-xinit xorg-xclipboard pipewire pipewire-pulse pipewire-alsa alsa-utils pulsemixer pamixer lf nemo 
+  sudo pacman --noconfirm -S xorg xorg-xinit xorg-xclipboard pipewire pipewire-pulse pipewire-alsa alsa-utils pulsemixer pamixer lf thuner
   # To better sound control
   echo "Clone Pinto Stuff"
   git clone https://github.com/dpnpinto/PintoDWM /home/$USERNAME/.config/PintoDWM
