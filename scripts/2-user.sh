@@ -135,6 +135,9 @@ if [[ $INSTALL_TYPE == "TOTAL" ]]; then
   fi
 fi
 rm -rf /home/$USERNAME/PintArch
+rm -rf /home/$USERNAME/.config/PintoDWMBlocks
+rm -rf /home/$USERNAME/.config/PintoDWM
+rm -rf /home/$USERNAME/.config/PintoST
 clear
 counter
 echo -ne "
@@ -142,5 +145,5 @@ echo -ne "
                     SISTEMA PRONTO PARA REBOOT
 -------------------------------------------------------------------------
 "
-reboot now
+sudo reboot now
 exit
