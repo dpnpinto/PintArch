@@ -146,5 +146,4 @@ echo -ne "
 -------------------------------------------------------------------------
 "
 read -p "ENTER para reboot"
-sudo reboot now
 exit
