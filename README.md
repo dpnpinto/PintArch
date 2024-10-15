@@ -106,4 +106,10 @@ ShiftMask - > ShiftKey
 * MODKEY | ShiftMask Prt sc -> Print Selected Screen to a file Imagens
 
 ## Keys that I use in ST
-* ... Some more details missing here
+* ControlMask | SiftMask  j -> Zoom -1
+* ControlMask | SiftMask  k -> Zoom +1
+* ControlMask | SiftMask  h -> Zoom -2
+* ControlMask | SiftMask  l -> Zoom +2
+* ControlMask | SiftMask  r -> Zoom reset
+* ControlMask | SiftMask  c -> Clipcopy
+* ControlMask | SiftMask  v -> Clippast
