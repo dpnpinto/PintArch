@@ -69,7 +69,7 @@
 * [docker](https://www.docker.com) - For managing containers (with service start by sockts)
 * [flatpak](https://flatpak.org) - Generic distribute aplications to the entire Linux desktop
 
-## Keys that I use in DWM
+## Keys that I use in DWM (PintoDWM)
 MODKEY - > Windows Key
 ShiftMask - > ShiftKey
 ### First key line
@@ -105,7 +105,7 @@ ShiftMask - > ShiftKey
 * MODKEY Prt sc -> Print All Screen to a file in Imagens
 * MODKEY | ShiftMask Prt sc -> Print Selected Screen to a file Imagens
 
-## Keys that I use in ST
+## Keys that I use in ST (PintoST)
 * ControlMask | SiftMask  j -> Zoom -1
 * ControlMask | SiftMask  k -> Zoom +1
 * ControlMask | SiftMask  h -> Zoom -2
