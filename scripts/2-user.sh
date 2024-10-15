@@ -145,5 +145,4 @@ echo -ne "
                     SISTEMA PRONTO PARA REBOOT
 -------------------------------------------------------------------------
 "
-read -p "ENTER para reboot"
 exit
