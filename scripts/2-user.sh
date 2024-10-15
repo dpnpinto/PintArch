@@ -145,5 +145,6 @@ echo -ne "
                     SISTEMA PRONTO PARA REBOOT
 -------------------------------------------------------------------------
 "
+read -p "ENTER para reboot"
 sudo reboot now
 exit
