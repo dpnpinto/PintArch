@@ -93,3 +93,4 @@ echo -ne "
 -------------------------------------------------------------------------
           Por favor retirar o dispositivo de arranque e reiniciar 
 "
+sudo reboot now
