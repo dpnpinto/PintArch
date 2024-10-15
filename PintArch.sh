@@ -93,4 +93,5 @@ echo -ne "
 -------------------------------------------------------------------------
           Por favor retirar o dispositivo de arranque e reiniciar 
 "
+read -p "ENTER para reboot"
 sudo reboot now
