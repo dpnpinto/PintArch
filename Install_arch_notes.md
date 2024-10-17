@@ -24,7 +24,7 @@ nota: o traço "-" no teclado em ingles é na tecla do apóstrofo "'"
 
 * **timedatectl set-ntp true**
 
-## se pretender utilizar o WIFI utilizar o iwctl
+## Se pretender utilizar o WIFI utilizar o iwctl
 **iwctl**
 * device list (para saber o nome do dispositivo)
 * station nomedispositivo scan (ver as redes disponiveis)
@@ -217,7 +217,7 @@ Conferir se a data ficou correta
 * Pode confirmar que já tem este repositório com **pacman -Sy**
 * Pode ver os pacotes do repositorio MultiLib com **pacman -Sl multilib**
 
-### melhorar o PACMAN
+### Melhorar o PACMAN
 
 * Editar o pacman.conf (está dentro do /etc) **sudo vim /etc/pacman.conf**
 * Ir até # Misc options
@@ -252,39 +252,24 @@ Conferir se a data ficou correta
    *         exec startx
    * fi
   ...
-### Instalar o Display Manager LightDM
-
-O display manager permite-nos entrar no sistema de forma gráfica e também
-automatizar o arranque de determinados serviços.
-[LightDM](https://wiki.archlinux.org/index.phpexit/LightDM) é um dos mais leves display managers.
-* **sudo pacman -S lightdm lightdm-gtk-greeter --needed**
-* **sudo systemctl enable lightdm**
-* **sudo vim /etc/lightdm/lightdm.conf** Editar as configurações do LightDM
-* Colocar o Greeter:
-  - [Seat:*]
-  ...
-  greeter-session=lightdm-gtk-greeter
-  ...
-
-### Instalar ToolBar Polybar
-
-* **sudo pacman -S polybar** Instalr a Polybar
-* **mkdir .config/polybar** criar pasta de configuração da barra
-* **sudo cp /etc/polybar/config.ini** copiar um ficheiro de exemplo ou colocar o seu
-
 ### Intalar o Aplication Launcher Rofi
 
 * **sudo pacman -S rofi** Instalar o Rofi
 
-### Intalar o emulador de terminal Kitty
+### Intalar o emulador de terminal PintoST
 
-* **sudo pacman -S kitty**  instalar o emulador de terminal kitty
+* **git clone https://github.com/dpnpinto/PintoST
+* **sudo male clean Install
   
-### Instalar o Windows Manager i3-wm (ultima versão já tem o i3 gaps)
+### Instalar o Windows Manager PintoDWM
 
-* **sudo pacman -S xorg-server xorg-apps xorg-xinit** Instalr o servidor grafico xorg.server e os pacotes do xorg-apps e o xorg-xinit
-* **sudo pacman -S i3-wm**
-* **i3-config-wizard**
+* **git clone https://github.com/dpnpinto/PintoDWM
+* **sudo male clean Install
+
+### Instalar a barra de controle PintoDWMBlocks
+
+* **git clone https://github.com/dpnpinto/PintoDWMBlocks
+* **sudo male clean Install
 
 ### Instalar o PipeWire (melhor que o Pulseaudio)
 
@@ -293,8 +278,3 @@ automatizar o arranque de determinados serviços.
 * For noire canceelation easy efects is the way then **sudo pacman -S easyeffects**
 * https://wiki.archlinux.org/title/PipeWire
 * https://www.youtube.com/watch?v=5a7_2mA2LYQ
-
-### Special stuff
-
-* pacman -S figlet banner toilet cawsay
-* Choose one
