@@ -258,23 +258,23 @@ Conferir se a data ficou correta
 
 ### Intalar o emulador de terminal PintoST
 
-* **git clone https://github.com/dpnpinto/PintoST
-* **sudo male clean Install
+* **git clone https://github.com/dpnpinto/PintoST**
+* **sudo male clean Install**
   
 ### Instalar o Windows Manager PintoDWM
 
-* **git clone https://github.com/dpnpinto/PintoDWM
-* **sudo male clean Install
+* **git clone https://github.com/dpnpinto/PintoDWM**
+* **sudo male clean Install**
 
 ### Instalar a barra de controle PintoDWMBlocks
 
-* **git clone https://github.com/dpnpinto/PintoDWMBlocks
-* **sudo male clean Install
+* **git clone https://github.com/dpnpinto/PintoDWMBlocks**
+* **sudo male clean Install**
 
 ### Instalar o PipeWire (melhor que o Pulseaudio)
 
 * **sudo pacman -S pipewire pipewire-jack pipewire-alsa pipewire-pulse qjackctl**
-* **sudo pacman -S lib32-pipewire lib32-pipewire-jack** para suporte multilib
+* **sudo pacman -S lib32-pipewire lib32-pipewire-jack** para suporte multilib**
 * For noire canceelation easy efects is the way then **sudo pacman -S easyeffects**
 * https://wiki.archlinux.org/title/PipeWire
 * https://www.youtube.com/watch?v=5a7_2mA2LYQ
