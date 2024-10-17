@@ -4,6 +4,7 @@
 - To run just use **curl -fsSL https://raw.githubusercontent.com/dpnpinto/PintArch/main/install.sh | sh**
 - Or just do it yourself **loakeys pt-laint1**, **pacman -Sy git** and **git clone https://github.com/dpnpinto/PintArch**, the instalation script is the file **PintArch.sh** 
 - Note: remember this is made by me to me, use at your own risk, Allways changing something here.
+- It is very useful however to perform a manual installation so you can follow the [Arch Wiki](https://wiki.archlinux.org) or my resume in Portuguese  [here](https://github.com/dpnpinto/PintArch/blob/main/Install_arch_notes.md)
 -------------------------------------------------------------------------
 #                      **https://dpnpinto.github.io**
 -------------------------------------------------------------------------
