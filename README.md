@@ -16,7 +16,7 @@
 * It has a large community of very dedicated people https://gitlab.archlinux.org/archlinux
 * It allows me to install everything I want (I don't know of any software that I can't get to work on Arch, yes even "Windows troublesoftware"
 * It is completely modular and adaptable to the needs of any user
-* It always has the latest updates https://wiki.archlinux.org/title/ArchWiki:About
+* It, always, has the latest updates https://wiki.archlinux.org/title/ArchWiki:About
 * It has a very well-documented source of knowledge (Arch Wiki) https://wiki.archlinux.org
 * It has the best open repository from a Linux community (AUR) https://aur.archlinux.org
 --------------------------------------------------------------------------
