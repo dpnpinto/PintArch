@@ -114,3 +114,5 @@ ShiftMask - > ShiftKey
 * ControlMask | SiftMask  r -> Zoom reset
 * ControlMask | SiftMask  c -> Clipcopy
 * ControlMask | SiftMask  v -> Clippast
+
+![PintArch](https://raw.githubusercontent.com/dpnpinto/PintArch/refs/heads/main/PintArch.png)
