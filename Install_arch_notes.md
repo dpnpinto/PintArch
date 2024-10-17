@@ -150,13 +150,13 @@ Conferir se a data ficou correta
 * **useradd -m -g users -G wheel,storage,power -s /bin/bash nomedoutilizador**
 * **passwd nomedoutilizador** (colocar palavra passe nesse utilizador)
 * Editar o **pacman.conf** em /etc e colocar:
-- VerbosePkgLists
-- ParallelDownloads = 5 (descarregar 5 ficheiros em paralelo
+- VerbosePkgLists (descritivo dos pacotes)
+- ParallelDownloads = 5 (descarregar 5 ficheiros em simultaneo)
 - ILoveCandy (para ficar em modo pacman C-o-)
 
 ## Instalar pacotes uteis
 
-* **pacman -S man dosfstools os-prober mtools network-manager-applet networkmanager wpa_supplicant wireless_tools dialog** 
+* **pacman -S man dosfstools os-prober mtools networkmanager** 
 * Ativar networkmanager ** sudo systemctl enable NetworkManager.service**
 
 * systemctl list-unit-files --state=enabled
