@@ -2,7 +2,7 @@
 -------------------------------------------------------------------------
 #                      By **https://dpnpinto.github.io**
 -------------------------------------------------------------------------
-#                               **[PintArch](https://github.com/dpnpinto/PintArch/) - Ain't got no teeth, ain't got cavities.**
+# **[PintArch](https://github.com/dpnpinto/PintArch/) - Ain't got no teeth, ain't got cavities.**
 - To run just use **curl -fsSL https://raw.githubusercontent.com/dpnpinto/PintArch/main/install.sh | sh**
 - Or just do it yourself:
   * **loakeys pt-laint1**
@@ -11,7 +11,7 @@
 - Remember that this is made by me to me, use at your own risk, allways changing something here.
 - It is very useful however to perform a manual installation so you can follow the [Arch Wiki](https://wiki.archlinux.org) or my resume in Portuguese  [here](https://github.com/dpnpinto/PintArch/blob/main/Install_arch_notes.md)
 -------------------------------------------------------------------------
-#                            **[PintArch](https://github.com/dpnpinto/PintArch/)** - What I need
+# **[PintArch](https://github.com/dpnpinto/PintArch/)** - What I need
 -------------------------------------------------------------------------
 ## I designed this version of PintArch but, in reality, it is the simplified installation of my [Arch Linux](https://archlinux.org).
 ## It is not a pure Linux version on top of the [kernel](https://kernel.org), but, with the same mentality as [Linus Torvalds](https://github.com/torvalds/linux), I needed a version of an operating system for my [Workstation](https://en.wikipedia.org/wiki/Workstation) that met my needs to be light, simple, secure, and flexible.
@@ -26,7 +26,8 @@
 * It has a very well-documented source of knowledge (Arch Wiki) https://wiki.archlinux.org
 * It has the best open repository from a Linux community (AUR) https://aur.archlinux.org
 --------------------------------------------------------------------------
-#         Software packages used in this version of [Arch Linux](https://archlinux.org)
+# **[PintArch](https://github.com/dpnpinto/PintArch/)** Software packages used in this version of [Arch Linux](https://archlinux.org)
+--------------------------------------------------------------------------
 
 ## System Level
 * [grub](https://www.gnu.org/software/grub/) - Boot  loader that I use
