@@ -89,7 +89,7 @@ ShiftMask - > ShiftKey
 * MODKEY s -> Toggle sticky Windows (when stiky is on windows is visible in all workspaces)
 * MODKEY b -> togle view of the taskbar
 * MODKEY v -> Jump to master Windows
-### Windoows Laouts
+### Windows Laouts
 
 ... Organizing this
 
