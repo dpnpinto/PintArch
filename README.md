@@ -79,9 +79,20 @@
 ## Keys that I use in DWM (PintoDWM)
 MODKEY - > Windows Key
 ShiftMask - > ShiftKey
-### First key line
-* MODKEY q -> Close program
-* MODKEY | ShiftMask q -> log out
+### General purpose
+* MODKEY j/k -> Cyclet thu windows by stack order
+* MODKEY space -> Make the selected Window the master
+* MODKEY | ShiftMask space -> Make a windows float 
+* MODKEY h/l -> Change with of the master Window
+* MODKEY a -> Toggle gaps
+* MODKEY | ShiftMask a -> Gaps return to defaul value, can use MODKEY and midle buton
+* MODKEY s -> Toggle sticky Windows (when stiky is on windows is visible in all workspaces)
+* MODKEY b -> togle view of the taskbar
+* MODKEY v -> Jump to master Windows
+### Windoows Laouts
+
+... Organizing this
+
 * MODKEY w -> Open Browser
 * MODKEY e -> Open Email
 * MODKEY | ShiftMask w -> Open Network Manager (nmtui)
@@ -89,7 +100,6 @@ ShiftMask - > ShiftKey
 ### Second key line
 * MODKEY a -> Togle Gaps
 * MODKEY | ShiftMask a -> Defeult Gaps
-* MODKEY s -> Toggle sticky Windows (when stiky is on windows is visible in all workspaces)
 * MODKEY d -> Start Menu (I use Rofi)
 * MODKEY f -> togle window view to full screen
 * MODKEY | ShiftMask f -> No layout Floating window
@@ -103,7 +113,6 @@ ShiftMask - > ShiftKey
 ### Third key line
 * MODKEY z -> increase windows gaps
 * MODKEY x -> decrease windows gaps
-* MODKEY b -> togle view of the taskbar
 * MODKEY Minus -> Volume -5%
 * MODKEY | SiftMask Minus -> Volume -15%
 * MODKEY Plus -> Volume +5%
