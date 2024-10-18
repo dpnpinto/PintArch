@@ -1,6 +1,6 @@
 # PintArch - My personal instalation of [Arch Linux](https://archlinux.org)
 -------------------------------------------------------------------------
-#                      **https://dpnpinto.github.io**
+#                      By**https://dpnpinto.github.io**
 -------------------------------------------------------------------------
 #                               **[PintArch](https://github.com/dpnpinto/PintArch/) - Ain't got no teeth, ain't got cavities.**
 - To run just use **curl -fsSL https://raw.githubusercontent.com/dpnpinto/PintArch/main/install.sh | sh**
