@@ -83,7 +83,7 @@ Se pretendermos ter uma /home separado
    - pacman -S reflector
    - reflector --latest 5 --sort rate --save /etc/pacman.d/mirrorlist
 
-## Instalar o pacotes base do Arch
+## Instalar ow pacotes base do Arch Linux
 
 * **pacstrap -K /mnt base base-devel linux linux-firmware vim networkmanager xpto-ucode**
 * -K inicia as chaves do pacman e não utiliza as do host de instalação
