@@ -42,7 +42,7 @@
 * [PintoST](https://github.com/dpnpinto/PintoST) - My terminal, ST (Simple Terminal)
 * [PintoDWMBlocks](https://github.com/dpnpinto/PintoDWMBlocks) - My task bar based on DWMBlocks
 ## At user level
-* [maim](https://github.com/naelstrof/maim) - Make image software, I use to screenshot. 
+* [maim](https://github.com/naelstrof/maim) - Make image the software that I use for screenshot 
 * [vim](https://www.vim.org) - The best editor
 * [thunar](https://xfce.readthedocs.io/en/latest/core/thunar/) - GUI file manager that I like
 * [lf](https://github.com/gokcehan/lf) - Terminal file manager
