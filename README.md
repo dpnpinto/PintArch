@@ -11,7 +11,7 @@
 - Remember that this is made by me to me, use at your own risk, allways changing something here.
 - It is very useful however to perform a manual installation so you can follow the [Arch Wiki](https://wiki.archlinux.org) or my resume in Portuguese  [here](https://github.com/dpnpinto/PintArch/blob/main/Install_arch_notes.md)
 -------------------------------------------------------------------------
-# **[PintArch](https://github.com/dpnpinto/PintArch/)** - What I need
+# **[PintArch](https://github.com/dpnpinto/PintArch/)** - What I need and deserve
 -------------------------------------------------------------------------
 ## I designed this version of PintArch but, in reality, it is the simplified installation of my [Arch Linux](https://archlinux.org).
 ## It is not a pure Linux version on top of the [kernel](https://kernel.org), but, with the same mentality as [Linus Torvalds](https://github.com/torvalds/linux), I needed a version of an operating system for my [Workstation](https://en.wikipedia.org/wiki/Workstation) that met my needs to be light, simple, secure, and flexible.
