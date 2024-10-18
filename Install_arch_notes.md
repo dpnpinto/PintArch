@@ -1,4 +1,4 @@
-# How to make a manual PintoDWM Arch Install - After boot from the oficial Arch ISO
+# How to make a manual Arch Linux Install - After boot from the oficial Arch ISO
 
 ## Minha versão de instalação automatizada do Arch
 
