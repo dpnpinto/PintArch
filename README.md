@@ -9,7 +9,7 @@
   * **pacman -Sy git**
   * **git clone https://github.com/dpnpinto/PintArch**, the instalation script is the BASH file **PintArch.sh** 
 - Remember that this is made by me to me, use at your own risk, allways changing something here.
-- It is very useful however to perform a manual installation so you can follow the [Arch Wiki](https://wiki.archlinux.org) or my resume in Portuguese  [here](https://github.com/dpnpinto/PintArch/blob/main/Install_arch_notes.md)
+- However remember that it is very useful to perform a manual installation so you can follow the [Arch Wiki](https://wiki.archlinux.org) or my resume in Portuguese  [here](https://github.com/dpnpinto/PintArch/blob/main/Install_arch_notes.md)
 -------------------------------------------------------------------------
 # **[PintArch](https://github.com/dpnpinto/PintArch/)** - What I need and deserve
 -------------------------------------------------------------------------
