@@ -63,7 +63,7 @@
 * [thunderbird](https://www.thunderbird.net/) - Email client
 * [bat](https://github.com/sharkdp/bat) - like cat but with colors
 * [lsd](https://github.com/lsd-rs/lsd) - like ls but more control with colors
-* ... Some more details missing here, yes Arch you can do everything, will put more details when i have time but allways RDFM.
+* ... Some more details missing here, yes with Arch you can do everything, will put more details when i have time but allways RDFM.
 * [obs-studio](https://obsproject.com) - Open Brodcast Software
 * [qemu-full](https://www.qemu.org) - For full Virtualization (with service start by sockts)
 * [libvirt](https://libvirt.org) - Virtualization API for QEMU
