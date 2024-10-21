@@ -4,7 +4,7 @@
 
 PintArch.sh disponivel em https://github.com/dpnpinto/PintArch 
 
-## Consultar sempre a Arch Wiki para confirmação das opção disponiveis
+## Consultar sempre a Arch Wiki para confirmação das opções disponiveis
 
  * https://wiki.archlinux.org/
  * https://www.youtube.com/watch?v=rUEnS1zj1DM - Exemplo
