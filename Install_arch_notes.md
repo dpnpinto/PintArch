@@ -79,8 +79,7 @@ Se pretendermos ter uma /home separado
 
 * **vim /etc/pacman.d/mirrorlist** (se não tiver instalado o vim instalar o editor ou utilizar outro)
 * De forma automatica
-   - pacman -Sy
-   - pacman -S reflector
+   - pacman -Sy reflector
    - reflector --latest 5 --sort rate --save /etc/pacman.d/mirrorlist
 
 ## Instalar ow pacotes base do Arch Linux
