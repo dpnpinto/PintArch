@@ -10,5 +10,7 @@ fastfetch
 btop
 dfrs
 figlet
+tree
+lf
 openssh
 --END OF MINIMA INSTALL--
