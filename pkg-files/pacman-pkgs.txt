@@ -8,5 +8,6 @@ usbutils
 xdg-user-dirs
 fastfetch
 btop
+dfrs
 openssh
 --END OF MINIMA INSTALL--
