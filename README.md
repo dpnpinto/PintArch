@@ -80,7 +80,7 @@
 MODKEY - > Windows Key
 ShiftMask - > ShiftKey
 ### General purpose
-* MODKEY j/k -> Cyclet thu windows by stack order
+* MODKEY j/k -> Cycle thru windows by stack order
 * MODKEY space -> Make the selected Window the master
 * MODKEY | ShiftMask space -> Make a windows float 
 * MODKEY h/l -> Change with of the master Window
