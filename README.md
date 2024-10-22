@@ -44,8 +44,8 @@
 * [lxappearance](https://github.com/lxde/lxappearance) - Get icons and fancy stuff management.
 * [rofi](https://github.com/davatorium/rofi) - Use for starting aplications in the GUI
 * [xorg-server](https://www.x.org/wiki/) - Yes, still using the most popular display server
-* [PintoDWM](https://github.com/dpnpinto/PintoDWM) - My DWM (Dinamic Windows Management)
-* [PintoST](https://github.com/dpnpinto/PintoST) - My terminal, ST (Simple Terminal)
+* [PintoDWM](https://github.com/dpnpinto/PintoDWM) - My Dinamic Windows Management based on DWM
+* [PintoST](https://github.com/dpnpinto/PintoST) - My Simple Terminal based on ST
 * [PintoDWMBlocks](https://github.com/dpnpinto/PintoDWMBlocks) - My task bar based on DWMBlocks
 ## At user level
 * [maim](https://github.com/naelstrof/maim) - Make image the software that I use for screenshot 
