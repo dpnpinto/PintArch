@@ -9,5 +9,6 @@ xdg-user-dirs
 fastfetch
 btop
 dfrs
+figlet
 openssh
 --END OF MINIMA INSTALL--
