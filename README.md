@@ -63,6 +63,7 @@
 * [thunderbird](https://www.thunderbird.net/) - Email client
 * [bat](https://github.com/sharkdp/bat) - like cat but with colors
 * [lsd](https://github.com/lsd-rs/lsd) - like ls but more control with colors
+* [dfrs](https://github.com/anthraxx/dfrs) - Like df but more human like and with color (it run like df I have an alias to it)
 * ... Some more details missing here, yes with Arch you can do everything, will put more details when i have time but allways RDFM.
 * [obs-studio](https://obsproject.com) - Open Brodcast Software
 * [qemu-full](https://www.qemu.org) - For full Virtualization (with service start by sockts)
