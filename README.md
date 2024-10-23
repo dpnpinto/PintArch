@@ -89,10 +89,11 @@ ShiftMask - > ShiftKey
 * MODKEY h/l -> Change with of the master Window
 * MODKEY a -> Toggle gaps
 * MODKEY | ShiftMask a -> Gaps return to defaul value, can use MODKEY and midle buton
-* MODKEY s -> Toggle sticky Windows (when stiky is on windows is visible in all workspaces)
+* MODKEY s -> Open GUI filemanager (using thunar)
+* MODKEY | ShiftMask s -> Toggle sticky Windows (when stiky is on windows is visible in all workspaces)
 * MODKEY b -> togle view of the taskbar
 * MODKEY v -> Jump to master Windows
-### Windows Laouts
+### Windows Layouts
 
 ... Organizing this
 
