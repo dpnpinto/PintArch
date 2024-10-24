@@ -4,8 +4,8 @@
 -------------------------------------------------------------------------
 # **[PintArch](https://github.com/dpnpinto/PintArch/) - Ain't got no teeth, ain't got cavities.**
 - To run just use:
- -  **curl -LO https://raw.githubusercontent.com/dpnpinto/PintArch/main/install.sh**
- -  **sh install.sh**
+  * **curl -LO https://raw.githubusercontent.com/dpnpinto/PintArch/main/install.sh**
+  * **sh install.sh**
 - Or just do it yourself:
   * **loakeys pt-laint1**
   * **pacman -Sy git**
