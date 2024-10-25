@@ -44,7 +44,7 @@
 * [nitrogen](https://github.com/l3ib/nitrogen) - Background image management
 * [picom](https://github.com/yshui/picom) - Compositor that I use for Xorg, for example for transparency management
 * [lxappearance](https://github.com/lxde/lxappearance) - Get icons and fancy stuff management.
-* [rofi](https://github.com/davatorium/rofi) - Use for starting aplications in the GUI
+* [rofi](https://github.com/davatorium/rofi) - Use for starting aplications on the GUI
 * [xorg-server](https://www.x.org/wiki/) - Yes, still using the most popular display server
 * [PintoDWM](https://github.com/dpnpinto/PintoDWM) - My Dinamic Windows Management based on DWM
 * [PintoST](https://github.com/dpnpinto/PintoST) - My Simple Terminal based on ST
