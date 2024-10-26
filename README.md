@@ -55,7 +55,7 @@
 * [thunar](https://xfce.readthedocs.io/en/latest/core/thunar/) - GUI file manager that I like
 * [lf](https://github.com/gokcehan/lf) - Terminal file manager
 * [tree](https://gitlab.com/OldManProgrammer/unix-tree) - Everybode know tree
-* [figlet](http://www.figlet.org) - Need this ok
+* [figlet](http://www.figlet.org) - Need this ok, fancy ASCII names ;)
 * [fastfetch](https://github.com/fastfetch-cli/fastfetch) - Show in a nice what your config
 * [htop](https://htop.dev) e [btop](https://github.com/aristocratos/btop) - Visualize system resorces
 * [nvtop](https://github.com/Syllo/nvtop) - visualize nvidia resorces (I use a Nvidia Card) 
