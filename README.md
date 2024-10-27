@@ -1,4 +1,4 @@
-# [PintArch](https://github.com/dpnpinto/PintArch/) - My personal instalation of [Arch Linux](https://archlinux.org)
+&# [PintArch](https://github.com/dpnpinto/PintArch/) - My personal instalation of [Arch Linux](https://archlinux.org)
 -------------------------------------------------------------------------
 #                      By **https://dpnpinto.github.io**
 -------------------------------------------------------------------------
@@ -36,6 +36,7 @@
 * [base](https://archlinux.org/packages/core/any/base/) - Base Linux package for Arch Linux
 * [base-devel](https://archlinux.org/packages/core/any/base-devel/) - Base developer package
 * [Systemd](https://systemd.io) - Yes I like that Arch Linux use it, I use sockets in my workstation every time I can so...
+* [axel]() - Paralel downloads.
 * [linux](https://archlinux.org/packages/core/x86_64/linux/) - Linux kernel and modules, you can use others, RTFM.
 * [linux-firmware](https://archlinux.org/packages/core/any/linux-firmware/) - Firmware files
 * [networkmanager](https://www.networkmanager.dev) - The only thing that you need for network management
