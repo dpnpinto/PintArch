@@ -36,7 +36,6 @@
 * [base](https://archlinux.org/packages/core/any/base/) - Base Linux package for Arch Linux
 * [base-devel](https://archlinux.org/packages/core/any/base-devel/) - Base developer package
 * [Systemd](https://systemd.io) - Yes I like that Arch Linux use it, I use sockets in my workstation every time I can so...
-* [axel]() - Paralel downloads.
 * [linux](https://archlinux.org/packages/core/x86_64/linux/) - Linux kernel and modules, you can use others, RTFM.
 * [linux-firmware](https://archlinux.org/packages/core/any/linux-firmware/) - Firmware files
 * [networkmanager](https://www.networkmanager.dev) - The only thing that you need for network management
@@ -69,6 +68,8 @@
 * [bat](https://github.com/sharkdp/bat) - like cat but with colors
 * [lsd](https://github.com/lsd-rs/lsd) - like ls but more control with colors
 * [dfrs](https://github.com/anthraxx/dfrs) - Like df but more human like and with color (it run like df I have an alias to it)
+* [axel]() - Paralel downloads
+* [ncdu]() - Disk utilization
 * ... Some more details missing here, yes with Arch you can do everything, will put more details when i have time but allways RDFM.
 * [obs-studio](https://obsproject.com) - Open Brodcast Software
 * [qemu-full](https://www.qemu.org) - For full Virtualization (with service start by sockts)
