@@ -24,7 +24,7 @@ bat
 dfrs
 axel
 ncdu
-tldr
+tealdeer
 zathura
 zathura-pdf-mupdf
 materia-gtk-theme
