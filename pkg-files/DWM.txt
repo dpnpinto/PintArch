@@ -21,6 +21,10 @@ gdb
 mpv
 lsd
 bat
+dfrs
+axel
+ncdu
+tldr
 zathura
 zathura-pdf-mupdf
 materia-gtk-theme
