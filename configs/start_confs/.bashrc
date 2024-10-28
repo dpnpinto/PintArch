@@ -27,6 +27,7 @@ alias v='vim'
 alias code='code-oss'
 alias cat='bat'
 alias df='dfrs'
+alias du='ncdu --color dark'
 
 # Get some nice colors in man pages and use most as the pager
 
