@@ -68,7 +68,7 @@
 * [bat](https://github.com/sharkdp/bat) - like cat but with colors
 * [lsd](https://github.com/lsd-rs/lsd) - like ls but more control with colors
 * [dfrs](https://github.com/anthraxx/dfrs) - Like df but more human like and with color (it run like df I have an alias to it)
-* [axel](https://github.com/axel-download-accelerator/axe) - Parallel downloads
+* [axel](https://github.com/axel-download-accelerator/axel) - Parallel downloads
 * [ncdu](https://dev.yorhel.nl/ncdu) - Disk utilization
 * [tealdeer](https://github.com/tealdeer-rs/tealdeer) - To long Don't Read implemented in rust ;)
 * ... Some more details missing here, yes with Arch you can do everything, will put more details when i have time but allways RDFM.
