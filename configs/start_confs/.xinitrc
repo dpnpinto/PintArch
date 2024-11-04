@@ -1,5 +1,5 @@
 #
-#!/bin/sh
+#!/bin/bash
 #
 # by https://dpnpinto.github.io
 
