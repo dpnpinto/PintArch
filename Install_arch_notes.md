@@ -29,7 +29,7 @@ nota: o traço "-" no teclado em ingles é na tecla do apóstrofo "'"
 * device list (para saber o nome do dispositivo)
 * station nomedispositivo scan (ver as redes disponiveis)
 * station nomedodispositivo get-network (listar as redes)
-* station nomedodispositivo connect nomedarede (por fim paraq se ligar à rede WIFI)
+* station nomedodispositivo connect nomedarede (por fim para se ligar à rede WIFI)
 
 ## Configuração do disco
 * **fdisk -l** (listar todos os discos disponiveis)
