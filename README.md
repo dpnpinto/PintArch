@@ -70,7 +70,7 @@
 * [dfrs](https://github.com/anthraxx/dfrs) - Like df but more human like and with color (it run like df I have an alias to it)
 * [axel](https://github.com/axel-download-accelerator/axel) - Parallel downloads
 * [ncdu](https://dev.yorhel.nl/ncdu) - Disk utilization
-* [tealdeer](https://github.com/tealdeer-rs/tealdeer) - To long Don't Read implemented in rust ;)
+* [tealdeer(tldr)](https://github.com/tealdeer-rs/tealdeer) - To long Don't Read (tldr) implemented in rust ;)
 * ... Some more details missing here, yes with Arch you can do everything, will put more details when i have time but allways RDFM.
 * [obs-studio](https://obsproject.com) - Open Brodcast Software
 * [qemu-full](https://www.qemu.org) - For full Virtualization (with service start by sockts)
