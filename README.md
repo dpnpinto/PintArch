@@ -79,7 +79,7 @@
 * [cups](https://openprinting.github.io/cups/) - For printing (with service start by sockts)
 * [system-config-printer](https://github.com/OpenPrinting/system-config-printer) - GUI for printing configuration
 * [libreoffice-fresh](https://www.libreoffice.org) - Office suit for Linux
-* [Festival](http://festvox.org/festival/) - For Robotic (as I like) TTS
+* [Festival](http://festvox.org/festival/) - For Robotic voice to my personal AI (as I like), nice TTS
 * [Ollama](https://ollama.com) - For my personal AI 
 * [docker](https://www.docker.com) - For managing containers (with service start by sockts)
 * [flatpak](https://flatpak.org) - Generic distribute aplications to the entire Linux desktop
