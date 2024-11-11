@@ -52,7 +52,7 @@
 ## At user level
 * [maim](https://github.com/naelstrof/maim) - Make image the software that I use for screenshot 
 * [vim](https://www.vim.org) - The best editor
-* [thunar](https://xfce.readthedocs.io/en/latest/core/thunar/) - GUI file manager that I like
+* [pcmanfm](https://github.com/lxqt/pcmanfm-qt) - GUI file manager that I like
 * [lf](https://github.com/gokcehan/lf) - Terminal file manager
 * [tree](https://gitlab.com/OldManProgrammer/unix-tree) - Everybode know tree
 * [figlet](http://www.figlet.org) - Need this ok, fancy ASCII names ;)
