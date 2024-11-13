@@ -157,7 +157,7 @@ Conferir se a data ficou correta
 ## Instalar pacotes uteis
 
 * **pacman -S man dosfstools os-prober mtools networkmanager** 
-* Ativar networkmanager ** sudo systemctl enable NetworkManager.service**
+* Ativar networkmanager (systemd) **sudo systemctl enable NetworkManager.service**
 
 * systemctl list-unit-files --state=enabled
 
