@@ -94,4 +94,5 @@ echo -ne "
           Por favor retirar o dispositivo de arranque e reiniciar 
 "
 read -p "ENTER para reboot"
+umount -A --recursive /mnt # unmout everything before restart
 sudo reboot now
