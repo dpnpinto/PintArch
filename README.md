@@ -54,6 +54,7 @@
 * [vim](https://www.vim.org) - The best editor
 * [pcmanfm](https://github.com/lxqt/pcmanfm-qt) - GUI file manager that I like
 * [lf](https://github.com/gokcehan/lf) - Terminal file manager
+* [fzf](https://github.com/junegunn/fzf) - Fuzzy finder, for multiple use and find files
 * [tree](https://gitlab.com/OldManProgrammer/unix-tree) - Everybode know tree
 * [figlet](http://www.figlet.org) - Need this ok, fancy ASCII names ;)
 * [fastfetch](https://github.com/fastfetch-cli/fastfetch) - Show in a nice what your config
