@@ -4,6 +4,7 @@ libxft
 libxinerama
 freetype2
 maim
+fzf
 fastfetch
 btop
 htop
