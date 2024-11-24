@@ -1,4 +1,4 @@
-#!/bin/bash
+8#!/bin/bash
 #
 # PintArch
 #-------------------------------------------------------------------------
@@ -93,6 +93,6 @@ echo -ne "
 -------------------------------------------------------------------------
           Por favor retirar o dispositivo de arranque e reiniciar 
 "
-read -p "ENTER para reboot"
 umount -A --recursive /mnt # unmout everything before restart
+read -p "ENTER para reboot"
 sudo reboot now
