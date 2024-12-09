@@ -13,6 +13,9 @@ rofi
 picom
 nitrogen
 lxappearance
+breeze-gtk
+qt6ct
+breeze
 vivaldi
 thunderbird
 bash-completion
