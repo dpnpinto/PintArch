@@ -41,10 +41,11 @@
 * [linux-firmware](https://archlinux.org/packages/core/any/linux-firmware/) - Firmware files
 * [networkmanager](https://www.networkmanager.dev) - The only thing that you need for network management
 * [pipewire](https://pipewire.org) - Get all the sound that you deserve in a computer
-## System Level with Gui
+## System Level with GUI DWM
 * [nitrogen](https://github.com/l3ib/nitrogen) - Background image management
 * [picom](https://github.com/yshui/picom) - Compositor that I use for Xorg, for example for transparency management
-* [lxappearance](https://github.com/lxde/lxappearance) - Get icons and fancy stuff management.
+* [lxappearance](https://github.com/lxde/lxappearance) - Get icons and fancy stuff management for GTK
+* [qt6ct](https://github.com/trialuser02/qt6ct) - Get icons and fancy stuff management for QT
 * [rofi](https://github.com/davatorium/rofi) - Use for starting aplications on the GUI
 * [xorg-server](https://www.x.org/wiki/) - Yes, still using the most popular display server
 * [PintoDWM](https://github.com/dpnpinto/PintoDWM) - My Dinamic Windows Management based on DWM
