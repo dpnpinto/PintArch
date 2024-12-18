@@ -92,7 +92,7 @@ if [[ $DESKTOP_ENV == "DWM" ]]; then
   unzip /home/$USERNAME/PintArch/configs/themes/Material-Black-Blueberry-2.9.9-07.zip -d /home/$USERNAME/.themes
   mkdir /home/$USERNAME/.icons # Create my Icons themes folder
   tar -xf /home/$USERNAME/PintArch/configs/themes/Flight-Dark-Icons.tar.gz -C /home/$USERNAME/.icons
-  sudo echo export QT_QPA_PLATFORMTHEME=\"qt6ct\" >> /etc/environment
+  sudo bash "echo export QT_QPA_PLATFORMTHEME=\"qt6ct\" >> /etc/environment"
   #chown -R $USERNAME: /home/$USERNAME/.config
   chmod 755 /home/$USERNAME/.config/scripts/*   
 fi
