@@ -74,6 +74,7 @@
 * [axel](https://github.com/axel-download-accelerator/axel) - Parallel downloads
 * [ncdu](https://dev.yorhel.nl/ncdu) - Disk utilization (alias du)
 * [tealdeer(tldr)](https://github.com/tealdeer-rs/tealdeer) - To long Don't Read (tldr) implemented in rust ;)
+* [rclone](https://rclone.org) - Yes it is based in [rsync](https://github.com/rsyncproject/rsync) and is witen in go. Rsync for the cloud (it is what i like to name it)
 * ... Some more details missing here, yes with Arch you can do everything, will put more details when i have time but allways RDFM.
 * [obs-studio](https://obsproject.com) - Open Brodcast Software
 * [qemu-full](https://www.qemu.org) - For full Virtualization (with service start by sockts)
