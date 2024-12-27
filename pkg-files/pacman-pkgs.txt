@@ -4,6 +4,7 @@ binutils
 dosfstools
 linux-headers
 noto-fonts-emoji
+ttf-jetbrains-mono
 usbutils
 xdg-user-dirs
 fastfetch
