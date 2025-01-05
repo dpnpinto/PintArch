@@ -102,9 +102,10 @@ if [[ $INSTALL_TYPE == "TOTAL" ]]; then
     echo QUEMU - Máquinas Virtuais
     sudo pacman -S --noconfirm --needed qemu-full libvirt
     sudo systemctl enable libvirtd.socket
-    echo Virt MAnager - GUI para QEMU
-    pacman -S --noconfirm --needed virt-manager
   if [[ $DESKTOP_ENV == "DWM" ]]; then
+    echo Virt MAnager - GUI para QEMU/KVM
+    # install visual enviroment for QEMU/KVM
+    pacman -S --noconfirm --needed virt-manager
     echo CUPS - Servidor de imrpessão
     # install cups
     sudo pacman -S --noconfirm --needed cups
