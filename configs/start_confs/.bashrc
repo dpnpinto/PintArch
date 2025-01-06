@@ -28,7 +28,7 @@ alias code='code-oss'
 alias cat='bat'
 alias df='dfrs'
 alias du='ncdu --color dark'
-alias fastfetch='fastfetch --logo Arch3'
+alias fastfetch='fastfetch --logo Arch3 --logo-color-1 red --logo-color-2 yellow'
 
 # Get some nice colors in man pages and use most as the pager
 
