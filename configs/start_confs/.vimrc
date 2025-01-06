@@ -1,5 +1,6 @@
 # My Vim defenitions
-# By https://dpnpinto.github.io
+#
+# by https://dpnpinto.github.io
 set number
 colorscheme darkblue
 syntax on
