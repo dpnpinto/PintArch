@@ -77,6 +77,7 @@
 * [rclone](https://rclone.org) - Yes it is based in [rsync](https://github.com/rsyncproject/rsync) and is witen in go. Rsync for the cloud (it is what i like to name it)
 * ... Some more details missing here, yes with Arch you can do everything, will put more details when i have time but allways RDFM.
 * [obs-studio](https://obsproject.com) - Open Brodcast Software
+* [shotcut](https://www.shotcut.org) - Video editing
 * [qemu-full](https://www.qemu.org) - For full Virtualization (with service start by sockts)
 * [libvirt](https://libvirt.org) - Virtualization API for QEMU
 * [virt-manager](https://virt-manager.org/) - GUI for Virtual Machine Management 
