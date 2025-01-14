@@ -3,6 +3,7 @@
 #                      By **https://dpnpinto.github.io**
 -------------------------------------------------------------------------
 # **[PintArch](https://github.com/dpnpinto/PintArch/) - Ain't got no teeth, ain't got cavities.**
+From the start of an Arch image, get it here [https://archlinux.org/download/](https://archlinux.org/download/)
 - To install just use:
   * **curl -LO https://raw.githubusercontent.com/dpnpinto/PintArch/main/install.sh**
   * **bash install.sh**
