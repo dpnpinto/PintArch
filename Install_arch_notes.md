@@ -97,7 +97,7 @@ Neste passo, instalaremos o metapacote base e o grupo base-devel, além do kerne
     pacman-key --populate archlinux
     pacman-key --populate archlinux32 (apenas para o de 32 bit)  
     pacman-key --refresh-keys
-    - Desativar a verificação (Arch32) colocar 'SigLevel = Never' em /etc/pacman.conf (não conselhavel, perdes a verificação dos pacores)
+    - Desativar a verificação (Arch32) colocar 'SigLevel = Never' em /etc/pacman.conf (não aconselhavel, perdes a verificação dos pacores)
 
 
 * systemctl list-unit-files --state=enabled
