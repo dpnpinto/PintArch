@@ -106,7 +106,7 @@ Neste passo, instalaremos o metapacote base e o grupo base-devel, além do kerne
 
 Após instalar os pacotes essenciais é necessário gerar a tabela FSTAB, que vai dar a indicação ao sistema onde estão montadas cada uma das partições.
 * **genfstab -U /mnt >> /mnt/etc/fstab**
-   * Nota: **-U para colocar o UUID no lugar dos nomes dos devices para gatantir que está sempre a utilizar o mesmo despositivo**
+   * Nota: **-U para colocar o UUID no lugar dos nomes dos devices para gatantir que está sempre a utilizar o mesmo dispositivo**
 
 Deves smpre verificar se a tabela está correta
 * **cat /mnt/etc/fstab**
