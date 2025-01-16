@@ -108,7 +108,7 @@ Após instalar os pacotes essenciais é necessário gerar a tabela FSTAB, que va
 * **genfstab -U /mnt >> /mnt/etc/fstab**
    * Nota: **-U para colocar o UUID no lugar dos nomes dos devices para gatantir que está sempre a utilizar o mesmo dispositivo**
 
-Deves smpre verificar se a tabela está correta
+Devem sempre verificar se a tabela está correta
 * **cat /mnt/etc/fstab**
 
 ## O sistema está configurado vamos passar para dentro dele
