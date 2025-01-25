@@ -6,6 +6,6 @@
 setxkbmap pt &
 nitrogen --restore &
 dwmblocks &
-picom &
+picom -b
 lxappearence &
 exec dwm
