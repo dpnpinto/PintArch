@@ -93,6 +93,7 @@ From the start of an Arch image, get it here [https://archlinux.org/download/](h
 * [mtr](https://www.bitwizard.nl/mtr/) - Ping and traceroot in one better command
 * [iperf](https://github.com/esnet/iperf) - Test bandwith between sites
 * [tcpdump](https://www.tcpdump.org/) - Lightweight paket capture
+* [nmap](https://nmap.org/) - Scan remote ports/network
 
 ## Keys that I use in DWM (PintoDWM)
 MODKEY - > Windows Key
