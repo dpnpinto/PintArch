@@ -91,6 +91,7 @@ From the start of an Arch image, get it here [https://archlinux.org/download/](h
 * [docker](https://www.docker.com) - For managing containers (with service start by sockts)
 * [flatpak](https://flatpak.org) - Generic distribute aplications to the entire Linux desktop
 * [mtr](https://www.bitwizard.nl/mtr/) - Ping and traceroot in one better command
+* [iperf](https://github.com/esnet/iperf) - Test bandwith between sites
 
 ## Keys that I use in DWM (PintoDWM)
 MODKEY - > Windows Key
