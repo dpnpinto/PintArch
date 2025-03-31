@@ -34,4 +34,7 @@ zathura-pdf-mupdf
 materia-gtk-theme
 pop-icon-theme
 mtr
+iperf
+tcpdump
+nmap
 --END OF MINIMA INSTALL--
