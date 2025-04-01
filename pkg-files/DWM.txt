@@ -37,4 +37,5 @@ mtr
 iperf
 tcpdump
 nmap
+bind
 --END OF MINIMA INSTALL--
