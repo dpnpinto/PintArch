@@ -1,4 +1,4 @@
-9# [PintArch](https://github.com/dpnpinto/PintArch/) - My personal instalation of [Arch Linux](https://archlinux.org)
+# [PintArch](https://github.com/dpnpinto/PintArch/) - My personal instalation of [Arch Linux](https://archlinux.org)
 -------------------------------------------------------------------------
 #                      By **https://dpnpinto.github.io**
 -------------------------------------------------------------------------
