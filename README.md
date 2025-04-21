@@ -18,7 +18,7 @@ From the start of an Arch image, get it here [https://archlinux.org/download/](h
 -------------------------------------------------------------------------
 ## I designed this version of PintArch but, in reality, it is the simplified installation, using [BASH](https://www.gnu.org/software/bash/), of my [Arch Linux](https://archlinux.org).
 ## It is not a pure Linux version on top of the [kernel](https://kernel.org), but, with the same mentality as [Linus Torvalds](https://github.com/torvalds/linux), I needed a version of an operating system for my [Workstation](https://en.wikipedia.org/wiki/Workstation) that met my needs to be light, simple, secure, and flexible.
-## As a 'purist' I prefer base distributions rather than the ones 'based on'. I've tested a lot of them just to see how they work, for several reasons, they have been set aside.
+## As a 'purist' I prefer [base distributions](https://en.wikipedia.org/wiki/List_of_Linux_distributions) rather than the ones 'based on'. I've tested a lot of them just to see how they work, for several reasons, they have been set aside.
 ## In my opinion, and what I aim for is, an operating system that is secure and has the smallest footprint possible, meaning it has the minimal impact on the equipment so that processing is, for the most part, efficiently used by the processes and applications the user is running.
 ## The [Arch Linux](https://archlinux.org) distribution is perfect for this. It is one of the best Linux distributions for desktop use, and for what I need, because::
 
