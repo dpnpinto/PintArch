@@ -85,7 +85,7 @@ Se pretendermos ter uma /home separado
 ## Instalar os pacotes base do Arch Linux
 
 * **pacstrap -K /mnt base base-devel linux linux-firmware vim networkmanager "xpto"-ucode**
-   * Nota : xpto -> depnde do CPU que estás a utilizar mas connvem instalar o microcódigo especifico. 
+   * Nota : xpto -> depnde do CPU que estás a utilizar mas convem instalar o microcódigo especifico. 
 * -K inicia as chaves do pacman e não utiliza as do host de instalação
 Neste passo, instalaremos o metapacote base e o grupo base-devel, além do kernel Linux padrão do Arch, o firmware para hardware comum, o editor de texto “vim” e o NetworkManager
 * linux - instala o kernel estável (http://www.kernel.org). Pode-se instalar outro tipo, por exemplo o Zen Kernel, com **linux-zen**.
