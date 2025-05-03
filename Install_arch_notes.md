@@ -5,7 +5,7 @@
 * [Colocar o teclado em PT de Portugal](#Colocar-o-teclado-em-PT-de-Portugal)
 * [Verificar se tem internet](#Verificar-se-tem-internet)
 * [Para WIFI utilizar o iwctl](#Para-WIFI-utilizar-o-iwctl)
-* [Acertar o relógio e a data](#Acertar-o-relógio-e-a-data)
+* [Acertar data](#Acertar-data)
 * [Configuração do disco](#Configuração-do-disco)
 * [Formatar as partições](#Formatar-as-partições)
 * [Montagem do sistema](#Montagem-do-sistema)
@@ -40,7 +40,7 @@ nota: o traço (**-**) no teclado em ingles é na tecla do apóstrofo (**'**)
 * station nomedodispositivo get-network (listar as redes)
 * station nomedodispositivo connect nomedarede (por fim para se ligar à rede WIFI)
 
-## Acertar o relógio e a data
+## Acertar data
 
 * **timedatectl set-ntp true**
 
