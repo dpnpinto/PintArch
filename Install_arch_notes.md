@@ -6,8 +6,8 @@
 * [Verificar se tem internet](#Verificar-se-tem-internet)
 * [Para WIFI utilizar o iwctl](#Para-WIFI-utilizar-o-iwctl)
 * [Acertar data](#Acertar-data)
-* [Configuração do disco](#Configuração-do-disco)
-* [Formatar as partições](#Formatar-as-partições)
+* [Configurar o disco](#Configurar-o-disco)
+* [Formatar](#Formatar)
 * [Montagem do sistema](#Montagem-do-sistema)
 * [Otimizar mirrorlist](#Otimizar-mirrorlist)
 * [Instalar a base do Arch Linux](#Instalar-a-base-do-Arch-Linux)
@@ -45,6 +45,7 @@ nota: o traço (**-**) no teclado em ingles é na tecla do apóstrofo (**'**)
 * **timedatectl set-ntp true**
 
 ## Configurar o disco
+
 * **fdisk -l** (listar todos os discos disponiveis)
 * **fdisk -l /dev/discopretendido** (ver todas as partições no disco)
 * **cfdisk /dev/discopretendido** (criar as partições pretendidas)
@@ -70,7 +71,7 @@ Definir os tipos de sistema de ficheiros
 Se pretendermos ter uma /home separado
 * /dev/sda4 (todo o resto para o /home)
 
-## Formatar disco
+## Formatar
 
 * Partição de boot - **mkfs.fat -F32 /dev/sda1** (indicar partição selecionada)
 * Fartição Swap - **mkswap /dev/sda2** (indicar a partição selecionada)
