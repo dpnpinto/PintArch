@@ -122,7 +122,7 @@ O sistema está configurado vamos passar para dentro dele
 
 * **arch-chroot /mnt** (tudo o que é feito daqui para a frente é efetuado dentro já do sistema Arch instalado no disco)
 
-## Configurar data e hora do nosso sistema operativo
+## Configurar data e hora do novo sistema
 
 * **ln -sf /usr/share/zoneinfo/Região/Cidade /etc/localtime**
 * Zonas em /usr/share (efetuar ls para ver)
@@ -140,38 +140,46 @@ Conferir se a data ficou correta
 
 * **date**
 
-## Alterar o idioma do sistema
+## Alterar o idioma do novo sistema
 
 * **vim /etc/locale.gen** ( tirar o # comentário do idioma pretendido pt_PT* )
 * **locale-gen** (gerar o local tendo por base o ficheiro locale.gen)
 * **echo KEYMAP=pt-latin1 >> /etc/vconsole.conf** (colocar o mapa de teclas correto na configuração da consola)
 * **echo LANG=pt_PT.UTF-8 >> /etc/locale.conf** (defenir a variavel LANG adequadamente)
 
-## Configurações gerais do novo sistema operativo
+## Configurações gerais do novo sistema
 
 * **vim /etc/hostname** (colocar na primeira linha o nome do equipamento)
 * **passwd** (mudar a palavra passe do utilizador root)
 * **mkinitcpio -P** confirmar o ficheiro **/etc/mkinitcpio.conf** 
-### criar um novo utilizador
+
+### Criar um novo utilizador
 
 * **useradd -m -g users -G wheel,storage,power -s /bin/bash nomedoutilizador**
 * **passwd nomedoutilizador** (colocar palavra passe nesse utilizador)
+
+### Melhorar o pacman
+
 * Editar o **pacman.conf** em /etc e colocar:
 - VerbosePkgLists (descritivo dos pacotes)
 - ParallelDownloads = 5 (descarregar 5 ficheiros em simultaneo)
 - ILoveCandy (para ficar em modo pacman C-o-)
 
-## Instalar pacotes uteis
+### Instalar outros pacotes uteis
 
-* **pacman -S man dosfstools os-prober mtools networkmanager** 
+exemplo:
+* **pacman -S man dosfstools os-prober mtools**
+
+### Ativar rede
+
+Ativar o inicio automatico do serviço de comunicações e verificar serviços com arranque automático 
 * Ativar networkmanager (systemd) **sudo systemctl enable NetworkManager.service**
-
 * systemctl list-unit-files --state=enabled
 
-## Instalar o GRUB (Boot Loader)
+## Instalar o GRUB
 
-* **dmesg | grep "EFI v"** (verificar se o sistema arrancou com EFI)
-* **ls /sys/firmware/efi/efivars** (outra forma se não existe não é EFI)
+* **dmesg | grep EFI** (verificar se o sistema arrancou com EFI)
+* **ls /sys/firmware/efi/efivars** (outra forma de verificar se é EFI)
 
 ### Se for BIOS
 
@@ -185,7 +193,7 @@ Conferir se a data ficou correta
 * **grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=arch_grub --recheck** (instalar o GRUB na pasta efi)
 * **grub-mkconfig -o /boot/grub/grub.cfg** (gerar a configuração GRUB)
 
-# Feita instalação base
+## Concluir
 
 * **exit** (para sair do sistema instalado)
 * **umount** /mnt no live CD de instalação desmontar o /mnt que está no sda3
