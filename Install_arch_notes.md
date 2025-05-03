@@ -82,9 +82,8 @@ Se pretendermos ter uma /home separado
 * **mount /dev/sda1 /mnt/boot** (montar a partição boot apenas para EFI, em BIOS não montar partição)
 * **swapon /dev/sda2** (Ativando a swap)
 
-## verificar como ficou o sistema de ficheiros
-
-* **lsblk** (caso seja necessário corrigir ou alterar voltar aos pontos anteriores)
+* verificar como ficou o sistema de ficheiros
+ * **lsblk** (caso seja necessário corrigir ou alterar voltar aos pontos anteriores)
 
 ## Otimizar os mirrows para descarregar os pacotes
 
