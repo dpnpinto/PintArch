@@ -103,17 +103,6 @@ Se pretendermos ter uma /home separado
 Neste passo, instalaremos o metapacote base e o grupo base-devel, além do kernel Linux padrão do Arch, o firmware para hardware comum, o editor de texto “vim” e o NetworkManager
 * linux - instala o kernel estável (http://www.kernel.org). Pode-se instalar outro tipo, por exemplo o Zen Kernel, com **linux-zen**.
 * xpto-ucode intel-ucode/amd-ucode - atualziações de estabilidade e segurança da Intel/AMD 
-* Se necessário atualizar as chaves
-
-    pacman -Syy
-    pacman -S archlinux-keyring
-    pacman-key --populate archlinux
-    pacman-key --populate archlinux32 (apenas para o de 32 bit)  
-    pacman-key --refresh-keys
-    - Desativar a verificação (Arch32) colocar 'SigLevel = Never' em /etc/pacman.conf (não aconselhavel, perdes a verificação dos pacores)
-
-
-* systemctl list-unit-files --state=enabled
 
 ## Gerar a tabela de FSTAB
 
