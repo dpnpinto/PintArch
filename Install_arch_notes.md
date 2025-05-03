@@ -44,7 +44,7 @@ nota: o traço (**-**) no teclado em ingles é na tecla do apóstrofo (**'**)
 
 * **timedatectl set-ntp true**
 
-## Configuração do disco
+## Configurar o disco
 * **fdisk -l** (listar todos os discos disponiveis)
 * **fdisk -l /dev/discopretendido** (ver todas as partições no disco)
 * **cfdisk /dev/discopretendido** (criar as partições pretendidas)
@@ -70,7 +70,7 @@ Definir os tipos de sistema de ficheiros
 Se pretendermos ter uma /home separado
 * /dev/sda4 (todo o resto para o /home)
 
-## Formatar as partições
+## Formatar disco
 
 * Partição de boot - **mkfs.fat -F32 /dev/sda1** (indicar partição selecionada)
 * Fartição Swap - **mkswap /dev/sda2** (indicar a partição selecionada)
