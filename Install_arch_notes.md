@@ -11,6 +11,7 @@
 * [Montagem do sistema](#Montagem-do-sistema)
 * [Otimizar mirrorlist](#Otimizar-mirrorlist)
 * [Instalar a base do Arch Linux](#Instalar-a-base-do-Arch-Linux)
+* [Gerar a tabela FSTAB](#Gerar-a-tabela-FSTAB)
 
 
 ## BASH Arch Install PintArch
@@ -100,15 +101,16 @@ Se pretendermos ter uma /home separado
 * **pacstrap -K /mnt base base-devel linux linux-firmware vim networkmanager "xpto"-ucode**
    * Nota : xpto -> depnde do CPU que estás a utilizar mas convem instalar o microcódigo especifico. 
 * -K inicia as chaves do pacman e não utiliza as do host de instalação
-Neste passo, instalaremos o metapacote base e o grupo base-devel, além do kernel Linux padrão do Arch, o firmware para hardware comum, o editor de texto “vim” e o NetworkManager
+Neste passo, instalaremos o metapacote base e o grupo base-devel, além do kernel Linux padrão do Arch, o firmware para hardware comum, o editor de texto (vim) e comunicaçoes (NetworkManager)
 * linux - instala o kernel estável (http://www.kernel.org). Pode-se instalar outro tipo, por exemplo o Zen Kernel, com **linux-zen**.
-* xpto-ucode intel-ucode/amd-ucode - atualziações de estabilidade e segurança da Intel/AMD 
+* xpto-ucode - intel-ucode/amd-ucode, atualziações de estabilidade e segurança da Intel/AMD 
 
-## Gerar a tabela de FSTAB
+## Gerar a tabela FSTAB
 
 Após instalar os pacotes essenciais é necessário gerar a tabela FSTAB, que vai dar a indicação ao sistema onde estão montadas cada uma das partições.
+
 * **genfstab -U /mnt >> /mnt/etc/fstab**
-   * Nota: **-U para colocar o UUID no lugar dos nomes dos devices para gatantir que está sempre a utilizar o mesmo dispositivo**
+   * Nota: **-U para colocar o UUID no lugar dos nomes (-L) dos devices para gatantir mais fiabilidade**
 
 Devem sempre verificar se a tabela está correta
 * **cat /mnt/etc/fstab**
