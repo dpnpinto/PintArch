@@ -83,7 +83,7 @@ Se pretendermos ter uma /home separado
 * **swapon /dev/sda2** (Ativando a swap)
 
 * verificar como ficou o sistema de ficheiros
- * **lsblk** (caso seja necessário corrigir ou alterar voltar aos pontos anteriores)
+  * **lsblk** (caso seja necessário corrigir ou alterar voltar aos pontos anteriores)
 
 ## Otimizar os mirrows para descarregar os pacotes
 
