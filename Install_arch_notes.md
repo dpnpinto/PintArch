@@ -12,6 +12,7 @@
 * [Otimizar mirrorlist](#Otimizar-mirrorlist)
 * [Instalar a base do Arch Linux](#Instalar-a-base-do-Arch-Linux)
 * [Gerar a tabela FSTAB](#Gerar-a-tabela-FSTAB)
+* [Entrar no novo sistema](#Entrar-no-novo-sistema)
 
 
 ## BASH Arch Install PintArch
@@ -115,7 +116,9 @@ Após instalar os pacotes essenciais é necessário gerar a tabela FSTAB, que va
 Devem sempre verificar se a tabela está correta
 * **cat /mnt/etc/fstab**
 
-## O sistema está configurado vamos passar para dentro dele
+## Entrar no novo sistema
+
+O sistema está configurado vamos passar para dentro dele
 
 * **arch-chroot /mnt** (tudo o que é feito daqui para a frente é efetuado dentro já do sistema Arch instalado no disco)
 
