@@ -1,6 +1,6 @@
 # Como fazer uma instalação manual do Arch Linux - Utilizando a ISO oficial
 
-* [Instalação automatica do Arch](# Instalação automatica do Arch)
+* [Instalação automatica do Arch](## Instalação automatica do Arch)
 
 ## Instalação automatica do Arch
 
