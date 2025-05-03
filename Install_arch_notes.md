@@ -13,6 +13,7 @@
 * [Instalar a base do Arch Linux](#Instalar-a-base-do-Arch-Linux)
 * [Gerar a tabela FSTAB](#Gerar-a-tabela-FSTAB)
 * [Entrar no novo sistema](#Entrar-no-novo-sistema)
+* [Configurar data e hora do novo sistema](#Configurar-data-e-hora-do-novo sistema)
 
 
 ## BASH Arch Install PintArch
