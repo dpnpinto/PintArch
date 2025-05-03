@@ -1,6 +1,6 @@
 # Como fazer uma instalação manual do Arch Linux - Utilizando a ISO oficial
 
-* [Instalação automática do Arch](#Instalação-automática-do-Arch)
+* [Instalação aBASHdo Arch](#Instalação-BASH-do-Arch)
 * [Arch Linux Wiki e video](#Arch-Linux-Wiki-e-video)
 * [Colocar o teclado em PT de Portugal](#Colocar-o-teclado-em-PT-de-Portugal)
 * [Verificar se tem internet](#Verificar-se-tem-internet)
@@ -13,7 +13,7 @@
 * [Instalar a base do Arch Linux](#Instalar-a-base-do-Arch-Linux)
 
 
-## Instalação automática do Arch
+## Instalação BASH do Arch
 
 PintArch.sh disponivel em https://github.com/dpnpinto/PintArch
 
