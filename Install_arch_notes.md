@@ -20,7 +20,7 @@ nota: o traço (**-**) no teclado em ingles é na tecla do apóstrofo (**'**)
 
 * **ping -c 3 www.google.com**
 
-## Acertar o relogio
+## Acertar o relógio e data
 
 * **timedatectl set-ntp true**
 
