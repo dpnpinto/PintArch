@@ -2,12 +2,12 @@
 
 ## Minha versão de instalação automatica(BASH) do Arch
 
-PintArch.sh disponivel em [repositorio](https://github.com/dpnpinto/PintArch) 
+PintArch.sh disponivel em [repositório](https://github.com/dpnpinto/PintArch) 
 
 ## Consultar sempre a Arch Wiki para confirmação das opções disponiveis
 
- * https://wiki.archlinux.org/
- * https://www.youtube.com/watch?v=rUEnS1zj1DM - Exemplo
+* https://wiki.archlinux.org/
+* https://www.youtube.com/watch?v=rUEnS1zj1DM - Exemplo
 
 ## Colocar o teclado em PT de Portugal
 
