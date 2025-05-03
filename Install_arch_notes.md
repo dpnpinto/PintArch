@@ -6,6 +6,8 @@
 * [Verificar se tem internet](#Verificar-se-tem-internet)
 * [Para WIFI utilizar o iwctl](#Para-WIFI-utilizar-o-iwctl)
 * [Acertar o relógio e a data](#Acertar-o-relógio-e-a-data)
+* [Configuração do disco](#Configuração-do-disco)
+
 
 ## Instalação automática do Arch
 
