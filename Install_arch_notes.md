@@ -46,10 +46,10 @@ nota: o traço (**-**) no teclado em ingles é na tecla do apóstrofo (**'**)
 * **fdisk -l** (listar todos os discos disponiveis)
 * **fdisk -l /dev/discopretendido** (ver todas as partições no disco)
 * **cfdisk /dev/discopretendido** (criar as partições pretendidas)
-*  Recomenda-se o formato de tabela **GPT**
- * **GPT** - "GUID Partition Table"
- * **MBR** - "Master Boot Record"
-*  lsblk (para ver como ficaram as partições)
+* Recomenda-se o formato de tabela **GPT**
+  * **GPT** - "GUID Partition Table"
+  * **MBR** - "Master Boot Record"
+* lsblk (para ver como ficaram as partições)
 
 Exemplo:
 * /dev/sda1 (1G para o /boot e /boot/efi)
