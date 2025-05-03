@@ -3,7 +3,8 @@
 * [Instalação automática do Arch](#Instalação-automática-do-Arch)
 * [Arch Linux Wiki e video](#Arch-Linux-Wiki-e-video)
 * [Colocar o teclado em PT de Portugal](#Colocar-o-teclado-em-PT-de-Portugal)
-* 
+* [Verificar se tem internet](#Verificar-se-tem-internet)
+
 
 
 ## Instalação automática do Arch
@@ -22,13 +23,9 @@ PintArch.sh disponivel em https://github.com/dpnpinto/PintArch
 nota: o traço (**-**) no teclado em ingles é na tecla do apóstrofo (**'**)
 * Aumentar o tamanho da fonte, para verem melhor, **setfont ter-132n**
 
-## Ver se tem internet
+## Verificar se tem internet
 
 * **ping -c 3 www.google.com**
-
-## Acertar o relógio e data
-
-* **timedatectl set-ntp true**
 
 ## Se pretender utilizar o WIFI utilizar o iwctl
 **iwctl**
@@ -36,6 +33,10 @@ nota: o traço (**-**) no teclado em ingles é na tecla do apóstrofo (**'**)
 * station nomedispositivo scan (ver as redes disponiveis)
 * station nomedodispositivo get-network (listar as redes)
 * station nomedodispositivo connect nomedarede (por fim para se ligar à rede WIFI)
+
+## Acertar o relógio e data
+
+* **timedatectl set-ntp true**
 
 ## Configuração do disco
 * **fdisk -l** (listar todos os discos disponiveis)
