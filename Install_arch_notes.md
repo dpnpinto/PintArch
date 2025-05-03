@@ -53,7 +53,7 @@ Exemplo:
 * /dev/sda3 (30GB para /, root)
 
 verificar se tem sistema EFI ou BIOS
-* dmesg | grep "EFI v"
+* dmesg | grep EFI
 * ls /sys/firmware/efi/efivars (outra forma de ver se arrancou por EFI)
 
 Definir os tipos de sistema de ficheiros
@@ -68,7 +68,7 @@ Se pretendermos ter uma /home separado
 
 * Partição de boot - **mkfs.fat -F32 /dev/sda1** (indicar partição selecionada)
 * Fartição Swap - **mkswap /dev/sda2** (indicar a partição selecionada)
-* Partições do sistema **mkfs.ext4 /dev/sda3** (indicar as partição) 
+* Partições do sistema **mkfs.ext4 /dev/sda3** (indicar a/s partição/ões) 
 
 ## Pontos de montagem  do sistema
 
