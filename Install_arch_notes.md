@@ -9,7 +9,8 @@
 * [Configuração do disco](#Configuração-do-disco)
 * [Formatar as partições](#Formatar-as-partições)
 * [Montagem do sistema](#Montagem-do-sistema)
-* [Otimizar os repositórios](#Otimizar-os-repositórios)
+* [Otimizar mirrorlist](#Otimizar-mirrorlist)
+* [Instalar a base do Arch Linux](#Instalar-a-base-do-Arch-Linux)
 
 
 ## Instalação automática do Arch
@@ -86,14 +87,14 @@ Se pretendermos ter uma /home separado
 * verificar como ficou o sistema de ficheiros
   * **lsblk** (caso seja necessário corrigir ou alterar voltar aos pontos anteriores)
 
-## Otimizar os repositórios
+## Otimizar mirrorlist
 
 * **vim /etc/pacman.d/mirrorlist** (se não tiver instalado o vim instalar o editor ou utilizar outro)
 * De forma automatica
    - pacman -Sy reflector
    - reflector --latest 5 --sort rate --save /etc/pacman.d/mirrorlist
 
-## Instalar os pacotes base do Arch Linux
+## Instalar a base do Arch Linux
 
 * **pacstrap -K /mnt base base-devel linux linux-firmware vim networkmanager "xpto"-ucode**
    * Nota : xpto -> depnde do CPU que estás a utilizar mas convem instalar o microcódigo especifico. 
