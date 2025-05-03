@@ -2,11 +2,13 @@
 
 * [Instalação automática do Arch](#Instalação-automática-do-Arch)
 * [Arch Linux Wiki e video](#Arch-Linux-Wiki-e-video)
+* [Colocar o teclado em PT de Portugal](#Colocar-o-teclado-em-PT-de-Portugal)
+* 
 
 
 ## Instalação automática do Arch
 
-PintArch.sh disponivel em [repositório](https://github.com/dpnpinto/PintArch) 
+PintArch.sh disponivel em https://github.com/dpnpinto/PintArch
 
 ## Arch Linux Wiki e video
 
