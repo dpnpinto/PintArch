@@ -27,7 +27,7 @@ nota: o traço (**-**) no teclado em ingles é na tecla do apóstrofo (**'**)
 
 * **ping -c 3 www.google.com**
 
-## Se pretender utilizar o WIFI utilizar o iwctl
+## Para WIFI utilizar o iwctl
 **iwctl**
 * device list (para saber o nome do dispositivo)
 * station nomedispositivo scan (ver as redes disponiveis)
