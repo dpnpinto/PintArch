@@ -9,6 +9,7 @@
 * [Configuração do disco](#Configuração-do-disco)
 * [Formatar as partições](#Formatar-as-partições)
 * [Montagem do sistema](#Montagem-do-sistema)
+* [Otimizar os repositórios](#Otimizar-os-repositórios)
 
 
 ## Instalação automática do Arch
@@ -85,7 +86,7 @@ Se pretendermos ter uma /home separado
 * verificar como ficou o sistema de ficheiros
   * **lsblk** (caso seja necessário corrigir ou alterar voltar aos pontos anteriores)
 
-## Otimizar os mirrows para descarregar os pacotes
+## Otimizar os repositórios
 
 * **vim /etc/pacman.d/mirrorlist** (se não tiver instalado o vim instalar o editor ou utilizar outro)
 * De forma automatica
