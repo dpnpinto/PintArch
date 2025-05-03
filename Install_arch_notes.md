@@ -7,7 +7,8 @@
 * [Para WIFI utilizar o iwctl](#Para-WIFI-utilizar-o-iwctl)
 * [Acertar o relógio e a data](#Acertar-o-relógio-e-a-data)
 * [Configuração do disco](#Configuração-do-disco)
-* [Formatar partições](#Formatar-as-partições)
+* [Formatar as partições](#Formatar-as-partições)
+* [Montagem do sistema](#Montagem-do-sistema)
 
 
 ## Instalação automática do Arch
@@ -73,13 +74,13 @@ Se pretendermos ter uma /home separado
 * Fartição Swap - **mkswap /dev/sda2** (indicar a partição selecionada)
 * Partições do sistema **mkfs.ext4 /dev/sda3** (indicar a/s partição/ões) 
 
-## Pontos de montagem  do sistema
+## Montagem do sistema
 
 * **mount /dev/sda3 /mnt** (partição e raiz do sistema)
 * **mkdir /mnt/home**  (criar diretorio home)
 * **mkdir /mnt/boot** (criar diretorio boot)
 * **mkdir /mnt/boot/efi** (criar diretorio UEFI para o caso de utilizar UEFI)
-* **mount /dev/sda1 /mnt/boot** (montado a partição boot apenas para EFI em BIOS GPT não montar partição)
+* **mount /dev/sda1 /mnt/boot** (montado a partição boot apenas para EFI em BIOS não montar partição)
 * **mount /dev/sda1 /mnt/boot/efi** (montado a partição UEFI se for utilizar)
 * **swapon /dev/sda2** (Ativando a swap)
 
