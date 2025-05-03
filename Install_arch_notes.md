@@ -14,6 +14,7 @@
 * [Gerar a tabela FSTAB](#Gerar-a-tabela-FSTAB)
 * [Entrar no novo sistema](#Entrar-no-novo-sistema)
 * [Configurar data e hora do novo sistema](#Configurar-data-e-hora-do-novo-sistema)
+* [Alterar o idioma do novo sistema](#Alterar-o-idioma-do-novo-sistema)
 
 
 ## BASH Arch Install PintArch
