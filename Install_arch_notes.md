@@ -17,6 +17,7 @@
 * [Alterar o idioma do novo sistema](#Alterar-o-idioma-do-novo-sistema)
 * [Complementar novo sistema](#Complementar-novo-sistema)
 * [Instalar o GRUB](#Instalar-o-GRUB)
+* [Concluir sistema base Arch Linux](#Concluir-sistema-base-Arch-Linux)
 
 
 ## BASH Arch Install PintArch
@@ -198,7 +199,7 @@ Ativar o inicio automatico do serviço de comunicações e verificar serviços c
 * **grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=arch_grub --recheck** (instalar o GRUB na pasta efi)
 * **grub-mkconfig -o /boot/grub/grub.cfg** (gerar a configuração GRUB)
 
-## Concluir
+## Concluir sistema base Arch Linux
 
 * **exit** (para sair do sistema instalado)
 * **umount** /mnt no live CD de instalação desmontar o /mnt que está no sda3
