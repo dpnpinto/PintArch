@@ -162,10 +162,10 @@ Conferir se a data ficou correta
 
 ### Melhorar o pacman
 
-* Editar o **pacman.conf** em /etc e colocar:
-- VerbosePkgLists (descritivo dos pacotes)
-- ParallelDownloads = 5 (descarregar 5 ficheiros em simultaneo)
-- ILoveCandy (para ficar em modo pacman C-o-)
+* Editar o **pacman.conf** em /etc e descomentar:
+  * VerbosePkgLists (descritivo dos pacotes)
+  * ParallelDownloads = 5 (descarregar 5 ficheiros em simultaneo)
+  * ILoveCandy (adicionar para ficar em modo pacman C-o-)
 
 ### Instalar outros pacotes uteis
 
