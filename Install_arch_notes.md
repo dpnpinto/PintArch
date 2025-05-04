@@ -15,6 +15,7 @@
 * [Entrar no novo sistema](#Entrar-no-novo-sistema)
 * [Configurar data e hora do novo sistema](#Configurar-data-e-hora-do-novo-sistema)
 * [Alterar o idioma do novo sistema](#Alterar-o-idioma-do-novo-sistema)
+* [Complementar novo sistema](#Complementar-novo-sistema)
 
 
 ## BASH Arch Install PintArch
@@ -149,7 +150,7 @@ Conferir se a data ficou correta
 * **echo KEYMAP=pt-latin1 >> /etc/vconsole.conf** (colocar o mapa de teclas correto na configuração da consola)
 * **echo LANG=pt_PT.UTF-8 >> /etc/locale.conf** (defenir a variavel LANG adequadamente)
 
-## Configurações gerais do novo sistema
+## Complementar novo sistema
 
 * **vim /etc/hostname** (colocar na primeira linha o nome do equipamento)
 * **passwd** (mudar a palavra passe do utilizador root)
