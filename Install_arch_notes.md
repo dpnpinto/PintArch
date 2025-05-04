@@ -16,6 +16,7 @@
 * [Configurar data e hora do novo sistema](#Configurar-data-e-hora-do-novo-sistema)
 * [Alterar o idioma do novo sistema](#Alterar-o-idioma-do-novo-sistema)
 * [Complementar novo sistema](#Complementar-novo-sistema)
+* [Instalar o GRUB](#Instalar-o-GRUB)
 
 
 ## BASH Arch Install PintArch
