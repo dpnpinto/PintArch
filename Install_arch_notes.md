@@ -165,6 +165,7 @@ Conferir se a data ficou correta
 * Editar o **pacman.conf** em /etc e descomentar:
   * VerbosePkgLists (descritivo dos pacotes)
   * ParallelDownloads = 5 (descarregar 5 ficheiros em simultaneo)
+  * Color (cores no pacman)
   * ILoveCandy (adicionar para ficar em modo pacman C-o-)
 
 ### Instalar outros pacotes uteis
