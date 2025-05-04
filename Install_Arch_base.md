@@ -205,5 +205,6 @@ Ativar o inicio automatico do serviço de comunicações e verificar serviços c
 * **umount** /mnt no live CD de instalação desmontar o /mnt que está no sda3
 * **swapoff /dev/sda2** desligar a swap
 * tirar a pen/cd de arranque do Arch do computador e **reboot**
+  
 Depois de arrancar
 * Entrar com root
