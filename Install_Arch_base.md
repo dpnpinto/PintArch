@@ -125,7 +125,8 @@ Devem sempre verificar se a tabela está correta
 
 O sistema está configurado vamos passar para dentro dele
 
-* **arch-chroot /mnt** (tudo o que é feito daqui para a frente é efetuado dentro já do sistema Arch instalado no disco)
+* **arch-chroot /mnt**
+  *Nota: tudo o que é feito daqui para a frente é efetuado dentro já do sistema Arch instalado no disco)
 
 ## Configurar data e hora do novo sistema
 
@@ -166,7 +167,7 @@ Em /etc temos de ter os seguintes ficheiros:
 ### Criar um novo utilizador
 
 * **useradd -m -g users -G wheel,storage,power -s /bin/bash nomedoutilizador**
-  * Notas: -m para criar diretório home do utilizador, -g para defenir grupo primário, -G para defenir grupos segundários e -s para defenir o Shell padrão
+  *Notas: -m para criar diretório home do utilizador, -g para defenir grupo primário, -G para defenir grupos segundários e -s para defenir o Shell padrão
 * **passwd nomedoutilizador** (colocar palavra passe nesse utilizador)
 
 ### Melhorar o pacman
@@ -187,6 +188,7 @@ exemplo:
 Ativar o inicio automatico do serviço de comunicações e verificar serviços com arranque automático 
 * Ativar networkmanager (systemd) **sudo systemctl enable NetworkManager.service**
 * systemctl list-unit-files --state=enabled
+  *Nota: Podem sempre ativar e desativar o serviço a qualquer momento
 
 ## Instalar o GRUB
 
