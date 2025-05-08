@@ -166,6 +166,9 @@ Em /etc temos de ter os seguintes ficheiros:
 
 ### Criar um novo utilizador
 
+* Se for para criar um utilizador com permissões de administração por sudo
+  * Instalar o sudo **pacman -S sudo**
+  * Editar o ficheiro de sudo (/etc/sudoers) e tirar o **#** em **%wheel ALL=(ALL:ALL) ALL**, para que possa associar o utilizador a esse grupo de admin. 
 * **useradd -m -g users -G wheel,storage,power -s /bin/bash nomedoutilizador**
   * Notas: -m para criar diretório home do utilizador, -g para defenir grupo primário, -G para defenir grupos segundários e -s para defenir o Shell padrão
 * **passwd nomedoutilizador** (colocar palavra passe nesse utilizador)
