@@ -165,7 +165,7 @@ Em /etc temos de ter os seguintes ficheiros:
 ### Criar um novo utilizador
 
 * **useradd -m -g users -G wheel,storage,power -s /bin/bash nomedoutilizador**
-Notas: -m para criar diretório home do utilizador, -g para defenir grupo primário, -G para defenir grupos segundários e -s para defenir o Shell padrão
+  * Notas: -m para criar diretório home do utilizador, -g para defenir grupo primário, -G para defenir grupos segundários e -s para defenir o Shell padrão
 * **passwd nomedoutilizador** (colocar palavra passe nesse utilizador)
 
 ### Melhorar o pacman
