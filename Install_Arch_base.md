@@ -186,7 +186,7 @@ exemplo:
 ### Ativar rede
 
 Ativar o inicio automatico do serviço de comunicações e verificar serviços com arranque automático 
-* Ativar networkmanager (systemd) **sudo systemctl enable NetworkManager.service**
+* Ativar networkmanager (systemd) **systemctl enable NetworkManager.service**
 * systemctl list-unit-files --state=enabled
   *Nota: Podem sempre ativar e desativar o serviço a qualquer momento
 
