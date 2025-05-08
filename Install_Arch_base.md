@@ -126,7 +126,7 @@ Devem sempre verificar se a tabela está correta
 O sistema está configurado vamos passar para dentro dele
 
 * **arch-chroot /mnt**
-  *Nota: tudo o que é feito daqui para a frente é efetuado dentro já do sistema Arch instalado no disco)
+  * Nota: tudo o que é feito daqui para a frente é efetuado dentro já do sistema Arch instalado no disco)
 
 ## Configurar data e hora do novo sistema
 
@@ -137,7 +137,7 @@ O sistema está configurado vamos passar para dentro dele
 No caso dos Açores
 
 * **ln -sf /usr/share/zoneinfo/Atlantic/Azores /etc/localtime**
-  *Notas: -s para criar um link simbolico e o -f para forçar, se já existir apaga a cria novo
+  * Notas: -s para criar um link simbolico e o -f para forçar, se já existir apaga a cria novo
 Sincronizar o relógio
 
 * **hwclock --systohc** - Sicronizar o relógio de Hardware com os valores do relógio do sistema
@@ -167,7 +167,7 @@ Em /etc temos de ter os seguintes ficheiros:
 ### Criar um novo utilizador
 
 * **useradd -m -g users -G wheel,storage,power -s /bin/bash nomedoutilizador**
-  *Notas: -m para criar diretório home do utilizador, -g para defenir grupo primário, -G para defenir grupos segundários e -s para defenir o Shell padrão
+  * Notas: -m para criar diretório home do utilizador, -g para defenir grupo primário, -G para defenir grupos segundários e -s para defenir o Shell padrão
 * **passwd nomedoutilizador** (colocar palavra passe nesse utilizador)
 
 ### Melhorar o pacman
