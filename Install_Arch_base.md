@@ -129,8 +129,8 @@ O sistema está configurado vamos passar para dentro dele
 ## Configurar data e hora do novo sistema
 
 * **ln -sf /usr/share/zoneinfo/Região/Cidade /etc/localtime**
-* Zonas em /usr/share (efetuar ls para ver)
-* Também pode utilizar **timedatectl list-timezones | grep Azores**
+* Zonas em /usr/share/zoneinfo (efetuar ls para ver ou autocomplete no comando ln)
+* Podem também utilizar **timedatectl list-timezones | grep Azores**
 
 No caso dos Açores
 
@@ -138,7 +138,7 @@ No caso dos Açores
 
 Sincronizar o relógio
 
-* **hwclock \--systohc**
+* **hwclock --systohc**
 
 Conferir se a data ficou correta
 
