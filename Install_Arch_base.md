@@ -135,17 +135,22 @@ O sistema está configurado vamos passar para dentro dele
 No caso dos Açores
 
 * **ln -sf /usr/share/zoneinfo/Atlantic/Azores /etc/localtime**
-
+Notas: -s para criar um link simbolico e o -f para forçar, se já existir apaga a cria novo
 Sincronizar o relógio
 
-* **hwclock --systohc**
+* **hwclock --systohc** - Sicronizar o relógio de Hardware com os valores do relógio do sistema
+Nota: --systohc significa "system to hardware clock"
 
 Conferir se a data ficou correta
 
 * **date**
 
 ## Alterar o idioma do novo sistema
-
+Em /etc temos de ter os seguintes ficheiros:
+- locale.gen - Define quais os locais (locales) que estão disponíveis para serem utilizados;
+- vconsole.conf - Este ficheiro configura a consola virtual (os TTYs), tem as variaveis KEYMAP e FONT;
+- locale.conf - Defefinição da variaveis no inicio do sistema pelo SystemD, vamos colocar a variavel LANG.
+--
 * **vim /etc/locale.gen** ( tirar o # comentário do idioma pretendido pt_PT* )
 * **locale-gen** (gerar o local tendo por base o ficheiro locale.gen)
 * **echo KEYMAP=pt-latin1 >> /etc/vconsole.conf** (colocar o mapa de teclas correto na configuração da consola)
