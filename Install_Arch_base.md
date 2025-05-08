@@ -1,4 +1,4 @@
-# Como fazer instalação base do Arch Linux  - Utilizando BASH e a ISO oficial
+# Como fazer instalação base do Arch Linux
 By  https://dpnpinto.github.io
 
 * [BASH Arch Install PintArch](#BASH-Arch-Install-PintArch)
