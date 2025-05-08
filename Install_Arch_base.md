@@ -135,11 +135,11 @@ O sistema está configurado vamos passar para dentro dele
 No caso dos Açores
 
 * **ln -sf /usr/share/zoneinfo/Atlantic/Azores /etc/localtime**
-Notas: -s para criar um link simbolico e o -f para forçar, se já existir apaga a cria novo
+  *Notas: -s para criar um link simbolico e o -f para forçar, se já existir apaga a cria novo
 Sincronizar o relógio
 
 * **hwclock --systohc** - Sicronizar o relógio de Hardware com os valores do relógio do sistema
-Nota: --systohc significa "system to hardware clock"
+  *Nota: --systohc significa "system to hardware clock"
 
 Conferir se a data ficou correta
 
