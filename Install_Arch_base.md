@@ -87,7 +87,6 @@ Se pretendermos ter uma /home separado
 ## Montagem do sistema
 
 * **mount /dev/sda3 /mnt** (partição e raiz do sistema)
-* **mkdir /mnt/boot** (criar diretorio boot)
 * **mkdir /mnt/boot/efi** (criar apenas para o caso de ser EFI)
 * **mount /dev/sda1 /mnt/boot** (montar a partição boot apenas para EFI, em BIOS não montar partição)
 * **swapon /dev/sda2** (Ativando a swap)
