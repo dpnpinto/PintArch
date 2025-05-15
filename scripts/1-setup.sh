@@ -88,7 +88,6 @@ sed -i 's/^#pt_PT.UTF-8 UTF-8/pt_PT.UTF-8 UTF-8/' /etc/locale.gen # remove the c
 locale-gen # generate local
 
 timedatectl --no-ask-password set-timezone ${TIMEZONE} # set my time zone
-timedatectl --no-ask-password set-ntp -1 # set azores time ;)
 timedatectl set-ntp true # sincronize stuff
 
 # Set keymaps
