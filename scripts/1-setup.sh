@@ -86,15 +86,13 @@ echo -ne "
 "
 sed -i 's/^#pt_PT.UTF-8 UTF-8/pt_PT.UTF-8 UTF-8/' /etc/locale.gen # remove the coment from line pt_PT.UTF-8 UTF-8
 locale-gen # generate local
-
-timedatectl --no-ask-password set-timezone ${TIMEZONE} # set my time zone
-timedatectl set-ntp true # sincronize stuff
-
 # Set keymaps
 echo KEYMAP=pt-latin1 >> /etc/vconsole.conf 
 # Set Laguage
 echo LANG=pt_PT.UTF-8 >> /etc/locale.conf
 ln -s /usr/share/zoneinfo/${TIMEZONE} /etc/localtime
+timedatectl --no-ask-password set-timezone ${TIMEZONE} # set my time zone
+timedatectl set-ntp true # sincronize stuff
 hwclock --systohc #sicronize
 date # check
 counter
