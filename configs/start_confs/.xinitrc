@@ -4,7 +4,7 @@
 # by https://dpnpinto.github.io
 
 setxkbmap pt &
-feh --bg-scale ~/.config/backimg/space_arch.png &
+feh --bg-center ~/.config/backimg/space_arch.png &
 dwmblocks &
 picom -b
 exec dwm
