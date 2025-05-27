@@ -4,7 +4,6 @@ binutils
 dosfstools
 linux-headers
 noto-fonts-emoji
-ttf-jetbrains-mono
 ttf-jetbrains-mono-nerd
 usbutils
 xdg-user-dirs
