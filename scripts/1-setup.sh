@@ -141,7 +141,7 @@ if grep -E "GenuineIntel" <<< ${proc_type}; then
     pacman -S --noconfirm --needed intel-ucode
     proc_ucode=intel-ucode.img
 elif grep -E "AuthenticAMD" <<< ${proc_type}; then
-    echo "Tens um AMD - A installing AMD microcode"
+    echo "Tens um AMD - A instalar AMD microcode"
     pacman -S --noconfirm --needed amd-ucode
     proc_ucode=amd-ucode.img
 fi
