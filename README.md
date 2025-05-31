@@ -90,6 +90,7 @@ From the start of an Arch image, get it here [https://archlinux.org/download/](h
 * [Ollama](https://ollama.com) - For my personal AI 
 * [docker](https://www.docker.com) - For managing containers (with service start by sockts)
 * [flatpak](https://flatpak.org) - Generic distribute aplications to the entire Linux desktop
+* [inxi](https://codeberg.org/smxi/inxi) - Ultimate system information tool
 * [mtr](https://www.bitwizard.nl/mtr/) - Ping and traceroot in one better command
 * [iperf](https://github.com/esnet/iperf) - Test bandwith between sites
 * [tcpdump](https://www.tcpdump.org/) - Lightweight paket capture
