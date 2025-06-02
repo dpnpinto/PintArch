@@ -3,7 +3,7 @@
 #
 # by https://dpnpinto.github.io
 
-setxkbmap pt &
+setxkbmap pt
 feh --bg-center ~/.config/backimg/space_arch.png &
 dwmblocks &
 picom -b
