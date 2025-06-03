@@ -123,8 +123,10 @@ if [[ $INSTALL_TYPE == "TOTAL" ]]; then
     echo OBS Studio - Ultima versão do OBS
     sudo pacman -S --noconfirm --needed obs-studio
     # Install Video Editing Tool
-    echo     kdenlive - Editor de video
+    echo kdenlive - Editor de video
     sudo pacman -S --noconfirm --needed kdenlive
+    echo ImageMagick - Magick with your images
+    sudo pacman -S --noconfirm --needed imagemagick
     #echo Docker - Gestão de conteiners
     # Installl Docker in a Arch Linux workstation 
     #sudo pacman -S --noconfirm --needed docker
