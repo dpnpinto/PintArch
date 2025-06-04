@@ -5,6 +5,6 @@
 
 setxkbmap pt
 feh --bg-center ~/.config/backimg/space_arch.png &
-dwmblocks &
+# dwmblocks & it starts with dwm
 picom -b
 exec dwm
