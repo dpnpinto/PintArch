@@ -23,7 +23,7 @@ unzip
 code
 gdb
 mpv
-lsd
+eza
 bat
 dfrs
 axel
