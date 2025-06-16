@@ -86,6 +86,7 @@ From the start of an Arch image, get it here [https://archlinux.org/download/](h
 * [system-config-printer](https://github.com/OpenPrinting/system-config-printer) - GUI for printing configuration
 * [calibre](https://calibre-ebook.com/) - Ebook reader
 * [libreoffice-fresh](https://www.libreoffice.org) - Office suit for Linux
+* [drawio-desktop](https://app.diagrams.net) - Diagrams
 * [Festival](http://festvox.org/festival/) - For Robotic voice to my personal AI (as I like), nice TTS
 * [Ollama](https://ollama.com) - For my personal AI 
 * [docker](https://www.docker.com) - For managing containers (with service start by sockts)
