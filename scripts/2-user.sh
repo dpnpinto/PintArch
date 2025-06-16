@@ -127,6 +127,8 @@ if [[ $INSTALL_TYPE == "TOTAL" ]]; then
     sudo pacman -S --noconfirm --needed kdenlive
     echo ImageMagick - Magick with your images
     sudo pacman -S --noconfirm --needed imagemagick
+    echo Draw.io - Diagrams
+    sudo pacman -S --noconfirm --needed drawio-desktop
     #echo Docker - Gestão de conteiners
     # Installl Docker in a Arch Linux workstation 
     #sudo pacman -S --noconfirm --needed docker
