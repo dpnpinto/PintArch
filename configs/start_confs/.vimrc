@@ -1,3 +1,3 @@
 set number
-colorscheme darkblue
+colorscheme default
 syntax on
