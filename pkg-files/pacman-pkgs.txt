@@ -9,7 +9,7 @@ usbutils
 xdg-user-dirs
 fastfetch
 btop
-dfrs
+dysk
 figlet
 tree
 lf
