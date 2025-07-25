@@ -71,7 +71,7 @@ From the start of an Arch image, get it here [https://archlinux.org/download/](h
 * [thunderbird](https://www.thunderbird.net/) - Email client
 * [bat](https://github.com/sharkdp/bat) - like cat but with colors
 * [lsd](https://github.com/lsd-rs/lsd) - like ls but more control with colors
-* [dfrs](https://github.com/anthraxx/dfrs) - Like df but more human like and with color (it run like df I have an alias to it)
+* [dysk](https://github.com/Canop/dysk) - Like df but more human like and with color (it run like df I have an alias to it)
 * [axel](https://github.com/axel-download-accelerator/axel) - Parallel downloads
 * [ncdu](https://dev.yorhel.nl/ncdu) - Disk utilization (alias du)
 * [tealdeer(tldr)](https://github.com/tealdeer-rs/tealdeer) - To long Don't Read (tldr) implemented in rust ;)
