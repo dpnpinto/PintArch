@@ -70,7 +70,7 @@ From the start of an Arch image, get it here [https://archlinux.org/download/](h
 * [vivaldi](https://vivaldi.com) - Web Browser that I like, with DuckDuckGo as search engine ;) (at least from a european company)
 * [thunderbird](https://www.thunderbird.net/) - Email client
 * [bat](https://github.com/sharkdp/bat) - like cat but with colors
-* [lsd](https://github.com/lsd-rs/lsd) - like ls but more control with colors
+* [eza](https://github.com/eza-community/eza) - like ls but more control with colors
 * [dysk](https://github.com/Canop/dysk) - Like df but more human like and with color (it run like df I have an alias to it)
 * [axel](https://github.com/axel-download-accelerator/axel) - Parallel downloads
 * [ncdu](https://dev.yorhel.nl/ncdu) - Disk utilization (alias du)
