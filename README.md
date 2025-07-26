@@ -8,7 +8,7 @@ From the start of an Arch image, get it here [https://archlinux.org/download/](h
   * **curl -LO https://raw.githubusercontent.com/dpnpinto/PintArch/main/install.sh**
   * **bash install.sh**
 - Or just do it yourself:
-  * **loakeys pt-laint1**
+  * **loakeys pt-latint1**
   * **pacman -Sy git**
   * **git clone https://github.com/dpnpinto/PintArch**, the instalation script is the BASH file **PintArch.sh** 
 - Remember that this is made by me to me, use at your own risk, allways changing something here.
