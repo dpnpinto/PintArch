@@ -1,4 +1,4 @@
-:set nocompatible
+set nocompatible
 set number
 colorscheme default
 filetype on
