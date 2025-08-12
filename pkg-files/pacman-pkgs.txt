@@ -12,7 +12,7 @@ btop
 dysk
 figlet
 tree
-lf
+yazi
 inxi
 openssh
 --END OF MINIMA INSTALL--
