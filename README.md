@@ -56,7 +56,7 @@ From the start of an Arch image, get it here [https://archlinux.org/download/](h
 * [maim](https://github.com/naelstrof/maim) - Make image the software that I use for screenshot 
 * [vim](https://www.vim.org) - The best editor
 * [pcmanfm](https://github.com/lxqt/pcmanfm-qt) - GUI file manager that I like, configure terminal (st %s), and dont forget the gvfs (RTFM)
-* [lf](https://github.com/gokcehan/lf) - Terminal file manager
+* [yazi](https://github.com/sxyazi/yazi) - Terminal file manager
 * [fzf](https://github.com/junegunn/fzf) - Fuzzy finder, for multiple use and find files
 * [tree](https://gitlab.com/OldManProgrammer/unix-tree) - Everybody knows tree
 * [figlet](http://www.figlet.org) - Need this ok, fancy ASCII names ;)
