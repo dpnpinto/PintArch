@@ -7,6 +7,7 @@ noto-fonts-emoji
 ttf-jetbrains-mono-nerd
 usbutils
 xdg-user-dirs
+bash-completion
 fastfetch
 btop
 dysk
