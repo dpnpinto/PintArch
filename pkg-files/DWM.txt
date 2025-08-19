@@ -28,6 +28,7 @@ bat
 dfrs
 axel
 ncdu
+ueberzugpp
 tealdeer
 zathura
 zathura-pdf-mupdf
