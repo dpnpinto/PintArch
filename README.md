@@ -53,6 +53,7 @@ From the start of an Arch image, get it here [https://archlinux.org/download/](h
 * [PintoST](https://github.com/dpnpinto/PintoST) - My Simple Terminal based on ST
 * [PintoDWMBlocks](https://github.com/dpnpinto/PintoDWMBlocks) - My task bar based on DWMBlocks
 ## At user level
+* [xdg-user-dirs](https://www.freedesktop.org/wiki/Software/xdg-user-dirs/) - Manage "well known" user directories like the desktop folder and the music folder. It also handles localization (i.e. translation) of the filenames.
 * [maim](https://github.com/naelstrof/maim) - Make image the software that I use for screenshot 
 * [vim](https://www.vim.org) - The best editor
 * [pcmanfm](https://github.com/lxqt/pcmanfm-qt) - GUI file manager that I like, configure terminal (st %s), and dont forget the gvfs (RTFM)
