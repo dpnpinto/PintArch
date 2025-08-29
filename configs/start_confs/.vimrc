@@ -1,9 +1,10 @@
-  set nocompatible
-  set t_Co=256
-  colorscheme retrobox
-  set background=dark
-  set number
-  filetype on
-  syntax on
-  set ignorecase
-  set wildmenu
+set nocompatible
+set t_Co=256
+colorscheme retrobox
+set background=dark
+set number
+set relativenumber
+filetype on
+syntax on
+set ignorecase
+set wildmenu
