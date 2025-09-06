@@ -4,6 +4,7 @@ colorscheme retrobox
 set background=dark
 set number
 set relativenumber
+set cursorline
 filetype on
 syntax on
 set ignorecase
