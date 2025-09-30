@@ -11,7 +11,7 @@ export TERM=st
 # Get some nie  aliases for colors and stuff
 
 alias ls='ls --color=auto'
-alias la='eza -alh --icons --git --group --color-scale --group-directories-first'
+alias la='eza -alh --icons --git --group --group-directories-first'
 alias ll='eza --icons'
 alias rm='rm -i'
 alias grep='grep --color=always'
