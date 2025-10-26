@@ -83,6 +83,8 @@ if [[ $DESKTOP_ENV == "DWM" ]]; then
   cd /home/$USERNAME/.config/PintoDWMBlocks
   sudo make clean install
   cp -r /home/$USERNAME/PintArch/configs/start_confs/.*  /home/$USERNAME/ # starting stuff
+  mkdir /home/$USERNAME/.config/fastfetch
+  cp -r /home/$USERNAME/PintArch/configs/fastfetch/*  /home/$USERNAME/.config/fastfetch # My fastfetch config
   mkdir /home/$USERNAME/.config/scripts # Scripts dir
   cp -r /home/$USERNAME/.config/PintoDWMBlocks/scripts/*  /home/$USERNAME/.config/scripts
   mkdir /home/$USERNAME/.config/backimg # Background images dir
