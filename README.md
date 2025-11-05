@@ -4,8 +4,8 @@
 -------------------------------------------------------------------------
 # **[PintArch](https://github.com/dpnpinto/PintArch/) - Ain't got no teeth, ain't got cavities.**
 From the start of an Arch image, get it here [https://archlinux.org/download/](https://archlinux.org/download/)
-- To install just use:
-  * **curl -sSL https://raw.githubusercontent.com/dpnpinto/PintArch/main/install.sh | bash**
+- To install just see:
+  * [Youtube Link](https://youtu.be/4bHXsEDwXgw?si=Z1IAu-EhXknN_o8S)
 - Or just do it yourself:
   * **loakeys pt-latint1**
   * **pacman -Sy git**
