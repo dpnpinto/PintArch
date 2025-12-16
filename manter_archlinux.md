@@ -47,7 +47,7 @@ Verificar tamanho: journalctl --disk-usage
 Limpar e deixar apenas as últimas 2 semanas:
 sudo journalctl --vacuum-time=2weeks
 
-5. Arquivos de Configuração (.pacnew)
+5) Arquivos de Configuração (.pacnew)
 Quando uma atualização muda um arquivo de configuração que você já editou, o Pacman não sobrescreve o seu. Ele cria um arquivo .pacnew. Você precisa verificar se há mudanças importantes.
 Ferramenta recomendada: pacdiff (vem no pacman-contrib).
 
@@ -55,10 +55,9 @@ sudo pacdiff
 
 Ele vai mostrar as diferenças e perguntar se você quer sobrescrever, manter o seu ou mesclar (merge). Na dúvida, pesquise antes de aceitar a mudança.
 
-6. A Rede de Segurança: Backups (Timeshift)
+6) A Rede de Segurança: Backups (Timeshift, não utilizo)
 Como o Arch é muito dinâmico, ter um "ponto de restauração" é essencial para não perder tempo de trabalho no Hotel ou na Sauna.
 Recomendação: Instale o Timeshift.
 
 sudo pacman -S timeshift
 Configure-o para fazer um "snapshot" diário ou semanal. Se uma atualização quebrar o sistema, você pode restaurar o estado anterior direto do GRUB (se configurado) ou via Live USB em minutos.
-USE COM CUIDO!!!!!!!!!
