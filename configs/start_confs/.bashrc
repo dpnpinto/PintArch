@@ -34,11 +34,11 @@ export MANROFFOPT="-P -c"
 #  Get git info in terminal
 
 function parse_git_dirty {
-  [[ $(git status --porcelain 2> /dev/null) ]] && echo "*"
+  [[ $(git status --porcelain 2> /dev/null) ]] && echo -e "-\uf126"
 }
 
 function parse_git_branch {
-  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/ (\1$(parse_git_dirty))/"
+  git branch --color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/ (\1$(parse_git_dirty))/"
 }
 
 PS1='\[$(tput setaf 2)\]\u\[$(tput setaf 1)\]@\[$(tput setaf 3)\]\h \[$(tput setaf 6)\]\w\[$(tput sgr0)\] $(parse_git_branch)'
