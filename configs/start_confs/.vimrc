@@ -3,7 +3,7 @@ set nocompatible "Vim more usefull, no vi full compatible
 filetype off "Don't detect file type
 set hlsearch "highlight searches
 set tabstop=2 "tabs with 2 spaces
-set siftwith=2 "tabs swift equal to 2 spaces 
+set shiftwidth=2 "tabs swift equal to 2 spaces 
 set expandtab "Convert tab to spaces
 set t_Co=256 "Teminal colors to 256
 colorscheme retrobox "set color scheme
