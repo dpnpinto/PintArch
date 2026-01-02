@@ -7,7 +7,7 @@ set shiftwidth=2 "tabs swift equal to 2 spaces
 set expandtab "Convert tab to spaces
 set t_Co=256 "Teminal colors to 256
 colorscheme retrobox "set color scheme
-set background=dark ""set back color to dark
+set background=dark "set back color to dark
 set number " Set numbers
 set relativenumber " Relativa numbers
 set wildmenu "set a more usefull menu
