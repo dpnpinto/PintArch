@@ -11,7 +11,7 @@ set background=dark "set back color to dark
 set number " Set numbers
 set relativenumber " Relativa numbers
 set wildmenu "set a more usefull menu
-set colorcolumn=80 "Mark that you don't whant to go over 80
+set colorcolumn=120 "Mark that you don't whant to go over 80
 syntax on "Syntax highlight 
 set cursorline "highlight cursor line
 set ignorecase "ignore case in search
