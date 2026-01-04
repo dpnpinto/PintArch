@@ -15,5 +15,6 @@ figlet
 tree
 yazi
 inxi
+vim-supertab
 openssh
 --END OF MINIMA INSTALL--
