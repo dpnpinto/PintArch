@@ -64,7 +64,7 @@ From the start of an Arch image, get it here [https://archlinux.org/download/](h
 * [fastfetch](https://github.com/fastfetch-cli/fastfetch) - Show, in a nice format, what is your config
 * [htop](https://htop.dev) e [btop](https://github.com/aristocratos/btop) - Visualize system resorces
 * [nvtop](https://github.com/Syllo/nvtop) - visualize nvidia resorces (I use a Nvidia Card) 
-* [code](https://github.com/microsoft/vscode) -Open Source version of  MS VS Studio Code
+* [zed](https://zed.dev) - Minimal code editor crafted for speed and collaboration with humans and AI
 * [mpv](https://mpv.io) - Player audio/video.
 * [zathura](https://pwmt.org/projects/zathura/) - Pdf document viewer
 * [gdb](https://www.sourceware.org/gdb/) - Debug programs for Linux
