@@ -19,7 +19,7 @@ breeze
 vivaldi
 thunderbird
 unzip
-code
+zed
 gdb
 mpv
 eza
