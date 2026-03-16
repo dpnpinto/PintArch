@@ -253,7 +253,7 @@ Depois de arrancar
 
 * Este serviço faz parte do pacote util-linux
 * Basta ativar o serviço de timer com **sudo systemctl enable fstrim.timer**
-* O serviço de fstrim será utilziado semanalmente
+* O serviço de fstrim será utilizado semanalmente
 
 ## Instalar o ambiente grafico (GUI)
 
