@@ -195,8 +195,9 @@ Ativar o inicio automatico do serviço de comunicações e verificar serviços c
 
 ### Se for UEFI
 
+
 * **pacman -S grub efibootmgr** (instalar o GRUB e o efibootmgr)
-* **grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=arch_grub --recheck** (instalar o GRUB na pasta efi)
+* **grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=ArchBoot --recheck** (instalar o GRUB na pasta boot)
 * **grub-mkconfig -o /boot/grub/grub.cfg** (gerar a configuração GRUB)
 
 ## Concluir sistema base Arch Linux
