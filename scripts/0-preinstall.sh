@@ -171,8 +171,8 @@ if [[ ! -d "/sys/firmware/efi" ]]; then # BIOS BOOT
     mkfs.vfat -F32 -n "BIOSBOOT" ${partition1} # format and name it BIOSBOOT
 else # UEFI BOOT
     mkfs.vfat -F32 -n "EFIBOOT" ${partition1} # format and name it EFIBOOT
-    mkdir -p /mnt/boot/efi # make efi dir for EFI
-    mount -t ${partition1} /mnt/boot/efi # mount partition for EFI
+    mkdir -p /mnt/boot # make boot dir for EFI
+    mount -t ${partition1} /mnt/boot # mount partition for EFI
 fi
 
 # swap activation
