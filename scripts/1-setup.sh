@@ -36,9 +36,7 @@ if [[ ! -d "/sys/firmware/efi" ]]; then
     grub-mkconfig -o /boot/grub/grub.cfg #generate GRUB config
 else
     pacman -S --noconfirm grub efibootmgr # for efi you have to install efibootmgr
-    mkdir /boot/efi
-    mount /dev/sda1 /boot/efi  #Mount FAT32 EFI partition 
-    grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=arch_grub --recheck # install grub to EFI partition
+    grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=arch_grub --recheck # install grub to EFI partition
     grub-mkconfig -o /boot/grub/grub.cfg  #generate GRUB config
 fi
 counter
