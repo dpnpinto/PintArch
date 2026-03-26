@@ -55,7 +55,7 @@ From the start of an Arch image, get it here [https://archlinux.org/download/](h
 * [xdg-user-dirs](https://www.freedesktop.org/wiki/Software/xdg-user-dirs/) - Manage "well known" user directories like the desktop folder and the music folder. It also handles localization (i.e. translation) of the filenames
 * [maim](https://github.com/naelstrof/maim) - Make image the software that I use for screenshot 
 * [vim](https://www.vim.org) - The best editor
-* [pcmanfm](https://pcmanfm.com) - GUI Lightweight file manager that I like, configure terminal (st %s), and, if you want automount USB, dont forget the gvfs (RTFM)
+* [pcmanfm](https://pcmanfm.com) - A GUI lightweight file manager that I like, configure terminal (st %s), and, if you want automount USB, dont forget the gvfs (RTFM)
 * [yazi](https://github.com/sxyazi/yazi) - Terminal file manager
 * [ueberzugpp](https://github.com/jstkdng/ueberzugpp) - To get image view in terminal (ueberzu in fast cpp)  for yazi 
 * [fzf](https://github.com/junegunn/fzf) - Fuzzy finder, for multiple use and find files
