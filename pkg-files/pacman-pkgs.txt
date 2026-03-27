@@ -13,6 +13,7 @@ btop
 dysk
 figlet
 tree
+lynx
 yazi
 inxi
 vim-supertab
