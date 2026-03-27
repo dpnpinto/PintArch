@@ -69,6 +69,7 @@ From the start of an Arch image, get it here [https://archlinux.org/download/](h
 * [zathura](https://pwmt.org/projects/zathura/) - Pdf document viewer
 * [gdb](https://www.sourceware.org/gdb/) - Debug programs for Linux
 * [vivaldi](https://vivaldi.com) - Web Browser that I like, with DuckDuckGo as search engine ;) (at least from a european company)
+* [lynx](https://lynx.invisible-island.net) - Text Web Browser
 * [thunderbird](https://www.thunderbird.net/) - Email client
 * [bat](https://github.com/sharkdp/bat) - like cat but with colors
 * [eza](https://github.com/eza-community/eza) - like ls but more control with colors
