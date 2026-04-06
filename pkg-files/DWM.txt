@@ -37,5 +37,6 @@ mtr
 iperf
 tcpdump
 nmap
+zola
 bind
 --END OF MINIMA INSTALL--
