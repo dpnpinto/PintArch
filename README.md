@@ -99,6 +99,7 @@ From the start of an Arch image, get it here [https://archlinux.org/download/](h
 * [iperf](https://github.com/esnet/iperf) - Test bandwith between sites
 * [tcpdump](https://www.tcpdump.org/) - Lightweight paket capture
 * [nmap](https://nmap.org/) - Scan remote ports/network
+* [zola](https://www.getzola.org) - Make sites that suck less ;)
 * [bind](https://www.isc.org/bind/) - DNS tools, your know like [dig](https://linux.die.net/man/1/dig) and [nslookup](https://linux.die.net/man/1/nslookup)
 
 ## Keys that I use in DWM (PintoDWM)
