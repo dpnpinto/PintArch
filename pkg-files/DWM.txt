@@ -10,7 +10,7 @@ btop
 htop
 nvtop
 rofi
-picom
+xcompmgr
 feh
 lxappearance
 breeze-gtk
