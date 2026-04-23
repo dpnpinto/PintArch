@@ -43,7 +43,7 @@ From the start of an Arch image, get it here [https://archlinux.org/download/](h
 * [pipewire](https://pipewire.org) - Get all the sound that you deserve in a computer
 ## System Level with GUI DWM
 * [feh](https://feh.finalrewind.org/) - Image management, including background image.
-* [picom](https://picom.app) - Compositor for Xorg, for example for transparency management, rounded corners, blur, etc.
+* [xcompmgr](https://wiki.archlinux.org/title/Xcompmgr) - Simpler compositor for Xorg, for example for transparency management. Nomeed rounded corners, etc.
 * [lxappearance](https://github.com/lxde/lxappearance) - Get icons and fancy stuff management for GTK
 * [qt6ct](https://github.com/trialuser02/qt6ct) - Get icons and fancy stuff management for QT
 * [rofi](https://github.com/davatorium/rofi) - Use for starting aplications on the GUI
