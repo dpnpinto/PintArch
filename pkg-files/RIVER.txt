@@ -1,5 +1,6 @@
 base-devel
 river
+waybar
 freetype2
 maim
 fzf
