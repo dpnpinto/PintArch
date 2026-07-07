@@ -49,7 +49,7 @@ From the start of an Arch image, get it here [https://archlinux.org/download/](h
 * [rofi](https://github.com/davatorium/rofi) - Use for starting aplications on the GUI
 * [xorg-server](https://www.x.org/wiki/) - Yes, still using the most popular display server
 * [PintoDWM](https://github.com/dpnpinto/PintoDWM) - My Dinamic Windows Management based on [DWM](https://dwm.suckless.org)
-* [PintoST](https://github.com/dpnpinto/PintoST) - My Simple Terminal based on ST
+* [PintoST](https://github.com/dpnpinto/PintoST) - My Simple Terminal based on [ST](https://st.suckless.org)
 * [PintoDWMBlocks](https://github.com/dpnpinto/PintoDWMBlocks) - My task bar based on DWMBlocks
 ## At user level
 * [xdg-user-dirs](https://www.freedesktop.org/wiki/Software/xdg-user-dirs/) - Manage "well known" user directories like the desktop folder and the music folder. It also handles localization (i.e. translation) of the filenames (X Desktop Group)
