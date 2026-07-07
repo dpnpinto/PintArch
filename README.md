@@ -50,7 +50,7 @@ From the start of an Arch image, get it here [https://archlinux.org/download/](h
 * [xorg-server](https://www.x.org/wiki/) - Yes, still using the most popular display server
 * [PintoDWM](https://github.com/dpnpinto/PintoDWM) - My Dinamic Windows Management based on [DWM](https://dwm.suckless.org)
 * [PintoST](https://github.com/dpnpinto/PintoST) - My Simple Terminal based on [ST](https://st.suckless.org)
-* [PintoDWMBlocks](https://github.com/dpnpinto/PintoDWMBlocks) - My task bar based on DWMBlocks
+* [PintoDWMBlocks](https://github.com/dpnpinto/PintoDWMBlocks) - My task bar based on [DWMBlocks](https://github.com/torrinfail/dwmblocks)
 ## At user level
 * [xdg-user-dirs](https://www.freedesktop.org/wiki/Software/xdg-user-dirs/) - Manage "well known" user directories like the desktop folder and the music folder. It also handles localization (i.e. translation) of the filenames (X Desktop Group)
 * [maim](https://github.com/naelstrof/maim) - Make image the software that I use for screenshot 
@@ -90,7 +90,7 @@ From the start of an Arch image, get it here [https://archlinux.org/download/](h
 * [libreoffice-fresh](https://www.libreoffice.org) - Office suit for Linux
 * [drawio-desktop](https://app.diagrams.net) - Diagrams
 * [Festival](http://festvox.org/festival/) - For Robotic voice to my personal AI (as I like), nice TTS
-* [Ollama](https://ollama.com) - For my personal AI 
+* [llama.cpp](https://llama-cpp.com) - The base for AI writen in C/C++ for my personal AI 
 * [docker](https://www.docker.com) - For managing containers (with service start by sockts)
 * [flatpak](https://flatpak.org) - Generic distribute aplications to the entire Linux desktop
 * [inxi](https://codeberg.org/smxi/inxi) - Ultimate system information tool
