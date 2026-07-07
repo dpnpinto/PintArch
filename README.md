@@ -48,7 +48,7 @@ From the start of an Arch image, get it here [https://archlinux.org/download/](h
 * [qt6ct](https://github.com/trialuser02/qt6ct) - Get icons and fancy stuff management for QT
 * [rofi](https://github.com/davatorium/rofi) - Use for starting aplications on the GUI
 * [xorg-server](https://www.x.org/wiki/) - Yes, still using the most popular display server
-* [PintoDWM](https://github.com/dpnpinto/PintoDWM) - My Dinamic Windows Management based on DWM
+* [PintoDWM](https://github.com/dpnpinto/PintoDWM) - My Dinamic Windows Management based on [DWM](https://dwm.suckless.org)
 * [PintoST](https://github.com/dpnpinto/PintoST) - My Simple Terminal based on ST
 * [PintoDWMBlocks](https://github.com/dpnpinto/PintoDWMBlocks) - My task bar based on DWMBlocks
 ## At user level
