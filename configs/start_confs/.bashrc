@@ -22,7 +22,6 @@ alias dmesg='dmesg --color=always'
 alias ..='cd ..'
 alias vi='vim'
 alias code='code-oss'
-alias cat='bat'
 alias df='dysk'
 alias du='ncdu --color dark'
 
