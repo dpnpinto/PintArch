@@ -8,7 +8,7 @@
 export PATH=$PATH:~/.local/bin 
 export TERM=st
 
-# Get some nie  aliases for colors and stuff
+# Get some nice  aliases for colors and stuff
 
 alias ls='ls --color=auto'
 alias la='eza -alh --icons --git --group --group-directories-first'
@@ -25,7 +25,7 @@ alias code='code-oss'
 alias df='dysk'
 alias du='ncdu --color dark'
 
-# Get some nice colors in man pages and use most as the pager
+# Get some nice colors in man pages and use less as the pager
 
 export MANPAGER="less -R --use-color -Dd+r -Du+b"
 export MANROFFOPT="-P -c"
