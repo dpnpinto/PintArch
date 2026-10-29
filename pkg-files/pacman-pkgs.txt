@@ -1,5 +1,4 @@
 base-devel
-gdb
 freetype2
 binutils
 dosfstools
