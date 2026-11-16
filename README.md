@@ -43,7 +43,7 @@ From the start of an Arch image, get it here [https://archlinux.org/download/](h
 * [pipewire](https://pipewire.org) - Get all the sound that you deserve in a computer
 ## System Level with GUI DWM
 * [feh](https://feh.finalrewind.org/) - Image management, including background image.
-* [xcompmgr](https://wiki.archlinux.org/title/Xcompmgr) - Simpler compositor for Xorg, for example for transparency management. Nomeed rounded corners, etc.
+* [xcompmgr](https://wiki.archlinux.org/title/Xcompmgr) - Simpler compositor for Xorg, for example for transparency management. No need round corners, etc.
 * [lxappearance](https://github.com/lxde/lxappearance) - Get icons and fancy stuff management for GTK
 * [qt6ct](https://github.com/trialuser02/qt6ct) - Get icons and fancy stuff management for QT
 * [rofi](https://github.com/davatorium/rofi) - Use for starting aplications on the GUI
@@ -64,7 +64,6 @@ From the start of an Arch image, get it here [https://archlinux.org/download/](h
 * [fastfetch](https://github.com/fastfetch-cli/fastfetch) - Show, in a nice format, what is your config
 * [htop](https://htop.dev) e [btop](https://github.com/aristocratos/btop) - Visualize system resorces
 * [nvtop](https://github.com/Syllo/nvtop) - visualize nvidia resorces (I use a Nvidia Card) 
-* [zed](https://zed.dev) - Minimal code editor crafted for speed and collaboration with humans and AI
 * [mpv](https://mpv.io) - Player audio/video.
 * [zathura](https://pwmt.org/projects/zathura/) - Pdf document viewer
 * [gdb](https://www.sourceware.org/gdb/) - Debug programs for Linux
