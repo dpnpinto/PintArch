@@ -22,12 +22,10 @@ unzip
 gdb
 mpv
 eza
-bat
 dfrs
 axel
 ncdu
 ueberzugpp
-tealdeer
 zathura
 zathura-pdf-mupdf
 materia-gtk-theme
