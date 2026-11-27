@@ -27,14 +27,10 @@ alias df='dysk'
 alias du='ncdu --color dark'
 alias pat='bat --style=plain'
 
-# Get some nice colors in man and tldr pages
+# Get some nice colors in man
 
 man() {
     command man "$@" | bat -l man --style=plain
-}
-
-tldr() {
-    command tldr "$@" | bat -l man --style=plain
 }
 
 #  Get git info in terminal
